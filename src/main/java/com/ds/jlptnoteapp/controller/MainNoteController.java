@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/main-notes")
+@RequestMapping("/notes")
 public class MainNoteController {
 
     private final MainNoteRepository mainNoteRepository;
@@ -45,6 +45,6 @@ public class MainNoteController {
         model.addAttribute("activeTab", "notes");
         model.addAttribute("title", "Main Notes");
 
-        return "main_notes/list"; // <-- file HTML konten
+        return "notes/list"; // <-- file HTML konten
     }
 }

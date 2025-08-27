@@ -17,7 +17,7 @@
             background: #f9f9f9;
         }
         /* Default widths */
-        th:nth-child(1) { width: 120px; }
+        th:nth-child(1) { width: 96px; }
         th:nth-child(2) { width: 150px; }
         th:nth-child(3) { width: 200px; }
         th:nth-child(4) { width: 180px; }
@@ -39,7 +39,7 @@
 <body class="m-0 mt-2">
 <ul class="nav nav-tabs mb-3">
     <li class="nav-item">
-        <a class="nav-link" th:classappend="${activeTab == 'notes'} ? 'active'" th:href="@{/main-notes}">Main Notes</a>
+        <a class="nav-link" th:classappend="${activeTab == 'notes'} ? 'active'" th:href="@{/notes}">Main Notes</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" th:classappend="${activeTab == 'examples'} ? 'active'" th:href="@{/examples}">Examples</a>
@@ -51,7 +51,7 @@
 <h2>Main Notes</h2>
 
 <!-- Search bar -->
-<form th:action="@{/main-notes}" method="get" class="row mb-3">
+<form th:action="@{/notes}" method="get" class="row mb-3">
     <div class="col-auto">
         <input type="text" name="pattern" th:value="${pattern}" class="form-control" placeholder="Search by pattern">
     </div>
@@ -88,16 +88,16 @@
 <nav>
     <ul class="pagination">
         <li class="page-item" th:classappend="${mainNotes.first} ? 'disabled'">
-            <a class="page-link" th:href="@{/main-notes(page=${mainNotes.number - 1}, pattern=${pattern})}">Previous</a>
+            <a class="page-link" th:href="@{/notes(page=${mainNotes.number - 1}, pattern=${pattern})}">Previous</a>
         </li>
 
         <li class="page-item" th:each="i : ${#numbers.sequence(0, mainNotes.totalPages - 1)}"
             th:classappend="${i == mainNotes.number} ? 'active'">
-            <a class="page-link" th:href="@{/main-notes(page=${i}, pattern=${pattern})}" th:text="${i + 1}">1</a>
+            <a class="page-link" th:href="@{/notes(page=${i}, pattern=${pattern})}" th:text="${i + 1}">1</a>
         </li>
 
         <li class="page-item" th:classappend="${mainNotes.last} ? 'disabled'">
-            <a class="page-link" th:href="@{/main-notes(page=${mainNotes.number + 1}, pattern=${pattern})}">Next</a>
+            <a class="page-link" th:href="@{/notes(page=${mainNotes.number + 1}, pattern=${pattern})}">Next</a>
         </li>
     </ul>
 </nav>
