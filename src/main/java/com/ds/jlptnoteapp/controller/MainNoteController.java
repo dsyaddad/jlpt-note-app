@@ -41,6 +41,10 @@ public class MainNoteController {
         model.addAttribute("mainNotes", dtoPage);
         model.addAttribute("pattern", pattern);
 
-        return "main_notes/list";
+        // tambahan untuk layout frame
+        model.addAttribute("activeTab", "notes");
+        model.addAttribute("title", "Main Notes");
+
+        return "main_notes/list"; // <-- file HTML konten
     }
 }
