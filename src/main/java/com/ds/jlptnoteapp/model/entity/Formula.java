@@ -6,8 +6,8 @@ import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
-
 @Entity
 @Table(name = "formula")
 @Setter
@@ -37,10 +37,10 @@ public class Formula implements Serializable {
     private String subNote;
 
     @ManyToOne
-    @JoinColumn(name = "main_note_id", insertable = false, updatable = false)
+    @JoinColumn(name = "main_note_id") // biar bisa diisi otomatis
     private MainNote mainNote;
 
     @OneToMany(mappedBy = "formula", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Example> examples;
+    private List<Example> examples = new ArrayList<>();
 
 }

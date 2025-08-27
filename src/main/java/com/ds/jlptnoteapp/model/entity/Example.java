@@ -8,7 +8,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "formula")
+@Table(name = "example")
 @Setter
 @Getter
 public class Example implements Serializable {
