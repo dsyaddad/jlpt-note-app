@@ -1,3 +1,6 @@
+-- Pastikan session pakai utf8mb4
+/*!40101 SET NAMES utf8mb4 */;
+
 -- Insert Level
 INSERT INTO level (id, level, note)
 VALUES
