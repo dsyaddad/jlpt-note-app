@@ -21,11 +21,11 @@ public class Formula implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "section")
-    private String section;
-
     @Column(name = "sub_section")
     private String subSection;
+
+    @Column(name = "pattern")
+    private String pattern;
 
     @Column(name = "sub_function")
     private String subFunction;

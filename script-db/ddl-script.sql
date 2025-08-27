@@ -29,8 +29,8 @@ CREATE TABLE main_note (
 CREATE TABLE formula (
                          id BIGINT AUTO_INCREMENT PRIMARY KEY,
                          main_note_id BIGINT,
-                         section VARCHAR(255),
                          sub_section VARCHAR(255),
+                         pattern VARCHAR(255),
                          sub_function VARCHAR(255),
                          sub_use_when VARCHAR(255),
                          sub_note TEXT
