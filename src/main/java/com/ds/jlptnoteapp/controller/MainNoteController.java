@@ -47,4 +47,19 @@ public class MainNoteController {
 
         return "notes/list"; // <-- file HTML konten
     }
+
+    @GetMapping("/create")
+    public String showCreateForm(Model model) {
+        model.addAttribute("mainNote", new MainNoteDto());
+        model.addAttribute("activeTab", "create");
+        model.addAttribute("title", "Add New MainNote");
+        return "notes/create";
+    }
+
+    @PostMapping("/create")
+    public String createMainNote(@ModelAttribute("mainNote") MainNoteDto mainNoteDto) {
+        MainNote entity = mainNoteMapper.toEntity(mainNoteDto);
+        mainNoteRepository.save(entity);
+        return "redirect:/notes";
+    }
 }

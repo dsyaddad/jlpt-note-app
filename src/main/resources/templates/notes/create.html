@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Temporary Tab</title>
+</head>
+<body>
+<section>
+    <div class="container mt-4">
+        <h2>Add New MainNote</h2>
+        <form th:action="@{/notes/create}" th:object="${mainNote}" method="post">
+            <div class="mb-3">
+                <label for="section" class="form-label">Section</label>
+                <input type="text" th:field="*{section}" class="form-control" id="section" required>
+            </div>
+            <div class="mb-3">
+                <label for="identifier" class="form-label">Identifier</label>
+                <input type="text" th:field="*{identifier}" class="form-control" id="identifier" required>
+            </div>
+            <div class="mb-3">
+                <label for="patternName" class="form-label">Pattern Name</label>
+                <input type="text" th:field="*{patternName}" class="form-control" id="patternName" required>
+            </div>
+            <div class="mb-3">
+                <label for="mainFunction" class="form-label">Main Function</label>
+                <input type="text" th:field="*{mainFunction}" class="form-control" id="mainFunction">
+            </div>
+            <div class="mb-3">
+                <label for="mainUseWhen" class="form-label">Main Use When</label>
+                <input type="text" th:field="*{mainUseWhen}" class="form-control" id="mainUseWhen">
+            </div>
+            <div class="mb-3">
+                <label for="mainNote" class="form-label">Main Note</label>
+                <textarea th:field="*{mainNote}" class="form-control" id="mainNote"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a th:href="@{/notes}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</section>
+</body>
+</html>
