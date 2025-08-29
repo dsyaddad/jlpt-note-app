@@ -91,4 +91,15 @@ public class MainNoteController {
         mainNoteRepository.save(entity);
         return "redirect:/notes";
     }
+    @GetMapping("/view/{id}")
+    public String viewMainNote(@PathVariable Long id, Model model) {
+        MainNote mainNote = mainNoteRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid note id: " + id));
+        MainNoteDto dto = mainNoteMapper.toDto(mainNote);
+        model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
+        model.addAttribute("mainNote", dto);
+        model.addAttribute("activeTab", "view");
+        model.addAttribute("title", "View MainNote");
+        return "notes/view";
+    }
 }

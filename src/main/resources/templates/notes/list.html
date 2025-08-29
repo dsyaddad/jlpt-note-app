@@ -34,6 +34,9 @@
         <tbody>
         <tr th:each="note : ${mainNotes.content}">
             <td>
+                <a th:href="@{/notes/view/{id}(id=${note.id})}" title="View">
+                    <i class="bi bi-info-square"></i>
+                </a>
                 <a th:href="@{/notes/edit/{id}(id=${note.id})}" title="Edit">
                     <i class="bi bi-pencil-square"></i>
                 </a>

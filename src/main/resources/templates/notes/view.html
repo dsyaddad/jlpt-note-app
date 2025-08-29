@@ -1,0 +1,76 @@
+<!-- HTML -->
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>View MainNote</title>
+</head>
+<body>
+<section>
+    <div class="container mt-4">
+        <h2 th:text="${title}">View MainNote</h2>
+        <div class="mb-0">
+            <label class="form-label mb-0">Level</label>
+            <div th:text="${levels[mainNote.levelId]?.level}"></div>
+        </div>
+        <div class="mb-0">
+            <label class="form-label mb-0">Section</label>
+            <div th:text="${mainNote.section}"></div>
+        </div>
+        <div class="mb-0">
+            <label class="form-label mb-0">Identifier</label>
+            <div th:text="${mainNote.identifier}"></div>
+        </div>
+        <div class="mb-0">
+            <label class="form-label mb-0">Pattern Name</label>
+            <div th:text="${mainNote.patternName}"></div>
+        </div>
+        <div class="mb-0">
+            <label class="form-label mb-0">Main Function</label>
+            <div th:text="${mainNote.mainFunction}"></div>
+        </div>
+        <div class="mb-0">
+            <label class="form-label mb-0">Main Use When</label>
+            <div th:text="${mainNote.mainUseWhen}"></div>
+        </div>
+        <div class="mb-2">
+            <label class="form-label mb-0">Main Note</label>
+            <div th:text="${mainNote.mainNote}"></div>
+        </div>
+        <div id="formulas-container">
+            <!-- Loop formulas -->
+            <div th:if="${mainNote.formulas != null and #lists.size(mainNote.formulas) > 0}">
+                <div th:each="formula, formulaStat : ${mainNote.formulas}" class="formula-block mb-3 card">
+                    <div class="card-header">
+                        <h5>Formula</h5>
+                    </div>
+                    <div class="card-body">
+                        <div><b>Sub Section:</b> <span th:text="${formula.subSection}"></span></div>
+                        <div><b>Pattern:</b> <span th:text="${formula.pattern}"></span></div>
+                        <div><b>Sub Function:</b> <span th:text="${formula.subFunction}"></span></div>
+                        <div><b>Sub Use When:</b> <span th:text="${formula.subUseWhen}"></span></div>
+                        <div><b>Sub Note:</b> <span th:text="${formula.subNote}"></span></div>
+                        <!-- Loop examples -->
+                        <div th:if="${formula.examples != null and #lists.size(formula.examples) > 0}">
+                            <div th:each="example : ${formula.examples}" class="example-block mb-2 card">
+                                <div class="card-header">
+                                    <h6>Example</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div><b>Sample Kanji:</b> <span th:text="${example.sampleKanji}"></span></div>
+                                    <div><b>Sample Non Kanji:</b> <span th:text="${example.sampleNonKanji}"></span></div>
+                                    <div><b>Meaning:</b> <span th:text="${example.meaning}"></span></div>
+                                    <div><b>Note:</b> <span th:text="${example.note}"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a th:href="@{/notes}" class="btn btn-secondary">Back</a>
+    </div>
+</section>
+</body>
+</html>
