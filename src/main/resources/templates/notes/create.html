@@ -8,6 +8,7 @@
 <section>
     <div class="container mt-4">
         <h2>Add New MainNote</h2>
+        <!-- HTML (Thymeleaf + JS) -->
         <form th:action="@{/notes/create}" th:object="${mainNote}" method="post">
             <div class="mb-3">
                 <label for="section" class="form-label">Section</label>
@@ -33,10 +34,14 @@
                 <label for="mainNote" class="form-label">Main Note</label>
                 <textarea th:field="*{mainNote}" class="form-control" id="mainNote"></textarea>
             </div>
+            <div id="formulas-container"></div>
+            <button type="button" onclick="addFormula()" class="btn btn-success">Add Formula</button>
+
             <button type="submit" class="btn btn-primary">Save</button>
             <a th:href="@{/notes}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
+    <script type="text/javascript" th:src="@{/js/dynamic-formula-example.js}"></script>
 </section>
 </body>
 </html>
