@@ -6,4 +6,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface LevelRepository extends JpaRepository<Level, Long>, JpaSpecificationExecutor<Level> {}
+public interface LevelRepository extends JpaRepository<Level, Long>, JpaSpecificationExecutor<Level> {
+
+}

@@ -10,28 +10,37 @@
         <h2>Add New MainNote</h2>
         <!-- HTML (Thymeleaf + JS) -->
         <form th:action="@{/notes/create}" th:object="${mainNote}" method="post">
-            <div class="mb-3">
-                <label for="section" class="form-label">Section</label>
+            <div class="mb-0">
+                <label for="section" class="form-label mb-0">Level</label>
+                <select th:field="*{level}" class="form-select" id="level" required>
+                    <option th:each="entry : ${levels}"
+                            th:value="${entry.key}"
+                            th:text="${entry.key}">
+                    </option>
+                </select>
+            </div>
+            <div class="mb-0">
+                <label for="section" class="form-label mb-0">Section</label>
                 <input type="text" th:field="*{section}" class="form-control" id="section" required>
             </div>
-            <div class="mb-3">
-                <label for="identifier" class="form-label">Identifier</label>
+            <div class="mb-0">
+                <label for="identifier" class="form-label mb-0">Identifier</label>
                 <input type="text" th:field="*{identifier}" class="form-control" id="identifier" required>
             </div>
-            <div class="mb-3">
-                <label for="patternName" class="form-label">Pattern Name</label>
+            <div class="mb-0">
+                <label for="patternName" class="form-label mb-0">Pattern Name</label>
                 <input type="text" th:field="*{patternName}" class="form-control" id="patternName" required>
             </div>
-            <div class="mb-3">
-                <label for="mainFunction" class="form-label">Main Function</label>
+            <div class="mb-0">
+                <label for="mainFunction" class="form-label mb-0">Main Function</label>
                 <input type="text" th:field="*{mainFunction}" class="form-control" id="mainFunction">
             </div>
-            <div class="mb-3">
-                <label for="mainUseWhen" class="form-label">Main Use When</label>
+            <div class="mb-0">
+                <label for="mainUseWhen" class="form-label mb-0">Main Use When</label>
                 <input type="text" th:field="*{mainUseWhen}" class="form-control" id="mainUseWhen">
             </div>
-            <div class="mb-3">
-                <label for="mainNote" class="form-label">Main Note</label>
+            <div class="mb-2">
+                <label for="mainNote" class="form-label mb-0">Main Note</label>
                 <textarea th:field="*{mainNote}" class="form-control" id="mainNote"></textarea>
             </div>
             <div id="formulas-container"></div>

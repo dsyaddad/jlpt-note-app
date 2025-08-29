@@ -48,10 +48,15 @@ public class MainNote implements Serializable {
         if (this.createdAt == null) {
             this.createdAt = LocalDateTime.now();
         }
+        if (formulas != null) {
+            for (Formula f : formulas) {
+                f.setMainNote(this);
+            }
+        }
     }
 
     @ManyToOne
-    @JoinColumn(name = "level_id", insertable = false, updatable = false)
+    @JoinColumn(name = "level_id")
     private Level level;
 
     @OneToMany(mappedBy = "mainNote", cascade = CascadeType.ALL, orphanRemoval = true)

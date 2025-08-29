@@ -1,6 +1,7 @@
 package com.ds.jlptnoteapp.model.dto;
 
 
+import com.ds.jlptnoteapp.model.entity.Level;
 import lombok.Data;
 
 @Data

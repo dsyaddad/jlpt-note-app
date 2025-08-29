@@ -40,6 +40,15 @@ public class Formula implements Serializable {
     @JoinColumn(name = "main_note_id") // biar bisa diisi otomatis
     private MainNote mainNote;
 
+    @PrePersist
+    public void prePersist() {
+        if (examples != null) {
+            for (Example e : examples) {
+                e.setFormula(this); // auto link ke parent
+            }
+        }
+    }
+
     @OneToMany(mappedBy = "formula", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Example> examples = new ArrayList<>();
 

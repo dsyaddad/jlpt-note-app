@@ -5,6 +5,7 @@ import com.ds.jlptnoteapp.model.entity.MainNote;
 import com.ds.jlptnoteapp.model.repository.MainNoteRepository;
 import com.ds.jlptnoteapp.model.specification.MainNoteSpecification;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
+import com.ds.jlptnoteapp.util.GlobalCachedVariable;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,7 @@ public class MainNoteController {
 
     private final MainNoteRepository mainNoteRepository;
     private final AppMapper mainNoteMapper;
+    private final GlobalCachedVariable globalCachedVariable;
 
     @GetMapping
     public String listMainNotes(
@@ -50,6 +52,7 @@ public class MainNoteController {
 
     @GetMapping("/create")
     public String showCreateForm(Model model) {
+        model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("mainNote", new MainNoteDto());
         model.addAttribute("activeTab", "create");
         model.addAttribute("title", "Add New MainNote");
@@ -58,7 +61,7 @@ public class MainNoteController {
 
     @PostMapping("/create")
     public String createMainNote(@ModelAttribute("mainNote") MainNoteDto mainNoteDto) {
-        MainNote entity = mainNoteMapper.toEntity(mainNoteDto);
+        MainNote entity = mainNoteMapper.toEntity(mainNoteDto,globalCachedVariable);
         mainNoteRepository.save(entity);
         return "redirect:/notes";
     }

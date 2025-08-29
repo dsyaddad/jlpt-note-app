@@ -33,7 +33,8 @@ public class Example implements Serializable {
     private String note;
 
     @ManyToOne
-    @JoinColumn(name = "formula_id", insertable = false, updatable = false)
+    @JoinColumn(name = "formula_id")
     private Formula formula;
+
 
 }

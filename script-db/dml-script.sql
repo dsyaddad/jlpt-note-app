@@ -4,11 +4,11 @@
 -- Insert Level
 INSERT INTO level (id, level, note)
 VALUES
-    (1, 'JLPT-N5', 'Level: Mampu memahami bahasa Jepang dasar. Target: ±100 kanji, ±800 kosakata. Nilai Minimal: Seksi (38 dari 120, 19 dari 60), Total (80 dari 180).'),
-    (2, 'JLPT-N4', 'Level: Mampu memahami bahasa Jepang dasar, memahami percakapan sehari-hari yang diucapkan perlahan. Target: ±300 kanji, ±1.500 kosakata. Nilai Minimal: Seksi (38 dari 120, 19 dari 60), Total (90 dari 180).'),
-    (3, 'JLPT-N3', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam percakapan sehari-hari dengan kecepatan mendekati normal. Target: ±650 kanji, ±3.750 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (95 dari 180).'),
-    (4, 'JLPT-N2', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam berbagai situasi sehari-hari dan profesional. Target: ±1.000 kanji, ±6.000 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (90 dari 180).'),
-    (5, 'JLPT-N1', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam berbagai situasi, termasuk tulisan dengan topik yang kompleks. Target: ±2.000 kanji, ±10.000 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (100 dari 180).');
+    (1, 'N5', 'Level: Mampu memahami bahasa Jepang dasar. Target: ±100 kanji, ±800 kosakata. Nilai Minimal: Seksi (38 dari 120, 19 dari 60), Total (80 dari 180).'),
+    (2, 'N4', 'Level: Mampu memahami bahasa Jepang dasar, memahami percakapan sehari-hari yang diucapkan perlahan. Target: ±300 kanji, ±1.500 kosakata. Nilai Minimal: Seksi (38 dari 120, 19 dari 60), Total (90 dari 180).'),
+    (3, 'N3', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam percakapan sehari-hari dengan kecepatan mendekati normal. Target: ±650 kanji, ±3.750 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (95 dari 180).'),
+    (4, 'N2', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam berbagai situasi sehari-hari dan profesional. Target: ±1.000 kanji, ±6.000 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (90 dari 180).'),
+    (5, 'N1', 'Level: Mampu memahami bahasa Jepang yang digunakan dalam berbagai situasi, termasuk tulisan dengan topik yang kompleks. Target: ±2.000 kanji, ±10.000 kosakata. Nilai Minimal: Seksi (19 dari 60), Total (100 dari 180).');
 
 -- Insert MainNote
 INSERT INTO main_note (id, section, level_id, identifier, pattern_name, main_function, main_use_when, main_note, created_at)
