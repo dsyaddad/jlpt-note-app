@@ -21,8 +21,8 @@ public class MainNoteSpecification {
             if (dto.getSection() != null && !dto.getSection().isEmpty()) {
                 predicates.add(cb.like(cb.lower(root.get("section")), "%" + dto.getSection().toLowerCase() + "%"));
             }
-            if (dto.getLevel() != null) {
-                predicates.add(cb.equal(root.get("levelId"), dto.getLevel()));
+            if (dto.getLevelId() != null) {
+                predicates.add(cb.equal(root.get("levelId"), dto.getLevelId()));
             }
             if (dto.getIdentifier() != null && !dto.getIdentifier().isEmpty()) {
                 predicates.add(cb.like(cb.lower(root.get("identifier")), "%" + dto.getIdentifier().toLowerCase() + "%"));

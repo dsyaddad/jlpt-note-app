@@ -18,24 +18,23 @@ import org.mapstruct.factory.Mappers;
 public interface AppMapper {
 
     AppMapper INSTANCE = Mappers.getMapper(AppMapper.class);
-
-    // MainNote
-    // Mapping DTO -> Entity
-    @Mapping(target = "level", expression = "java(levelFromString(dto.getLevel(), globalCachedVariable))")
+    // DTO -> Entity
+    @Mapping(target = "level", expression = "java(levelFromId(dto.getLevelId(), globalCachedVariable))")
     MainNote toEntity(MainNoteDto dto, @Context GlobalCachedVariable globalCachedVariable);
 
-    // Mapping Entity -> DTO
-    @Mapping(target = "level", expression = "java(levelToString(entity.getLevel()))")
+    // Entity -> DTO
+    @Mapping(target = "levelId", expression = "java(levelToId(entity.getLevel()))")
     MainNoteDto toDto(MainNote entity);
 
-    // helper methods
-    default Level levelFromString(String key, @Context GlobalCachedVariable cache) {
-        if (key == null) return null;
-        return toEntity(cache.getLevelMapByLevel().get(key));
+    // helper
+    default Level levelFromId(Long id, @Context GlobalCachedVariable cache) {
+        if (id == null) return null;
+        LevelDto dto = cache.getLevelMapByLevel().get(id);
+        return dto != null ? toEntity(dto) : null;
     }
 
-    default String levelToString(Level level) {
-        return level != null ? level.getId().toString() : null;
+    default Long levelToId(Level level) {
+        return level != null ? level.getId() : null;
     }
 
     // Level

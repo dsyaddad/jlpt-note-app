@@ -3,6 +3,7 @@
 <head>
     <title>Main Notes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <ul class="nav nav-tabs mb-3">
@@ -10,7 +11,7 @@
             <a class="nav-link" th:classappend="${activeTab == 'notes'} ? 'active'" th:href="@{/notes}">Main Notes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:classappend="${activeTab == 'create'} ? 'active'" th:href="@{/notes/create}">Add New Note</a>
+            <a class="nav-link" th:classappend="${activeTab == 'create-edit'} ? 'active'" th:href="@{/notes/create}">Add Edit Note</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" th:classappend="${activeTab == 'settings'} ? 'active'" th:href="@{/settings}">Settings</a>

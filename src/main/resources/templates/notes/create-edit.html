@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Temporary Tab</title>
+</head>
+<body>
+<section>
+    <div class="container mt-4">
+        <h2>Add New MainNote</h2>
+        <form th:action="@{${formAction}}" th:object="${mainNote}" method="post">
+            <div class="mb-0">
+                <label for="level" class="form-label mb-0">Level</label>
+                <select th:field="*{levelId}" class="form-select" id="level" required>
+                    <option value="" disabled th:if="*{levelId == null}" selected>Pilih Level</option>
+                    <option th:each="entry : ${levels}"
+                            th:value="${entry.key}"
+                            th:text="${entry.value.level}">
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-0">
+                <label for="section" class="form-label mb-0">Section</label>
+                <input type="text" th:field="*{section}" class="form-control" id="section" required>
+            </div>
+            <div class="mb-0">
+                <label for="identifier" class="form-label mb-0">Identifier</label>
+                <input type="text" th:field="*{identifier}" class="form-control" id="identifier" required>
+            </div>
+            <div class="mb-0">
+                <label for="patternName" class="form-label mb-0">Pattern Name</label>
+                <input type="text" th:field="*{patternName}" class="form-control" id="patternName" required>
+            </div>
+            <div class="mb-0">
+                <label for="mainFunction" class="form-label mb-0">Main Function</label>
+                <input type="text" th:field="*{mainFunction}" class="form-control" id="mainFunction">
+            </div>
+            <div class="mb-0">
+                <label for="mainUseWhen" class="form-label mb-0">Main Use When</label>
+                <input type="text" th:field="*{mainUseWhen}" class="form-control" id="mainUseWhen">
+            </div>
+            <div class="mb-2">
+                <label for="mainNote" class="form-label mb-0">Main Note</label>
+                <textarea th:field="*{mainNote}" class="form-control" id="mainNote"></textarea>
+            </div>
+            <div id="formulas-container">
+                <div th:if="${mainNote.formulas != null and #lists.size(mainNote.formulas) > 0}">
+                    <div th:each="formula, formulaStat : *{formulas}" class="formula-block mb-3 card">
+                        <div class="card-header">
+                            <h5>Formula</h5>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].subSection}" placeholder="Sub Section" class="form-control mb-1" required>
+                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].pattern}" placeholder="Pattern" class="form-control mb-1" required>
+                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].subFunction}" placeholder="Sub Function" class="form-control mb-1">
+                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].subUseWhen}" placeholder="Sub Use When" class="form-control mb-1">
+                            <textarea th:field="*{formulas[__${formulaStat.index}__].subNote}" placeholder="Sub Note" class="form-control mb-1"></textarea>
+                            <!-- Looping examples if examples size != null -->
+                            <div th:id="'examples-container-' + ${formulaStat.index}">
+                                <div th:if="${formula.examples != null and #lists.size(formula.examples) > 0}">
+                                    <div th:each="example, exampleStat : ${formula.examples}" class="example-block mb-2 card">
+                                        <div class="card-header">
+                                            <h6>Example</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].examples[__${exampleStat.index}__].sampleKanji}" placeholder="Sample Kanji" class="form-control mb-1">
+                                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].examples[__${exampleStat.index}__].sampleNonKanji}" placeholder="Sample Non Kanji" class="form-control mb-1">
+                                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].examples[__${exampleStat.index}__].meaning}" placeholder="Meaning" class="form-control mb-1">
+                                            <input type="text" th:field="*{formulas[__${formulaStat.index}__].examples[__${exampleStat.index}__].note}" placeholder="Note" class="form-control mb-1">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" th:onclick="'addExample(' + ${formulaStat.index} + ')'" class="btn btn-success">Add Example</button>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" onclick="addFormula()" class="btn btn-success">Add Formula</button>
+            <button type="submit" class="btn btn-primary" th:text="${submitLabel}">Save</button>
+            <a th:href="@{/notes}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+    <script type="text/javascript" th:src="@{/js/dynamic-formula-example.js}"></script>
+</section>
+</body>
+</html>

@@ -22,6 +22,7 @@
     <table class="table table-striped" id="resizableTable">
         <thead>
         <tr>
+            <th>Action</th>
             <th>Section</th>
             <th>Identifier</th>
             <th>Pattern Name</th>
@@ -32,6 +33,11 @@
         </thead>
         <tbody>
         <tr th:each="note : ${mainNotes.content}">
+            <td>
+                <a th:href="@{/notes/edit/{id}(id=${note.id})}" title="Edit">
+                    <i class="bi bi-pencil-square"></i>
+                </a>
+            </td>
             <td th:text="${note.section}">Section</td>
             <td th:text="${note.identifier}">Identifier</td>
             <td th:text="${note.patternName}">Pattern</td>

@@ -29,12 +29,17 @@ public class StartupListener implements ApplicationRunner {
 
     private void refreshGlobalVariable() {
         log.info("Refreshing global variable");
+        globalCachedVariable.setLevelMapById(findAllAsMapById());
         globalCachedVariable.setLevelMapByLevel(findAllAsMapByLevel());
         log.info("Refreshing global variable done.");
     }
 
-    private Map<String, LevelDto> findAllAsMapByLevel() {
+    private Map<Long, String> findAllAsMapById() {
         return levelRepository.findAll().stream()
-                .collect(Collectors.toMap(Level::getLevel, appMapper::toDto));
+                .collect(Collectors.toMap(Level::getId, Level::getLevel));
+    }
+    private Map<Long, LevelDto> findAllAsMapByLevel() {
+        return levelRepository.findAll().stream()
+                .collect(Collectors.toMap(Level::getId, appMapper::toDto));
     }
 }

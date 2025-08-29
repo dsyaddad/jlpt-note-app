@@ -9,6 +9,6 @@ import java.util.Map;
 @Component
 @Data
 public class GlobalCachedVariable {
-    private Map<String, LevelDto> levelMapByLevel;
-
+    private Map<Long, String> levelMapById;
+    private Map<Long, LevelDto> levelMapByLevel;
 }

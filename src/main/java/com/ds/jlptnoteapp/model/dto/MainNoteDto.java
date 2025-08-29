@@ -15,6 +15,6 @@ public class MainNoteDto {
     private String mainUseWhen;
     private String mainNote;
     private LocalDateTime createdAt;
-    private String level;
+    private Long levelId;
     private List<FormulaDto> formulas;
 }
