@@ -5,19 +5,21 @@ import com.ds.jlptnoteapp.model.entity.MainNote;
 import com.ds.jlptnoteapp.model.repository.MainNoteRepository;
 import com.ds.jlptnoteapp.model.specification.MainNoteSpecification;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
+import com.ds.jlptnoteapp.service.MainNoteService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/notes")
 public class MainNoteController {
 
-    private final MainNoteRepository mainNoteRepository;
+    private final MainNoteService mainNoteService;
     private final AppMapper mainNoteMapper;
     private final GlobalCachedVariable globalCachedVariable;
 
@@ -33,10 +35,7 @@ public class MainNoteController {
         MainNoteDto filter = new MainNoteDto();
         filter.setPatternName(pattern);
 
-        Page<MainNote> result = mainNoteRepository.findAll(
-                MainNoteSpecification.filterByDto(filter),
-                pageable
-        );
+        Page<MainNote> result = mainNoteService.findAllByfilter(filter, pageable);
 
         Page<MainNoteDto> dtoPage = result.map(mainNoteMapper::toDto);
 
@@ -63,16 +62,16 @@ public class MainNoteController {
     }
 
     @PostMapping("/create")
-    public String createMainNote(@ModelAttribute("mainNote") MainNoteDto mainNoteDto) {
+    public String createMainNote(@ModelAttribute("mainNote") MainNoteDto mainNoteDto, RedirectAttributes redirectAttributes) {
         MainNote entity = mainNoteMapper.toEntity(mainNoteDto,globalCachedVariable);
-        mainNoteRepository.save(entity);
+        mainNoteService.save(entity);
+        redirectAttributes.addFlashAttribute("message", String.format("Note %s update successfully.", entity.getSection()));
         return "redirect:/notes";
     }
     // Show edit form using create-edit.html
     @GetMapping("/edit/{id}")
     public String showEditForm(@PathVariable Long id, Model model) {
-        MainNote mainNote = mainNoteRepository.findById(id)
-            .orElseThrow(() -> new IllegalArgumentException("Invalid note id: " + id));
+        MainNote mainNote = mainNoteService.findById(id);
         MainNoteDto dto = mainNoteMapper.toDto(mainNote);
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("mainNote", dto);
@@ -85,21 +84,27 @@ public class MainNoteController {
 
     // Process edit form
     @PostMapping("/edit/{id}")
-    public String editMainNote(@PathVariable Long id, @ModelAttribute("mainNote") MainNoteDto mainNoteDto) {
+    public String editMainNote(@PathVariable Long id, @ModelAttribute("mainNote") MainNoteDto mainNoteDto, RedirectAttributes redirectAttributes) {
         MainNote entity = mainNoteMapper.toEntity(mainNoteDto, globalCachedVariable);
         entity.setId(id);
-        mainNoteRepository.save(entity);
+        mainNoteService.save(entity);
+        redirectAttributes.addFlashAttribute("message", String.format("Note %s update successfully.", entity.getSection()));
         return "redirect:/notes";
     }
     @GetMapping("/view/{id}")
     public String viewMainNote(@PathVariable Long id, Model model) {
-        MainNote mainNote = mainNoteRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid note id: " + id));
+        MainNote mainNote = mainNoteService.findById(id);
         MainNoteDto dto = mainNoteMapper.toDto(mainNote);
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("mainNote", dto);
         model.addAttribute("activeTab", "view");
         model.addAttribute("title", "View MainNote");
         return "notes/view";
+    }
+    @PostMapping("/delete/{id}")
+    public String deleteNote(@PathVariable Long id, RedirectAttributes redirectAttributes) {
+        mainNoteService.deleteById(id);
+        redirectAttributes.addFlashAttribute("message", "Note deleted successfully.");
+        return "redirect:/notes";
     }
 }

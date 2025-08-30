@@ -7,61 +7,100 @@
 </head>
 <body>
 <section>
-    <div class="container mt-4">
-        <h2 th:text="${title}">View MainNote</h2>
-        <div class="mb-0">
-            <label class="form-label mb-0">Level</label>
-            <div th:text="${levels[mainNote.levelId]?.level}"></div>
+    <div class="example-block mb-2 card container" style="padding: 0;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0">View Note
+                <span class="badge bg-success" th:text="${#strings.concat('JLPT-',levels[mainNote.levelId]?.level)}"></span>
+                <span class="badge bg-primary" th:text="${#strings.concat('SECTION-',mainNote.section)}"></span>
+            </h6>
+            <a th:href="@{/notes}" class="btn btn-secondary ms-auto">Back</a>
         </div>
-        <div class="mb-0">
-            <label class="form-label mb-0">Section</label>
-            <div th:text="${mainNote.section}"></div>
-        </div>
-        <div class="mb-0">
-            <label class="form-label mb-0">Identifier</label>
-            <div th:text="${mainNote.identifier}"></div>
-        </div>
-        <div class="mb-0">
-            <label class="form-label mb-0">Pattern Name</label>
-            <div th:text="${mainNote.patternName}"></div>
-        </div>
-        <div class="mb-0">
-            <label class="form-label mb-0">Main Function</label>
-            <div th:text="${mainNote.mainFunction}"></div>
-        </div>
-        <div class="mb-0">
-            <label class="form-label mb-0">Main Use When</label>
-            <div th:text="${mainNote.mainUseWhen}"></div>
-        </div>
-        <div class="mb-2">
-            <label class="form-label mb-0">Main Note</label>
-            <div th:text="${mainNote.mainNote}"></div>
-        </div>
+        <div class="card-body">
+            <table class="table table-bordered mb-2">
+                <tbody>
+                <tr><td><b>Identifier</b>:</td></tr>
+                <tr><td><span th:text="${mainNote.identifier}"></span></td></tr>
+                <tr><td><b>Pattern Name</b>:</td></tr>
+                <tr><td><span th:text="${mainNote.patternName}"></span></td></tr>
+                <tr><td><b>Main Function</b>:</td></tr>
+                <tr><td><span th:text="${mainNote.mainFunction}"></span></td></tr>
+                <tr><td><b>Main Use When</b>:</td></tr>
+                <tr><td><span th:text="${mainNote.mainUseWhen}"></span></td></tr>
+                <tr><td><b>Main Note</b>:</td></tr>
+                <tr><td><span th:text="${mainNote.mainNote}"></span></td></tr>
+                </tbody>
+            </table>
         <div id="formulas-container">
             <!-- Loop formulas -->
             <div th:if="${mainNote.formulas != null and #lists.size(mainNote.formulas) > 0}">
                 <div th:each="formula, formulaStat : ${mainNote.formulas}" class="formula-block mb-3 card">
                     <div class="card-header">
-                        <h5>Formula</h5>
+                        <h5 style="margin-bottom: 0">Formula <span class="badge bg-primary" th:text="${#strings.concat('SECTION-',formula.subSection)}"></span></h5>
                     </div>
                     <div class="card-body">
-                        <div><b>Sub Section:</b> <span th:text="${formula.subSection}"></span></div>
-                        <div><b>Pattern:</b> <span th:text="${formula.pattern}"></span></div>
-                        <div><b>Sub Function:</b> <span th:text="${formula.subFunction}"></span></div>
-                        <div><b>Sub Use When:</b> <span th:text="${formula.subUseWhen}"></span></div>
-                        <div><b>Sub Note:</b> <span th:text="${formula.subNote}"></span></div>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr><td style="width: 130px"><b>Pattern:</b></td><td th:text="${formula.pattern}"></td></tr>
+                            <tr><td style="width: 130px"><b>Sub Function:</b></td><td th:text="${formula.subFunction}"></td></tr>
+                            <tr><td style="width: 130px"><b>Sub Use When:</b></td><td th:text="${formula.subUseWhen}"></td></tr>
+                            <tr><td style="width: 130px"><b>Sub Note:</b></td><td th:text="${formula.subNote}"></td></tr>
+                            </tbody>
+                        </table>
                         <!-- Loop examples -->
                         <div th:if="${formula.examples != null and #lists.size(formula.examples) > 0}">
-                            <div th:each="example : ${formula.examples}" class="example-block mb-2 card">
-                                <div class="card-header">
-                                    <h6>Example</h6>
+                            <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Indicators (titik navigasi bawah) -->
+                                <div class="carousel-indicators">
+                                    <button th:each="example, stat : ${formula.examples}"
+                                            type="button"
+                                            data-bs-target="#exampleCarousel"
+                                            th:attr="data-bs-slide-to=${stat.index}, aria-current=${stat.index == 0} ? 'true' : null"
+                                            th:classappend="${stat.index == 0} ? ' active'">
+                                    </button>
                                 </div>
-                                <div class="card-body">
-                                    <div><b>Sample Kanji:</b> <span th:text="${example.sampleKanji}"></span></div>
-                                    <div><b>Sample Non Kanji:</b> <span th:text="${example.sampleNonKanji}"></span></div>
-                                    <div><b>Meaning:</b> <span th:text="${example.meaning}"></span></div>
-                                    <div><b>Note:</b> <span th:text="${example.note}"></span></div>
+
+                                <!-- Slides -->
+                                <div class="carousel-inner">
+                                    <div th:each="example, stat : ${formula.examples}"
+                                         class="carousel-item"
+                                         th:classappend="${stat.index == 0} ? ' active'">
+
+                                        <div class="card example-block mb-2">
+                                            <div class="card-header">
+                                                <h6>Example [[${stat.index + 1}]]</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                    <tr><td style="width: 160px" colspan="2">
+                                                        <figure>
+                                                            <blockquote class="blockquote">
+                                                                <p th:text="${example.sampleKanji}"></p>
+                                                            </blockquote>
+                                                            <figcaption class="blockquote-footer">
+                                                                <cite title="Source Title" th:text="${example.sampleNonKanji}"></cite>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td></tr>
+                                                    <tr><td style="width: 160px"><b>Meaning:</b></td><td th:text="${example.meaning}"></td></tr>
+                                                    <tr><td style="width: 160px"><b>Note:</b></td><td th:text="${example.note}"></td></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
+                                <!-- Controls (panah kiri kanan) -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#exampleCarousel" data-bs-slide="prev">
+                                    <i class="fas fa-chevron-left fa-3x text-success"></i>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#exampleCarousel" data-bs-slide="next">
+                                    <i class="fas fa-chevron-right fa-3x text-success"></i>
+                                </button>
+
                             </div>
                         </div>
                         <hr>
@@ -69,8 +108,10 @@
                 </div>
             </div>
         </div>
+    </div>
         <a th:href="@{/notes}" class="btn btn-secondary">Back</a>
     </div>
+    <link rel="stylesheet" th:href="@{/css/table-helper.css}">
 </section>
 </body>
 </html>

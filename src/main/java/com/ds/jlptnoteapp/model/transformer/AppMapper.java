@@ -1,3 +1,4 @@
+// src/main/java/com/ds/jlptnoteapp/model/transformer/AppMapper.java
 package com.ds.jlptnoteapp.model.transformer;
 
 import com.ds.jlptnoteapp.model.dto.ExampleDto;
@@ -18,6 +19,7 @@ import org.mapstruct.factory.Mappers;
 public interface AppMapper {
 
     AppMapper INSTANCE = Mappers.getMapper(AppMapper.class);
+
     // DTO -> Entity
     @Mapping(target = "level", expression = "java(levelFromId(dto.getLevelId(), globalCachedVariable))")
     MainNote toEntity(MainNoteDto dto, @Context GlobalCachedVariable globalCachedVariable);
@@ -25,6 +27,24 @@ public interface AppMapper {
     // Entity -> DTO
     @Mapping(target = "levelId", expression = "java(levelToId(entity.getLevel()))")
     MainNoteDto toDto(MainNote entity);
+
+    // Formula
+    @Mapping(target = "mainNoteId", source = "mainNote.id")
+    FormulaDto toDto(Formula entity);
+
+    @Mapping(target = "mainNote.id", source = "mainNoteId")
+    Formula toEntity(FormulaDto dto);
+
+    // Example
+    @Mapping(target = "formulaId", source = "formula.id")
+    ExampleDto toDto(Example entity);
+
+    @Mapping(target = "formula.id", source = "formulaId")
+    Example toEntity(ExampleDto dto);
+
+    // Level
+    LevelDto toDto(Level entity);
+    Level toEntity(LevelDto dto);
 
     // helper
     default Level levelFromId(Long id, @Context GlobalCachedVariable cache) {
@@ -36,16 +56,4 @@ public interface AppMapper {
     default Long levelToId(Level level) {
         return level != null ? level.getId() : null;
     }
-
-    // Level
-    LevelDto toDto(Level entity);
-    Level toEntity(LevelDto dto);
-
-    // Formula
-    FormulaDto toDto(Formula entity);
-    Formula toEntity(FormulaDto dto);
-
-    // Example
-    ExampleDto toDto(Example entity);
-    Example toEntity(ExampleDto dto);
 }

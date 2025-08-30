@@ -21,3 +21,19 @@ th {
     user-select: none;
     height: 100%;
 }
+.carousel-control-prev {
+    left: -32px; /* tambah minus biar lebih keluar ke kiri */
+}
+
+.carousel-control-next {
+    right: -32px; /* tambah minus biar lebih keluar ke kanan */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0.5rem;
+}
+

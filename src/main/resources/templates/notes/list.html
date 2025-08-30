@@ -6,6 +6,11 @@
 </head>
 <body>
 <section>
+    <!-- Tambahkan ini di list.html -->
+    <div th:if="${message}" class="alert alert-success alert-dismissible fade show" role="alert"><span th:text="${message}"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
     <h2>Main Notes</h2>
 
     <!-- Search bar -->
@@ -34,14 +39,32 @@
         <tbody>
         <tr th:each="note : ${mainNotes.content}">
             <td>
-                <a th:href="@{/notes/view/{id}(id=${note.id})}" title="View">
-                    <i class="bi bi-info-square"></i>
-                </a>
-                <a th:href="@{/notes/edit/{id}(id=${note.id})}" title="Edit">
-                    <i class="bi bi-pencil-square"></i>
-                </a>
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink${note.id}" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink${note.id}">
+                        <li>
+                            <a class="dropdown-item" th:href="@{/notes/view/{id}(id=${note.id})}">
+                                <i class="fa fa-info-circle"></i> View
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/notes/edit/{id}(id=${note.id})}">
+                                <i class="fa fa-edit"></i> Edit
+                            </a>
+                        </li>
+                        <li>
+                            <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
+                                <button type="submit" class="dropdown-item" style="color: red;">
+                                    <i class="fa fa-trash"></i> Delete
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
             </td>
-            <td th:text="${note.section}">Section</td>
+            <td><span class="badge bg-primary" th:text="${note.section}"></span></td>
             <td th:text="${note.identifier}">Identifier</td>
             <td th:text="${note.patternName}">Pattern</td>
             <td th:text="${note.mainFunction}">Function</td>

@@ -7,6 +7,7 @@ import java.util.List;
 @Data
 public class FormulaDto {
     private Long id;
+    private Long mainNoteId;
     private String subSection;
     private String pattern;
     private String subFunction;

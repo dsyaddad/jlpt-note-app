@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class ExampleDto {
     private Long id;
+    private Long formulaId;
     private String sampleKanji;
     private String sampleNonKanji;
     private String meaning;
