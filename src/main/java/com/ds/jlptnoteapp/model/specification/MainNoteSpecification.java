@@ -22,7 +22,7 @@ public class MainNoteSpecification {
                 predicates.add(cb.like(cb.lower(root.get("section")), "%" + dto.getSection().toLowerCase() + "%"));
             }
             if (dto.getLevelId() != null) {
-                predicates.add(cb.equal(root.get("levelId"), dto.getLevelId()));
+                predicates.add(cb.equal(root.get("level").get("id"), dto.getLevelId()));
             }
             if (dto.getIdentifier() != null && !dto.getIdentifier().isEmpty()) {
                 predicates.add(cb.like(cb.lower(root.get("identifier")), "%" + dto.getIdentifier().toLowerCase() + "%"));

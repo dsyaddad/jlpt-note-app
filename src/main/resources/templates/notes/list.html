@@ -10,23 +10,64 @@
     <div th:if="${message}" class="alert alert-success alert-dismissible fade show" role="alert"><span th:text="${message}"></span>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+    <div class="example-block mb-2 card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h6 style="margin-bottom: 0">Notes</h6>
+                <div class="d-flex gap-2">
+                    <button type="submit" id="bulkDeleteBtn" class="btn btn-danger" form="bulkDeleteForm" disabled>Delete Selected</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Filter</button>
+                </div>
+            </div>
 
-    <h2>Main Notes</h2>
+        </div>
+        <form th:action="@{/notes}" method="get" class="row mb-3">
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.section}" class="form-control" placeholder="Section">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.identifier}" class="form-control" placeholder="Identifier">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.patternName}" class="form-control" placeholder="Pattern Name">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.mainFunction}" class="form-control" placeholder="Main Function">
+                        </div>
+                    </div>
 
-    <!-- Search bar -->
-    <form th:action="@{/notes}" method="get" class="row mb-3">
-        <div class="col-auto">
-            <input type="text" name="pattern" th:value="${pattern}" class="form-control" placeholder="Search by pattern">
-        </div>
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary">Search</button>
-        </div>
-    </form>
+                    <div class="row g-2 mt-2">
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.mainUseWhen}" class="form-control" placeholder="Use When">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.mainNote}" class="form-control" placeholder="Main Note">
+                        </div>
+                        <div class="col-md-3">
+                            <select th:field="*{filter.levelId}" class="form-control">
+                                <option value="">-- Select Level --</option>
+                                <option th:each="entry : ${levels}"
+                                        th:value="${entry.key}"
+                                        th:text="${entry.value}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 d-grid">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
 
     <!-- Table -->
 
-    <form id="bulkDeleteForm" th:action="@{/notes/bulk-delete}" method="post">
-        <button type="submit" id="bulkDeleteBtn" class="btn btn-danger mb-2" disabled>Delete Selected</button>
+    <form id="bulkDeleteForm" th:action="@{/notes/bulk-delete}" method="post" >
         <table class="table table-striped" id="resizableTable">
             <thead>
             <tr>

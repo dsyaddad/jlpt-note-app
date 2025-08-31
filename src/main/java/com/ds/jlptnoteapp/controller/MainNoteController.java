@@ -25,29 +25,24 @@ public class MainNoteController {
 
     @GetMapping
     public String listMainNotes(
-            @RequestParam(value = "pattern", required = false) String pattern,
+            MainNoteDto filter, // Spring akan otomatis isi dari query param
             @RequestParam(value = "page", defaultValue = "0") int page,
             @RequestParam(value = "size", defaultValue = "30") int size,
             Model model
     ) {
         Pageable pageable = PageRequest.of(page, size, Sort.by("id").ascending());
-
-        MainNoteDto filter = new MainNoteDto();
-        filter.setPatternName(pattern);
-
         Page<MainNote> result = mainNoteService.findAllByfilter(filter, pageable);
-
         Page<MainNoteDto> dtoPage = result.map(mainNoteMapper::toDto);
 
         model.addAttribute("mainNotes", dtoPage);
-        model.addAttribute("pattern", pattern);
-
-        // tambahan untuk layout frame
+        model.addAttribute("filter", filter);
+        model.addAttribute("levels", globalCachedVariable.getLevelMapById());
         model.addAttribute("activeTab", "notes");
         model.addAttribute("title", "Main Notes");
 
-        return "notes/list"; // <-- file HTML konten
+        return "notes/list";
     }
+
 
     // Show create form
     @GetMapping("/create")
