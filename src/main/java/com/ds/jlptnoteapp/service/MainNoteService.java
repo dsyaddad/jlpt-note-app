@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class MainNoteService {
@@ -29,5 +31,9 @@ public class MainNoteService {
 
     public void deleteById(Long id) {
         mainNoteRepository.deleteById(id);
+    }
+
+    public void deleteAllByIds(List<Long> ids) {
+        mainNoteRepository.deleteAllById(ids);
     }
 }

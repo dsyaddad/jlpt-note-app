@@ -24,55 +24,68 @@
     </form>
 
     <!-- Table -->
-    <table class="table table-striped" id="resizableTable">
-        <thead>
-        <tr>
-            <th>Action</th>
-            <th>Section</th>
-            <th>Identifier</th>
-            <th>Pattern Name</th>
-            <th>Main Function</th>
-            <th>Main Use When</th>
-            <th>Main Note</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="note : ${mainNotes.content}">
-            <td>
-                <div class="dropdown">
-                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink${note.id}" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink${note.id}">
-                        <li>
-                            <a class="dropdown-item" th:href="@{/notes/view/{id}(id=${note.id})}">
-                                <i class="fa fa-info-circle"></i> View
+
+    <form id="bulkDeleteForm" th:action="@{/notes/bulk-delete}" method="post">
+        <button type="submit" id="bulkDeleteBtn" class="btn btn-danger mb-2" disabled>Delete Selected</button>
+        <table class="table table-striped" id="resizableTable">
+            <thead>
+            <tr>
+                <th>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="selectAll" class="form-check-input" >
+                        <label class="form-check-label" for="selectAll">Action</label>
+                    </div>
+                </th>
+                <th>Section</th>
+                <th>Identifier</th>
+                <th>Pattern Name</th>
+                <th>Main Function</th>
+                <th>Main Use When</th>
+                <th>Main Note</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="note : ${mainNotes.content}">
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input rowCheckbox" type="checkbox" name="ids" th:value="${note.id}" >
+                        <div class="dropdown">
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink${note.id}" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bars"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" th:href="@{/notes/edit/{id}(id=${note.id})}">
-                                <i class="fa fa-edit"></i> Edit
-                            </a>
-                        </li>
-                        <li>
-                            <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
-                                <button type="submit" class="dropdown-item" style="color: red;">
-                                    <i class="fa fa-trash"></i> Delete
-                                </button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-            <td><span class="badge bg-primary" th:text="${note.section}"></span></td>
-            <td th:text="${note.identifier}">Identifier</td>
-            <td th:text="${note.patternName}">Pattern</td>
-            <td th:text="${note.mainFunction}">Function</td>
-            <td th:text="${note.mainUseWhen}">Use When</td>
-            <td th:text="${note.mainNote}">Note</td>
-        </tr>
-        </tbody>
-    </table>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink${note.id}">
+                                <li>
+                                    <a class="dropdown-item" th:href="@{/notes/view/{id}(id=${note.id})}">
+                                        <i class="fa fa-info-circle"></i> View
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" th:href="@{/notes/edit/{id}(id=${note.id})}">
+                                        <i class="fa fa-edit"></i> Edit
+                                    </a>
+                                </li>
+                                <li>
+                                    <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
+                                        <button type="submit" class="dropdown-item" style="color: red;">
+                                            <i class="fa fa-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge bg-primary" th:text="${note.section}"></span></td>
+                <td th:text="${note.identifier}">Identifier</td>
+                <td th:text="${note.patternName}">Pattern</td>
+                <td th:text="${note.mainFunction}">Function</td>
+                <td th:text="${note.mainUseWhen}">Use When</td>
+                <td th:text="${note.mainNote}">Note</td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
 
     <!-- Pagination -->
     <nav>

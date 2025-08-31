@@ -39,4 +39,18 @@ function makeResizable(table, storageKey) {
 }
 document.addEventListener("DOMContentLoaded", function () {
     makeResizable(document.getElementById("resizableTable"), "mainNotesTableWidths");
+    const bulkDeleteBtn = document.getElementById('bulkDeleteBtn');
+    const checkboxes = document.querySelectorAll('.rowCheckbox');
+    const selectAll = document.getElementById('selectAll');
+
+    function updateButtonState() {
+        const anyChecked = Array.from(checkboxes).some(cb => cb.checked);
+        bulkDeleteBtn.disabled = !anyChecked;
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', updateButtonState));
+    selectAll.addEventListener('change', function() {
+        checkboxes.forEach(cb => cb.checked = selectAll.checked);
+        updateButtonState();
+    });
 });

@@ -107,4 +107,17 @@ public class MainNoteController {
         redirectAttributes.addFlashAttribute("message", "Note deleted successfully.");
         return "redirect:/notes";
     }
+
+    @PostMapping("/bulk-delete")
+    public String bulkDelete(@RequestParam("ids") java.util.List<Long> ids, RedirectAttributes redirectAttributes) {
+        if (ids != null && !ids.isEmpty()) {
+            mainNoteService.deleteAllByIds(ids);
+            redirectAttributes.addFlashAttribute("message", "Selected notes deleted successfully.");
+        } else {
+            redirectAttributes.addFlashAttribute("message", "No notes selected for deletion.");
+        }
+        return "redirect:/notes";
+    }
+
+
 }
