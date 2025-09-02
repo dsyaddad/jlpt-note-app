@@ -17,4 +17,13 @@ public class MainNoteDto {
     private LocalDateTime createdAt;
     private Long levelId;
     private List<FormulaDto> formulas;
+
+    public void checkMainNoteExists(){
+        if(this.mainNote != null){
+            this.identifier = this.mainNote;
+            this.patternName = this.mainNote;
+            this.mainFunction = this.mainNote;
+            this.mainUseWhen = this.mainNote;
+        }
+    }
 }

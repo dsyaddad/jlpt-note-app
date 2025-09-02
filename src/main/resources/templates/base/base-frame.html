@@ -18,7 +18,10 @@
             <a class="nav-link" th:classappend="${activeTab == 'create-edit'} ? 'active'" th:href="@{/notes/create}">Add Edit Note</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:classappend="${activeTab == 'view'} ? 'active'" href="#">View</a>
+            <a class="nav-link" th:classappend="${activeTab == 'view'} ? 'active'" href="#">View Note</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:classappend="${activeTab == 'dictionary'} ? 'active'" href="#">Jisho</a>
         </li>
     </ul>
     <div th:replace="${content}"></div>

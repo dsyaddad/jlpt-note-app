@@ -36,4 +36,8 @@ th {
     transform: translateY(-50%);
     padding: 0 0.5rem;
 }
-
+.popover {
+    max-width: none; /* biar lebarnya fleksibel */
+    width: auto;     /* sesuaikan isi */
+    white-space: nowrap; /* optional: supaya teks tidak dipotong baris */
+}

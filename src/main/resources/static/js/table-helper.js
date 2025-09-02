@@ -53,4 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
         checkboxes.forEach(cb => cb.checked = selectAll.checked);
         updateButtonState();
     });
+
+    const buttonClear = document.getElementById("buttonClear");
+    const sectionInput = document.getElementById("sectionInput");
+    const noteInput = document.getElementById("noteInput");
+    const levelSelect = document.getElementById("levelSelect");
+
+    buttonClear.addEventListener("click", function () {
+        sectionInput.value = "";
+        noteInput.value = "";
+        levelSelect.value = ""; // balik ke default option
+    });
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
 });

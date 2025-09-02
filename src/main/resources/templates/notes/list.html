@@ -19,35 +19,19 @@
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Filter</button>
                 </div>
             </div>
-
         </div>
-        <form th:action="@{/notes}" method="get" class="row mb-3">
+        <form th:action="@{/notes}" method="get">
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                     <div class="row g-2">
                         <div class="col-md-3">
-                            <input type="text" th:field="*{filter.section}" class="form-control" placeholder="Section">
+                            <input type="text" th:field="*{filter.section}" class="form-control" placeholder="Section" id="sectionInput">
                         </div>
                         <div class="col-md-3">
-                            <input type="text" th:field="*{filter.identifier}" class="form-control" placeholder="Identifier">
+                            <input type="text" th:field="*{filter.mainNote}" class="form-control" placeholder="Note" id="noteInput">
                         </div>
                         <div class="col-md-3">
-                            <input type="text" th:field="*{filter.patternName}" class="form-control" placeholder="Pattern Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" th:field="*{filter.mainFunction}" class="form-control" placeholder="Main Function">
-                        </div>
-                    </div>
-
-                    <div class="row g-2 mt-2">
-                        <div class="col-md-3">
-                            <input type="text" th:field="*{filter.mainUseWhen}" class="form-control" placeholder="Use When">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" th:field="*{filter.mainNote}" class="form-control" placeholder="Main Note">
-                        </div>
-                        <div class="col-md-3">
-                            <select th:field="*{filter.levelId}" class="form-control">
+                            <select th:field="*{filter.levelId}" class="form-control" id="levelSelect">
                                 <option value="">-- Select Level --</option>
                                 <option th:each="entry : ${levels}"
                                         th:value="${entry.key}"
@@ -55,9 +39,17 @@
                                 </option>
                             </select>
                         </div>
-                        <div class="col-md-3 d-grid">
-                            <button type="submit" class="btn btn-primary">Search</button>
+                        <div class="col-md-3">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary w-100" id="buttonClear">Clear</button>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -74,15 +66,16 @@
                 <th>
                     <div class="form-check form-switch">
                         <input type="checkbox" id="selectAll" class="form-check-input" >
-                        <label class="form-check-label" for="selectAll">Action</label>
+                        <label class="form-check-label" for="selectAll"></label>
                     </div>
                 </th>
                 <th>Section</th>
                 <th>Identifier</th>
                 <th>Pattern Name</th>
-                <th>Main Function</th>
-                <th>Main Use When</th>
-                <th>Main Note</th>
+                <th>Pattern</th>
+                <th>Function</th>
+                <th>Use When</th>
+                <th>Note</th>
             </tr>
             </thead>
             <tbody>
@@ -90,38 +83,70 @@
                 <td>
                     <div class="form-check form-switch">
                         <input class="form-check-input rowCheckbox" type="checkbox" name="ids" th:value="${note.id}" >
-                        <div class="dropdown">
-                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink${note.id}" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink${note.id}">
-                                <li>
-                                    <a class="dropdown-item" th:href="@{/notes/view/{id}(id=${note.id})}">
-                                        <i class="fa fa-info-circle"></i> View
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" th:href="@{/notes/edit/{id}(id=${note.id})}">
-                                        <i class="fa fa-edit"></i> Edit
-                                    </a>
-                                </li>
-                                <li>
-                                    <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
-                                        <button type="submit" class="dropdown-item" style="color: red;">
-                                            <i class="fa fa-trash"></i> Delete
-                                        </button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-light" href="#" role="button" th:id="${#strings.concat('dropdownMenuLink',note.id)}" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8.5px;">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="dropdown-menu" th:aria-labelledby="${#strings.concat('dropdownMenuLink',note.id)}">
+                            <li>
+                                <a class="dropdown-item" th:href="@{/notes/view/{id}(id=${note.id})}">
+                                    <i class="fa fa-info-circle"></i> View
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" th:href="@{/notes/edit/{id}(id=${note.id})}">
+                                    <i class="fa fa-edit"></i> Edit
+                                </a>
+                            </li>
+                            <li>
+                                <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
+                                    <button type="submit" class="dropdown-item" style="color: red;">
+                                        <i class="fa fa-trash"></i> Delete
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                 </td>
                 <td><span class="badge bg-primary" th:text="${note.section}"></span></td>
-                <td th:text="${note.identifier}">Identifier</td>
-                <td th:text="${note.patternName}">Pattern</td>
-                <td th:text="${note.mainFunction}">Function</td>
-                <td th:text="${note.mainUseWhen}">Use When</td>
-                <td th:text="${note.mainNote}">Note</td>
+                <td th:text="${note.identifier}"></td>
+                <td th:text="${note.patternName}"></td>
+                <td>
+                    <ul class="list-unstyled">
+                        <li th:each="formula : ${note.formulas}">
+                            <a tabindex="0" role="button"
+                               data-bs-toggle="popover"
+                               data-bs-trigger="focus"
+                               title="Example"
+                               data-bs-container="body"
+                               data-bs-html="true"
+                               data-bs-custom-class="wide-popover"
+                               th:data-bs-content="${
+                                 (note.formulas == null or note.formulas.isEmpty()) ?
+                                   'Formula belum ditambahkan' :
+                                   (
+                                     (note.formulas.?[examples != null and !examples.isEmpty()].isEmpty()) ?
+                                       'Example belum ditambahkan' :
+                                       '<ul>' + note.formulas
+                                         .![#strings.arrayJoin(examples.![ '<li>' + sampleKanji + '</li>' ], '')]
+                                         + '</ul>'
+                                   )
+                               }">
+                                <span class="badge bg-primary" th:text="${formula.pattern}"></span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </td>
+                <td th:text="${note.mainFunction}"></td>
+                <td th:text="${note.mainUseWhen}"></td>
+                <td th:text="${note.mainNote}"></td>
+<!--                <td style="max-width: 300px; max-height: 200px;">-->
+<!--                    <div class="overflow-auto" style="max-height: 200px;">-->
+<!--                        <span th:text="${note.mainNote}"></span>-->
+<!--                    </div>-->
+<!--                </td>-->
             </tr>
             </tbody>
         </table>

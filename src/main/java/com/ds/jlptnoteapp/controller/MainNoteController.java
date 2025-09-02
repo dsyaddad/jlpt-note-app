@@ -30,7 +30,8 @@ public class MainNoteController {
             @RequestParam(value = "size", defaultValue = "30") int size,
             Model model
     ) {
-        Pageable pageable = PageRequest.of(page, size, Sort.by("id").ascending());
+        filter.checkMainNoteExists();
+        Pageable pageable = PageRequest.of(page, size, Sort.by("section").descending());
         Page<MainNote> result = mainNoteService.findAllByfilter(filter, pageable);
         Page<MainNoteDto> dtoPage = result.map(mainNoteMapper::toDto);
 
