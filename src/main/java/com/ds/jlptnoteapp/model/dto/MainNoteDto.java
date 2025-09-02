@@ -16,6 +16,7 @@ public class MainNoteDto {
     private String mainNote;
     private LocalDateTime createdAt;
     private Long levelId;
+    private LevelDto level;
     private List<FormulaDto> formulas;
 
     public void checkMainNoteExists(){

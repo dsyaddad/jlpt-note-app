@@ -13,7 +13,14 @@
     <div class="example-block mb-2 card">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h6 style="margin-bottom: 0">Notes</h6>
+                <div class="d-flex gap-2">
+                    <form action="/notes/export-dml" method="get" id="exportDmlForm">
+                        <button type="submit" class="btn btn-success" form="exportDmlForm"
+                                onclick="return confirm('Yakin mau export DML terbaru?');"
+                        ><i class="fa fa-file-export"></i></button>
+                    </form>
+                    <h6 style="margin-top: 10px;">Notes</h6>
+                </div>
                 <div class="d-flex gap-2">
                     <button type="submit" id="bulkDeleteBtn" class="btn btn-danger" form="bulkDeleteForm" disabled>Delete Selected</button>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Filter</button>
@@ -99,17 +106,10 @@
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
                             </li>
-                            <li>
-                                <form th:action="@{/notes/delete/{id}(id=${note.id})}" method="post" th:onsubmit="return confirm('Are you sure you want to delete this note?');">
-                                    <button type="submit" class="dropdown-item" style="color: red;">
-                                        <i class="fa fa-trash"></i> Delete
-                                    </button>
-                                </form>
-                            </li>
                         </ul>
                     </div>
                 </td>
-                <td><span class="badge bg-primary" th:text="${note.section}"></span></td>
+                <td><span class="badge bg-primary" th:text="${#strings.concat(note.level.level,'-',note.section)}"></span></td>
                 <td th:text="${note.identifier}"></td>
                 <td th:text="${note.patternName}"></td>
                 <td>

@@ -8,7 +8,7 @@ import java.util.List;
 public class FormulaDto {
     private Long id;
     private Long mainNoteId;
-    private String subSection;
+    private String typeForm;
     private String pattern;
     private String subFunction;
     private String subUseWhen;

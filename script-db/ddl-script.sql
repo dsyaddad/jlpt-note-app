@@ -29,7 +29,7 @@ CREATE TABLE main_note (
 CREATE TABLE formula (
                          id BIGINT AUTO_INCREMENT PRIMARY KEY,
                          main_note_id BIGINT,
-                         sub_section VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+                         type_form VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          pattern VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          sub_function TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          sub_use_when TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,

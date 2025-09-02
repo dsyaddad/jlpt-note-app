@@ -21,8 +21,8 @@ public class Formula implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "sub_section")
-    private String subSection;
+    @Column(name = "type_form")
+    private String typeForm;
 
     @Column(name = "pattern")
     private String pattern;

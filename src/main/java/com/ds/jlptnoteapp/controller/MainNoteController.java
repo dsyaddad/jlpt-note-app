@@ -7,6 +7,7 @@ import com.ds.jlptnoteapp.model.specification.MainNoteSpecification;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
 import com.ds.jlptnoteapp.service.MainNoteService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
+import com.ds.jlptnoteapp.util.GlobalUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
@@ -31,7 +32,7 @@ public class MainNoteController {
             Model model
     ) {
         filter.checkMainNoteExists();
-        Pageable pageable = PageRequest.of(page, size, Sort.by("section").descending());
+        Pageable pageable = PageRequest.of(page, size, Sort.by("level.id","section").descending());
         Page<MainNote> result = mainNoteService.findAllByfilter(filter, pageable);
         Page<MainNoteDto> dtoPage = result.map(mainNoteMapper::toDto);
 
@@ -115,5 +116,16 @@ public class MainNoteController {
         return "redirect:/notes";
     }
 
+    @GetMapping("/export-dml")
+    public String exportDml(RedirectAttributes redirectAttributes) {
+        try {
+            GlobalUtil.exportDml("apppass", "apppass", "notesdb");
+            redirectAttributes.addFlashAttribute("message", "Exported to notesdb.dml successfully.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            redirectAttributes.addFlashAttribute("message", "Error during export: " + e.getMessage());
+        }
+        return "redirect:/notes";
+    }
 
 }

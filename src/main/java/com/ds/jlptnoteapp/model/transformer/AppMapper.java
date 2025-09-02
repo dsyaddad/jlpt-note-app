@@ -26,13 +26,16 @@ public interface AppMapper {
 
     // Entity -> DTO
     @Mapping(target = "levelId", expression = "java(levelToId(entity.getLevel()))")
+    @Mapping(target = "level", expression = "java(toDto(entity.getLevel()))")
     MainNoteDto toDto(MainNote entity);
 
     // Formula
     @Mapping(target = "mainNoteId", source = "mainNote.id")
+    @Mapping(target = "subFunction", source = "subFunction")
     FormulaDto toDto(Formula entity);
 
     @Mapping(target = "mainNote.id", source = "mainNoteId")
+    @Mapping(target = "subFunction", source = "subFunction")
     Formula toEntity(FormulaDto dto);
 
     // Example

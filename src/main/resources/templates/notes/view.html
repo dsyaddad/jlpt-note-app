@@ -35,7 +35,7 @@
             <div th:if="${mainNote.formulas != null and #lists.size(mainNote.formulas) > 0}">
                 <div th:each="formula, formulaStat : ${mainNote.formulas}" class="formula-block mb-3 card">
                     <div class="card-header">
-                        <h5 style="margin-bottom: 0">Formula <span class="badge bg-primary" th:text="${#strings.concat('SECTION-',formula.subSection)}"></span></h5>
+                        <h5 style="margin-bottom: 0">Formula <span class="badge bg-primary" th:text="${formula.typeForm}"></span></h5>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered">

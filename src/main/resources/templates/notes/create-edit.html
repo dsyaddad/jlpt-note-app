@@ -17,21 +17,30 @@
                 </div>
             </div>
             <div class="card-body">
-                    <div class="mb-0">
-                        <label for="level" class="form-label mb-0">Level</label>
-                        <select th:field="*{levelId}" class="form-select" id="level" required>
-                            <option value="" disabled th:if="*{levelId == null}" selected>Pilih Level</option>
-                            <option th:each="entry : ${levels}"
-                                    th:value="${entry.key}"
-                                    th:text="${entry.value.level}">
-                            </option>
-                        </select>
-                    </div>
-                    <div class="mb-0">
+                <div class="mb-0">
+                    <label for="level" class="form-label mb-0">Level</label>
+                    <select th:field="*{levelId}" class="form-select" id="level" required>
+                        <option value="" disabled th:if="*{levelId == null}" selected>Pilih Level</option>
+                        <option th:each="entry : ${levels}"
+                                th:value="${entry.key}"
+                                th:text="${entry.value.level}">
+                        </option>
+                    </select>
+                </div>
+
+                <div class="mb-0 d-flex gap-2">
+                    <div class="flex-grow-1">
                         <label for="section" class="form-label mb-0">Section</label>
-                        <input type="text" th:field="*{section}" class="form-control" id="section" required>
+                        <input type="text" id="section" class="form-control" required>
                     </div>
-                    <div class="mb-0">
+                    <div class="flex-grow-1">
+                        <label for="subSection" class="form-label mb-0">Sub Section</label>
+                        <input type="text" id="subSection" class="form-control" required>
+                    </div>
+                </div>
+                <!-- Hidden input untuk menggabungkan -->
+                <input type="hidden" th:field="*{section}" id="combinedSection">
+                <div class="mb-0">
                         <label for="identifier" class="form-label mb-0">Identifier</label>
                         <input type="text" th:field="*{identifier}" class="form-control" id="identifier" required>
                     </div>
@@ -60,7 +69,7 @@
                                 <div class="card-body">
                                     <input type="hidden" th:field="*{formulas[__${formulaStat.index}__].id}">
                                     <input type="hidden" th:field="*{formulas[__${formulaStat.index}__].mainNoteId}">
-                                    <input type="text" th:field="*{formulas[__${formulaStat.index}__].subSection}" placeholder="Sub Section" class="form-control mb-1" required>
+                                    <input type="text" th:field="*{formulas[__${formulaStat.index}__].typeForm}" placeholder="Sub Section" class="form-control mb-1" required>
                                     <input type="text" th:field="*{formulas[__${formulaStat.index}__].pattern}" placeholder="Pattern" class="form-control mb-1" required>
                                     <input type="text" th:field="*{formulas[__${formulaStat.index}__].subFunction}" placeholder="Sub Function" class="form-control mb-1">
                                     <input type="text" th:field="*{formulas[__${formulaStat.index}__].subUseWhen}" placeholder="Sub Use When" class="form-control mb-1">
