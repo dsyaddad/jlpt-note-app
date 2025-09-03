@@ -53,14 +53,16 @@ public class JlptWordController {
     // ✅ Create form
     @GetMapping("/create")
     public String createForm(Model model) {
-        model.addAttribute("word", new JlptWordDto());
-        model.addAttribute("levels", globalCachedVariable.getLevelMapById());
+        model.addAttribute("jlptWord", new JlptWordDto());
+        model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
+        model.addAttribute("submitLabel", "Save");
+        model.addAttribute("activeTab", "jisho");
         return "jisho/create-edit";
     }
 
     // ✅ Save (create & update)
     @PostMapping("/save")
-    public String save(@ModelAttribute("word") JlptWordDto wordDto,
+    public String save(@ModelAttribute("jlptWord") JlptWordDto wordDto,
                        RedirectAttributes redirectAttributes) {
         jlptWordService.save(wordDto);
         redirectAttributes.addFlashAttribute("message", "Word saved successfully!");
@@ -72,7 +74,9 @@ public class JlptWordController {
     public String editForm(@PathVariable Long id, Model model) {
         JlptWord entity = jlptWordService.findById(id);
         model.addAttribute("word", mapper.toDto(entity));
-        model.addAttribute("levels", globalCachedVariable.getLevelMapById());
+        model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
+        model.addAttribute("submitLabel", "Update");
+        model.addAttribute("activeTab", "jisho");
         return "jisho/create-edit";
     }
 
