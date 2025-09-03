@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Temporary Tab</title>
+</head>
+<body>
+<section>
+    <!-- Alert message -->
+    <div th:if="${message}" class="alert alert-success alert-dismissible fade show" role="alert">
+        <span th:text="${message}"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Filter + Header -->
+    <div class="example-block mb-2 card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h6 style="margin-top: 10px;">JLPT Words</h6>
+                <div class="d-flex gap-2">
+                    <button type="submit" id="bulkDeleteBtn" class="btn btn-danger" form="bulkDeleteForm" disabled>
+                        Delete Selected
+                    </button>
+                    <a class="btn btn-success" th:href="@{/jisho/create}">
+                        + Add Word
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Form -->
+        <form th:action="@{/jisho}" method="get">
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.kanji}" class="form-control" placeholder="Kanji">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.kana}" class="form-control" placeholder="Kana">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.romaji}" class="form-control" placeholder="Romaji">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.meaningEn}" class="form-control" placeholder="Meaning EN">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.meaningId}" class="form-control" placeholder="Meaning ID">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.pos}" class="form-control" placeholder="POS">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" th:field="*{filter.note}" class="form-control" placeholder="Note">
+                        </div>
+                        <div class="col-md-3">
+                            <select th:field="*{filter.levelId}" class="form-control">
+                                <option value="">-- Select Level --</option>
+                                <option th:each="entry : ${levels}"
+                                        th:value="${entry.key}"
+                                        th:text="${entry.value}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary w-100" id="buttonClear">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Table -->
+    <form id="bulkDeleteForm" th:action="@{/jisho/bulk-delete}" method="post">
+        <table class="table table-striped" id="resizableTable">
+            <thead>
+            <tr>
+                <th>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="selectAll" class="form-check-input">
+                        <label class="form-check-label" for="selectAll"></label>
+                    </div>
+                </th>
+                <th>Kanji</th>
+                <th>Kana</th>
+                <th>Romaji</th>
+                <th>Meaning EN</th>
+                <th>Meaning ID</th>
+                <th>POS</th>
+                <th>Note</th>
+                <th>Level</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="word : ${page.content}">
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input rowCheckbox" type="checkbox" name="ids" th:value="${word.id}">
+                    </div>
+                </td>
+                <td th:text="${word.kanji}"></td>
+                <td th:text="${word.kana}"></td>
+                <td th:text="${word.romaji}"></td>
+                <td th:text="${word.meaningEn}"></td>
+                <td th:text="${word.meaningId}"></td>
+                <td th:text="${word.pos}"></td>
+                <td th:text="${word.note}"></td>
+                <td>
+                    <span class="badge bg-primary" th:text="${word.level != null ? word.level.level : '-'}"></span>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <a class="btn btn-light" href="#" role="button"
+                           th:id="${'dropdownMenuLink' + word.id}" data-bs-toggle="dropdown" aria-expanded="false"
+                           style="padding: 8.5px;">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="dropdown-menu" th:aria-labelledby="${'dropdownMenuLink' + word.id}">
+                            <li>
+                                <a class="dropdown-item" th:href="@{/jisho/edit/{id}(id=${word.id})}">
+                                    <i class="fa fa-edit"></i> Edit
+                                </a>
+                            </li>
+                            <li>
+                                <form th:action="@{/jisho/delete/{id}(id=${word.id})}" method="post"
+                                      onsubmit="return confirm('Delete this word?');">
+                                    <button class="dropdown-item" type="submit">
+                                        <i class="fa fa-trash"></i> Delete
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination">
+            <li class="page-item" th:classappend="${page.first} ? 'disabled'">
+                <a class="page-link" th:href="@{/jisho(page=${page.number - 1}, size=${page.size})}">Previous</a>
+            </li>
+            <li class="page-item" th:each="i : ${#numbers.sequence(0, page.totalPages - 1)}"
+                th:classappend="${i == page.number} ? 'active'">
+                <a class="page-link" th:href="@{/jisho(page=${i}, size=${page.size})}" th:text="${i + 1}">1</a>
+            </li>
+            <li class="page-item" th:classappend="${page.last} ? 'disabled'">
+                <a class="page-link" th:href="@{/jisho(page=${page.number + 1}, size=${page.size})}">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <link rel="stylesheet" th:href="@{/css/table-helper.css}">
+    <script th:src="@{/js/table-helper.js}"></script>
+</section>
+</body>
+</html>

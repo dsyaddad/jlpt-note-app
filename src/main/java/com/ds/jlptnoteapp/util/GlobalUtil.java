@@ -1,66 +1,57 @@
 package com.ds.jlptnoteapp.util;
 
 import lombok.experimental.UtilityClass;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
+import java.nio.file.Paths;
 
 @UtilityClass
+@Log4j2
 public class GlobalUtil {
-    public static void exportDml(String dbUser, String dbPassword, String dbName) {
-        String path = "script-db";  // folder penyimpanan
-        String fileName = "dml-script.sql"; // fixed file name
-
+    public static void exportDml() {
         try {
-            File dir = new File(path);
-            if (!dir.exists()) {
-                dir.mkdirs();
-            }
-            File outFile = new File(dir, fileName);
+            File outputFile = Paths.get("script-db", "dml-script.sql").toFile();
 
-            if (outFile.exists()) {
-                System.out.println("[INFO] Existing file " + outFile.getAbsolutePath() + " will be overwritten.");
+            if (outputFile.exists()) {
+                log.info("Existing file {} will be overwritten.", outputFile.getAbsolutePath());
             }
 
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(outFile, false))) {
-                writer.write("-- Pastikan session pakai utf8mb4");
-                writer.newLine();
-                writer.write("/*!40101 SET NAMES utf8mb4 */;");
-                writer.newLine();
-                writer.newLine();
+            // tulis header dulu
+            try (FileWriter fw = new FileWriter(outputFile, false)) {
+                fw.write("-- Pastikan session pakai utf8mb4\n");
+                fw.write("/*!40101 SET NAMES utf8mb4 */;\n\n");
+            }
 
-                // Command mysqldump
-                String[] cmd = {
-                        "mysqldump",
-                        "-u" + dbUser,
-                        "-p" + dbPassword,
-                        "--no-create-info",
-                        "--skip-triggers",
-                        dbName
-                };
+            // perintah docker exec mysqldump
+            ProcessBuilder pb = new ProcessBuilder(
+                    "docker", "exec", "notes-mysql",
+                    "mysqldump",
+                    "-u", "root",
+                    "-proot",
+                    "--skip-triggers",
+                    "--no-create-info",
+                    "--set-gtid-purged=OFF",
+                    "--default-character-set=utf8mb4",
+                    "notesdb"
+            );
 
-                ProcessBuilder pb = new ProcessBuilder(cmd);
-                pb.redirectError(ProcessBuilder.Redirect.INHERIT);
-                Process process = pb.start();
+            // arahkan hasil mysqldump append ke file
+            pb.redirectOutput(ProcessBuilder.Redirect.appendTo(outputFile));
+            pb.redirectError(ProcessBuilder.Redirect.INHERIT);
 
-                try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
-                    String line;
-                    while ((line = reader.readLine()) != null) {
-                        writer.write(line);
-                        writer.newLine();
-                    }
-                }
-
-                int exitCode = process.waitFor();
-                if (exitCode == 0) {
-                    System.out.println("[INFO] Export success: " + outFile.getAbsolutePath());
-                } else {
-                    throw new RuntimeException("Export failed with code: " + exitCode);
-                }
+            Process process = pb.start();
+            int exitCode = process.waitFor();
+            if (exitCode == 0) {
+                log.info("DML export successful, saved to {}", outputFile.getAbsolutePath());
+            } else {
+                throw new RuntimeException("Failed to export DML, exit code " + exitCode);
             }
 
         } catch (Exception e) {
             throw new RuntimeException("Failed to export DML", e);
         }
     }
+
 }

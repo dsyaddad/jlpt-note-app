@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Create/Edit JLPT Word</title>
+</head>
+<body>
+<section>
+    <form th:action="@{${formAction}}" th:object="${jlptWord}" method="post">
+        <div class="container mt-4">
+            <div class="example-block mb-2 card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 style="margin-bottom: 0">Add / Edit JLPT Word</h6>
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary" th:text="${submitLabel}">Save</button>
+                        <a th:href="@{/jisho}" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <!-- Level -->
+                    <div class="mb-2">
+                        <label for="level" class="form-label mb-0">Level</label>
+                        <select th:field="*{levelId}" class="form-select" id="level" required>
+                            <option value="" disabled th:if="*{levelId == null}" selected>Pilih Level</option>
+                            <option th:each="entry : ${levels}"
+                                    th:value="${entry.key}"
+                                    th:text="${entry.value.level}">
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- Kanji -->
+                    <div class="mb-2">
+                        <label for="kanji" class="form-label mb-0">Kanji</label>
+                        <input type="text" th:field="*{kanji}" id="kanji" class="form-control">
+                    </div>
+
+                    <!-- Kana -->
+                    <div class="mb-2">
+                        <label for="kana" class="form-label mb-0">Kana</label>
+                        <input type="text" th:field="*{kana}" id="kana" class="form-control" required>
+                    </div>
+
+                    <!-- Romaji -->
+                    <div class="mb-2">
+                        <label for="romaji" class="form-label mb-0">Romaji</label>
+                        <input type="text" th:field="*{romaji}" id="romaji" class="form-control">
+                    </div>
+
+                    <!-- Meaning EN -->
+                    <div class="mb-2">
+                        <label for="meaningEn" class="form-label mb-0">Meaning (EN)</label>
+                        <textarea th:field="*{meaningEn}" id="meaningEn" class="form-control"></textarea>
+                    </div>
+
+                    <!-- Meaning ID -->
+                    <div class="mb-2">
+                        <label for="meaningId" class="form-label mb-0">Meaning (ID)</label>
+                        <textarea th:field="*{meaningId}" id="meaningId" class="form-control"></textarea>
+                    </div>
+
+                    <!-- POS -->
+                    <div class="mb-2">
+                        <label for="pos" class="form-label mb-0">POS</label>
+                        <input type="text" th:field="*{pos}" id="pos" class="form-control">
+                    </div>
+
+                    <!-- Note -->
+                    <div class="mb-2">
+                        <label for="note" class="form-label mb-0">Note</label>
+                        <textarea th:field="*{note}" id="note" class="form-control"></textarea>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="d-flex gap-2 mt-3">
+                        <button type="submit" class="btn btn-primary" th:text="${submitLabel}">Save</button>
+                        <a th:href="@{/jisho}" class="btn btn-secondary">Cancel</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+</html>

@@ -21,7 +21,7 @@
             <a class="nav-link" th:classappend="${activeTab == 'view'} ? 'active'" href="#">View Note</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:classappend="${activeTab == 'dictionary'} ? 'active'" href="#">Jisho</a>
+            <a class="nav-link" th:classappend="${activeTab == 'jisho'} ? 'active'" th:href="@{/jisho}">Jisho</a>
         </li>
     </ul>
     <div th:replace="${content}"></div>

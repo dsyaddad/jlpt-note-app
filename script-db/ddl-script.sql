@@ -45,3 +45,25 @@ CREATE TABLE example (
                          meaning TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          note TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
 );
+
+CREATE TABLE jlpt_words (
+                            id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                            kanji VARCHAR(255),
+                            kana VARCHAR(255) NOT NULL,
+                            romaji VARCHAR(255),
+                            meaning_en TEXT,
+                            meaning_id TEXT,
+                            pos VARCHAR(100),
+                            note TEXT,
+                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                            updated_at TIMESTAMP NULL,
+                            level_id BIGINT -- referensi ke level.id (tanpa constraint)
+);
+
+CREATE TABLE jlpt_examples (
+                               id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                               word_id BIGINT, -- referensi ke jlpt_words.id (tanpa constraint)
+                               jp_sentence TEXT NOT NULL,
+                               translation TEXT,
+                               note TEXT
+);

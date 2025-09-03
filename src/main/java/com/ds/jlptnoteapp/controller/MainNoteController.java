@@ -2,8 +2,6 @@ package com.ds.jlptnoteapp.controller;
 
 import com.ds.jlptnoteapp.model.dto.MainNoteDto;
 import com.ds.jlptnoteapp.model.entity.MainNote;
-import com.ds.jlptnoteapp.model.repository.MainNoteRepository;
-import com.ds.jlptnoteapp.model.specification.MainNoteSpecification;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
 import com.ds.jlptnoteapp.service.MainNoteService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
@@ -119,7 +117,7 @@ public class MainNoteController {
     @GetMapping("/export-dml")
     public String exportDml(RedirectAttributes redirectAttributes) {
         try {
-            GlobalUtil.exportDml("apppass", "apppass", "notesdb");
+            GlobalUtil.exportDml();
             redirectAttributes.addFlashAttribute("message", "Exported to notesdb.dml successfully.");
         } catch (Exception e) {
             e.printStackTrace();
