@@ -73,7 +73,7 @@ public class JlptWordController {
     @GetMapping("/edit/{id}")
     public String editForm(@PathVariable Long id, Model model) {
         JlptWord entity = jlptWordService.findById(id);
-        model.addAttribute("word", mapper.toDto(entity));
+        model.addAttribute("jlptWord", mapper.toDto(entity));
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("submitLabel", "Update");
         model.addAttribute("activeTab", "jisho");
