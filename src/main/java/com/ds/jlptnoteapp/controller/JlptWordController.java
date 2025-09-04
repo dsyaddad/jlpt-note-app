@@ -4,6 +4,7 @@ import com.ds.jlptnoteapp.model.dto.JlptWordDto;
 import com.ds.jlptnoteapp.model.dto.MainNoteDto;
 import com.ds.jlptnoteapp.model.entity.JlptWord;
 import com.ds.jlptnoteapp.model.entity.MainNote;
+import com.ds.jlptnoteapp.model.enums.PosEnum;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
 import com.ds.jlptnoteapp.service.JlptWordService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
