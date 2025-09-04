@@ -32,6 +32,7 @@ public class JlptWordController {
             @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.ASC) Pageable pageable,
             Model model
     ) {
+        filter.checkNoteExists();
         Page<JlptWord> page = jlptWordService.findAllByFilter(filter, pageable);
 
         List<JlptWordDto> wordDtos = page.getContent().stream()

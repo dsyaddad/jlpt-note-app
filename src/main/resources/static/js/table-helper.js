@@ -62,8 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonClear.addEventListener("click", function () {
         sectionInput.value = "";
         noteInput.value = "";
-        levelSelect.value = ""; // balik ke default option
+        levelSelect.value = "";
     });
+
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)

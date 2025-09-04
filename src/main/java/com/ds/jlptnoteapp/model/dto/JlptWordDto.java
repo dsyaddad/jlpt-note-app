@@ -23,4 +23,14 @@ public class JlptWordDto {
     private Long levelId;   // FK reference ke Level
     private LevelDto level; // optional join
     private List<JlptExampleDto> examples;
+
+    public void checkNoteExists(){
+        if(this.note != null){
+            this.kanji = this.note;
+            this.kana = this.note;
+            this.romaji = this.note;
+            this.meaningEn = this.note;
+            this.meaningId = this.note;
+        }
+    }
 }
