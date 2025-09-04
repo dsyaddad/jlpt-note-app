@@ -1,7 +1,9 @@
 package com.ds.jlptnoteapp.controller;
 
 import com.ds.jlptnoteapp.model.dto.JlptWordDto;
+import com.ds.jlptnoteapp.model.dto.MainNoteDto;
 import com.ds.jlptnoteapp.model.entity.JlptWord;
+import com.ds.jlptnoteapp.model.entity.MainNote;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
 import com.ds.jlptnoteapp.service.JlptWordService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.Map;
+
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/jisho")
@@ -47,6 +51,7 @@ public class JlptWordController {
 
         // untuk dropdown Level
         model.addAttribute("levels", globalCachedVariable.getLevelMapById());
+        model.addAttribute("posEnums", PosEnum.getPosEnumsByKey());
 
         return "jisho/list";
     }
@@ -58,11 +63,14 @@ public class JlptWordController {
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("submitLabel", "Save");
         model.addAttribute("activeTab", "jisho");
+        model.addAttribute("formAction", "/jisho/create");
+        model.addAttribute("posEnums", PosEnum.getPosEnumsByKey());
+
         return "jisho/create-edit";
     }
 
     // ✅ Save (create & update)
-    @PostMapping("/save")
+    @PostMapping("/create")
     public String save(@ModelAttribute("jlptWord") JlptWordDto wordDto,
                        RedirectAttributes redirectAttributes) {
         jlptWordService.save(wordDto);
@@ -72,29 +80,22 @@ public class JlptWordController {
 
     // ✅ Edit form
     @GetMapping("/edit/{id}")
-    public String editForm(@PathVariable Long id, Model model) {
+    public String showEditForm(@PathVariable Long id, Model model) {
         JlptWord entity = jlptWordService.findById(id);
         model.addAttribute("jlptWord", mapper.toDto(entity));
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("submitLabel", "Update");
+        model.addAttribute("formAction", "/jisho/edit/" + id);
         model.addAttribute("activeTab", "jisho");
+        model.addAttribute("posEnums", PosEnum.getPosEnumsByKey());
+
         return "jisho/create-edit";
     }
-
-    // ✅ View details
-    @GetMapping("/view/{id}")
-    public String viewWord(@PathVariable Long id, Model model) {
-        JlptWord entity = jlptWordService.findById(id);
-        model.addAttribute("jlptWord", mapper.toDto(entity));
-        model.addAttribute("levels", globalCachedVariable.getLevelMapById());
-        return "jisho/view";
-    }
-
-    // ✅ Delete single word
-    @PostMapping("/delete/{id}")
-    public String delete(@PathVariable Long id, RedirectAttributes redirectAttributes) {
-        jlptWordService.deleteById(id);
-        redirectAttributes.addFlashAttribute("message", "Word deleted successfully!");
+    @PostMapping("/edit/{id}")
+    public String editMainNote(@PathVariable Long id, @ModelAttribute("jlptWord") JlptWordDto jlptWord, RedirectAttributes redirectAttributes, Map map) {
+        jlptWord.setId(id);
+        jlptWordService.save(jlptWord);
+        redirectAttributes.addFlashAttribute("message", String.format("Word %s update successfully.", jlptWord.getKanji()));
         return "redirect:/jisho";
     }
 

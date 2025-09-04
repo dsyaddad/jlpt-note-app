@@ -38,7 +38,6 @@ function makeResizable(table, storageKey) {
     });
 }
 document.addEventListener("DOMContentLoaded", function () {
-    makeResizable(document.getElementById("resizableTable"), "mainNotesTableWidths");
     const bulkDeleteBtn = document.getElementById('bulkDeleteBtn');
     const checkboxes = document.querySelectorAll('.rowCheckbox');
     const selectAll = document.getElementById('selectAll');
@@ -58,11 +57,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionInput = document.getElementById("sectionInput");
     const noteInput = document.getElementById("noteInput");
     const levelSelect = document.getElementById("levelSelect");
+    const posSelect = document.getElementById("posSelect");
+
 
     buttonClear.addEventListener("click", function () {
-        sectionInput.value = "";
-        noteInput.value = "";
-        levelSelect.value = "";
+        if(sectionInput){
+            sectionInput.value = "";
+        }
+        if(noteInput){
+            noteInput.value = "";
+        }
+        if(levelSelect){
+            levelSelect.value = "";
+        }
+        if(posSelect){
+            posSelect.value = "";
+        }
     });
 
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))

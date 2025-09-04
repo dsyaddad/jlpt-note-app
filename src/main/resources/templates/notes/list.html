@@ -109,7 +109,7 @@
                         </ul>
                     </div>
                 </td>
-                <td><span class="badge bg-primary" th:text="${#strings.concat(note.level.level,'-',note.section)}"></span></td>
+                <td><span class="badge bg-secondary" th:text="${#strings.concat(note.level.level,'-',note.section)}"></span></td>
                 <td th:text="${note.identifier}"></td>
                 <td th:text="${note.patternName}"></td>
                 <td>
@@ -172,6 +172,11 @@
     </nav>
     <link rel="stylesheet" th:href="@{/css/table-helper.css}">
     <script th:src="@{/js/table-helper.js}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            makeResizable(document.getElementById("resizableTable"), "mainNoteTableWidths");
+        });
+    </script>
 </section>
 </body>
 

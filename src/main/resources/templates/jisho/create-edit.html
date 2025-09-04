@@ -52,7 +52,13 @@
 
                     <!-- POS -->
                     <div class="mb-2">
-                        <input type="text" th:field="*{pos}" id="pos" class="form-control" placeholder="Part of Speech (POS)">
+                        <select th:field="*{pos}" class="form-control" id="posSelect">
+                            <option value="">-- Select Part of Speech (POS) --</option>
+                            <option th:each="entry : ${posEnums}"
+                                    th:value="${entry.key}"
+                                    th:text="${#strings.concat(entry.value.name,' - ',entry.value,' - ',entry.value.note)}">
+                            </option>
+                        </select>
                     </div>
 
                     <!-- Note -->

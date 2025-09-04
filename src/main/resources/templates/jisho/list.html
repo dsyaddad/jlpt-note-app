@@ -39,7 +39,13 @@
                 <div class="card card-body">
                     <div class="row g-2">
                         <div class="col-md-3">
-                            <input type="text" th:field="*{filter.pos}" class="form-control" placeholder="POS" id="sectionInput">
+                            <select th:field="*{filter.pos}" class="form-control" id="posSelect">
+                                <option value="">-- Select POS --</option>
+                                <option th:each="entry : ${posEnums}"
+                                        th:value="${entry.key}"
+                                        th:text="${#strings.concat(entry.value.name,' - ',entry.value,' - ',entry.value.note)}">
+                                </option>
+                            </select>
                         </div>
                         <div class="col-md-3">
                             <input type="text" th:field="*{filter.note}" class="form-control" placeholder="Word" id="noteInput">
@@ -80,57 +86,52 @@
                         <label class="form-check-label" for="selectAll"></label>
                     </div>
                 </th>
-                <th>Kanji</th>
-                <th>Kana</th>
-                <th>Romaji</th>
-                <th>Meaning EN</th>
-                <th>Meaning ID</th>
-                <th>POS</th>
+                <th>Kanji-Kana</th>
+                <th>Meaning</th>
                 <th>Note</th>
-                <th>Level</th>
-                <th>Actions</th>
+                <th>Mark</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="word : ${page.content}">
                 <td>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input rowCheckbox" type="checkbox" name="ids" th:value="${word.id}">
+                    <div class="row g-2">
+                        <div class="col">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input rowCheckbox" type="checkbox" name="ids" th:value="${word.id}">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="dropdown-item" th:href="@{/jisho/edit/{id}(id=${word.id})}">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                        </div>
                     </div>
                 </td>
-                <td th:text="${word.kanji}"></td>
-                <td th:text="${word.kana}"></td>
-                <td th:text="${word.romaji}"></td>
-                <td th:text="${word.meaningEn}"></td>
-                <td th:text="${word.meaningId}"></td>
-                <td th:text="${word.pos}"></td>
+                <td>
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p th:text="${word.kanji}"></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0">
+                            <cite title="Source Title" th:text="${word.kana}"></cite>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p th:text="${word.meaningId}"></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0">
+                            <cite title="Source Title" th:text="${word.meaningEn}"></cite>
+                        </figcaption>
+                    </figure>
+                </td>
                 <td th:text="${word.note}"></td>
                 <td>
-                    <span class="badge bg-primary" th:text="${word.level != null ? word.level.level : '-'}"></span>
-                </td>
-                <td>
-                    <div class="dropdown">
-                        <a class="btn btn-light" href="#" role="button"
-                           th:id="${'dropdownMenuLink' + word.id}" data-bs-toggle="dropdown" aria-expanded="false"
-                           style="padding: 8.5px;">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <ul class="dropdown-menu" th:aria-labelledby="${'dropdownMenuLink' + word.id}">
-                            <li>
-                                <a class="dropdown-item" th:href="@{/jisho/edit/{id}(id=${word.id})}">
-                                    <i class="fa fa-edit"></i> Edit
-                                </a>
-                            </li>
-                            <li>
-                                <form th:action="@{/jisho/delete/{id}(id=${word.id})}" method="post"
-                                      onsubmit="return confirm('Delete this word?');">
-                                    <button class="dropdown-item" type="submit">
-                                        <i class="fa fa-trash"></i> Delete
-                                    </button>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
+                    <span class="badge bg-secondary" th:text="${word.level != null ? word.level.level : '-'}"></span>
+                    <span class="badge bg-primary" th:text="${word.pos}"></span>
                 </td>
             </tr>
             </tbody>
@@ -155,6 +156,11 @@
 
     <link rel="stylesheet" th:href="@{/css/table-helper.css}">
     <script th:src="@{/js/table-helper.js}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            makeResizable(document.getElementById("resizableTable"), "jishoTableWidths");
+        });
+    </script>
 </section>
 </body>
 </html>

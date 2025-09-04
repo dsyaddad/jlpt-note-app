@@ -1,6 +1,10 @@
 package com.ds.jlptnoteapp.model.enums;
 
 
+import java.util.Arrays;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public enum PosEnum {
 
     MEISHI(1L, "名詞", "Noun / kata benda"),
@@ -48,4 +52,12 @@ public enum PosEnum {
         }
         return null;
     }
+    private static final Map<String, PosEnum> POS_ENUMS_BY_KEY =
+            Arrays.stream(values())
+                    .collect(Collectors.toMap(Enum::name, e -> e));
+
+    public static Map<String, PosEnum> getPosEnumsByKey() {
+        return POS_ENUMS_BY_KEY;
+    }
+
 }
