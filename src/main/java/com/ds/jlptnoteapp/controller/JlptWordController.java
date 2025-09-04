@@ -10,6 +10,7 @@ import com.ds.jlptnoteapp.service.JlptWordService;
 import com.ds.jlptnoteapp.util.GlobalCachedVariable;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -34,13 +35,15 @@ public class JlptWordController {
     @GetMapping
     public String listWords(
             @ModelAttribute("filter") JlptWordDto filter,
-            @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.ASC) Pageable pageable,
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "30") int size,
             Model model
     ) {
         filter.checkNoteExists();
-        Page<JlptWord> page = jlptWordService.findAllByFilter(filter, pageable);
+        Pageable pageable = PageRequest.of(page, size, Sort.by("id").descending());
+        Page<JlptWord> result = jlptWordService.findAllByFilter(filter, pageable);
 
-        List<JlptWordDto> wordDtos = page.getContent().stream()
+        List<JlptWordDto> wordDtos = result.getContent().stream()
                 .map(mapper::toDto)
                 .toList();
 
