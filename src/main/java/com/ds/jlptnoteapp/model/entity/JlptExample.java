@@ -19,7 +19,7 @@ public class JlptExample implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "jp_sentence", nullable = false, columnDefinition = "TEXT")
+    @Column(name = "jp_sentence", columnDefinition = "TEXT")
     private String jpSentence;
 
     @Column(name = "translation", columnDefinition = "TEXT")
@@ -29,9 +29,7 @@ public class JlptExample implements Serializable {
     private String note;
 
     @ManyToOne
-    @JoinColumn(name = "word_id", insertable = false, updatable = false)
+    @JoinColumn(name = "word_id")
     private JlptWord word;
 
-    @Column(name = "word_id")
-    private Long wordId;
 }

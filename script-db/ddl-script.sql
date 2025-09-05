@@ -63,7 +63,7 @@ CREATE TABLE jlpt_words (
 CREATE TABLE jlpt_examples (
                                id BIGINT AUTO_INCREMENT PRIMARY KEY,
                                word_id BIGINT, -- referensi ke jlpt_words.id (tanpa constraint)
-                               jp_sentence TEXT NOT NULL,
+                               jp_sentence TEXT,
                                translation TEXT,
                                note TEXT
 );

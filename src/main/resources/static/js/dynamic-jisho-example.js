@@ -17,9 +17,10 @@ function addExample() {
             <button type="button" class="btn btn-danger btn-sm" onclick="removeExample(this)">Remove</button>
           </div>
           <div class="card-body">
-            <input type="text" name="examples[${exampleIdx}].sampleKanji" placeholder="Sample Kanji" class="form-control mb-1">
-            <input type="text" name="examples[${exampleIdx}].sampleNonKanji" placeholder="Sample Non Kanji" class="form-control mb-1">
-            <input type="text" name="examples[${exampleIdx}].meaning" placeholder="Meaning" class="form-control mb-1">
+            <input type="hidden" name="examples[${exampleIdx}].id" >
+            <input type="hidden" name="examples[${exampleIdx}].wordId" >
+            <input type="text" name="examples[${exampleIdx}].jpSentence" placeholder="Sentence" class="form-control mb-1">
+            <input type="text" name="examples[${exampleIdx}].translation" placeholder="Translation" class="form-control mb-1">
             <input type="text" name="examples[${exampleIdx}].note" placeholder="Note" class="form-control mb-1">
           </div>
         `;

@@ -54,6 +54,11 @@ public class JlptWord implements Serializable {
         if (this.createdAt == null) {
             this.createdAt = LocalDateTime.now();
         }
+        if (examples != null) {
+            for (JlptExample f : examples) {
+                f.setWord(this);
+            }
+        }
     }
 
     @PreUpdate

@@ -77,9 +77,8 @@
                                 <div class="card-body">
                                     <input type="hidden" th:field="*{examples[__${stat.index}__].id}">
                                     <input type="hidden" th:field="*{examples[__${stat.index}__].wordId}">
-                                    <input type="text" th:field="*{examples[__${stat.index}__].sampleKanji}" placeholder="Sample Kanji" class="form-control mb-1">
-                                    <input type="text" th:field="*{examples[__${stat.index}__].sampleNonKanji}" placeholder="Sample Non Kanji" class="form-control mb-1">
-                                    <input type="text" th:field="*{examples[__${stat.index}__].meaning}" placeholder="Meaning" class="form-control mb-1">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].jpSentence}" placeholder="Sample Kanji" class="form-control mb-1">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].translation}" placeholder="Sample Non Kanji" class="form-control mb-1">
                                     <input type="text" th:field="*{examples[__${stat.index}__].note}" placeholder="Note" class="form-control mb-1">
                                 </div>
                             </div>
