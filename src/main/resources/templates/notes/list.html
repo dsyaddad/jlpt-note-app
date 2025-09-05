@@ -157,16 +157,14 @@
     <nav>
         <ul class="pagination">
             <li class="page-item" th:classappend="${mainNotes.first} ? 'disabled'">
-                <a class="page-link" th:href="@{/notes(page=${mainNotes.number - 1}, pattern=${pattern})}">Previous</a>
+                <a class="page-link" th:href="@{/notes(page=${mainNotes.number - 1}, size=${mainNotes.size}, section=${filter.section}, mainNote=${filter.mainNote}, levelId=${filter.levelId})}">Previous</a>
             </li>
-
             <li class="page-item" th:each="i : ${#numbers.sequence(0, mainNotes.totalPages - 1)}"
                 th:classappend="${i == mainNotes.number} ? 'active'">
-                <a class="page-link" th:href="@{/notes(page=${i}, pattern=${pattern})}" th:text="${i + 1}">1</a>
+                <a class="page-link" th:href="@{/notes(page=${i}, size=${mainNotes.size}, section=${filter.section}, mainNote=${filter.mainNote}, levelId=${filter.levelId})}" th:text="${i + 1}">1</a>
             </li>
-
             <li class="page-item" th:classappend="${mainNotes.last} ? 'disabled'">
-                <a class="page-link" th:href="@{/notes(page=${mainNotes.number + 1}, pattern=${pattern})}">Next</a>
+                <a class="page-link" th:href="@{/notes(page=${mainNotes.number + 1}, size=${mainNotes.size}, section=${filter.section}, mainNote=${filter.mainNote}, levelId=${filter.levelId})}">Next</a>
             </li>
         </ul>
     </nav>

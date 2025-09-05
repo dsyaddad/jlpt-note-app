@@ -66,6 +66,28 @@
                         <textarea th:field="*{note}" id="note" class="form-control" placeholder="Note"></textarea>
                     </div>
 
+                    <!-- Examples -->
+                    <div id="examples-container">
+                        <div th:if="${jlptWord.examples != null and #lists.size(jlptWord.examples) > 0}">
+                            <div th:each="example, stat : *{examples}" class="example-block mb-2 card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6>Example</h6>
+                                    <button type="button" class="btn btn-danger btn-sm" onclick="removeExample(this)">Remove</button>
+                                </div>
+                                <div class="card-body">
+                                    <input type="hidden" th:field="*{examples[__${stat.index}__].id}">
+                                    <input type="hidden" th:field="*{examples[__${stat.index}__].wordId}">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].sampleKanji}" placeholder="Sample Kanji" class="form-control mb-1">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].sampleNonKanji}" placeholder="Sample Non Kanji" class="form-control mb-1">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].meaning}" placeholder="Meaning" class="form-control mb-1">
+                                    <input type="text" th:field="*{examples[__${stat.index}__].note}" placeholder="Note" class="form-control mb-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" onclick="addExample()" class="btn btn-success">Add Example</button>
+
+
                     <!-- Actions -->
                     <div class="d-flex gap-2 mt-3">
                         <button type="submit" class="btn btn-primary" th:text="${submitLabel}">Save</button>
@@ -76,6 +98,7 @@
             </div>
         </div>
     </form>
+    <script type="text/javascript" th:src="@{/js/dynamic-jisho-example.js}"></script>
 </section>
 </body>
 </html>

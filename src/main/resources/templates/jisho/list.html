@@ -93,7 +93,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="word : ${page.content}">
+            <tr th:each="word : ${words.content}">
                 <td>
                     <div class="row g-2">
                         <div class="col">
@@ -141,15 +141,15 @@
     <!-- Pagination -->
     <nav>
         <ul class="pagination">
-            <li class="page-item" th:classappend="${page.first} ? 'disabled'">
-                <a class="page-link" th:href="@{/jisho(page=${page.number - 1}, size=${page.size})}">Previous</a>
+            <li class="page-item" th:classappend="${words.first} ? 'disabled'">
+                <a class="page-link" th:href="@{/jisho(page=${words.number - 1}, size=${words.size}, pos=${filter.pos}, note=${filter.note}, levelId=${filter.levelId})}">Previous</a>
             </li>
-            <li class="page-item" th:each="i : ${#numbers.sequence(0, page.totalPages - 1)}"
-                th:classappend="${i == page.number} ? 'active'">
-                <a class="page-link" th:href="@{/jisho(page=${i}, size=${page.size})}" th:text="${i + 1}">1</a>
+            <li class="page-item" th:each="i : ${#numbers.sequence(0, words.totalPages - 1)}"
+                th:classappend="${i == words.number} ? 'active'">
+                <a class="page-link" th:href="@{/jisho(page=${i}, size=${words.size}, pos=${filter.pos}, note=${filter.note}, levelId=${filter.levelId})}" th:text="${i + 1}">1</a>
             </li>
-            <li class="page-item" th:classappend="${page.last} ? 'disabled'">
-                <a class="page-link" th:href="@{/jisho(page=${page.number + 1}, size=${page.size})}">Next</a>
+            <li class="page-item" th:classappend="${words.last} ? 'disabled'">
+                <a class="page-link" th:href="@{/jisho(page=${words.number + 1}, size=${words.size}, pos=${filter.pos}, note=${filter.note}, levelId=${filter.levelId})}">Next</a>
             </li>
         </ul>
     </nav>

@@ -42,10 +42,8 @@ public class JlptWordController {
         filter.checkNoteExists();
         Pageable pageable = PageRequest.of(page, size, Sort.by("id").descending());
         Page<JlptWord> result = jlptWordService.findAllByFilter(filter, pageable);
+        Page<JlptWordDto> wordDtos = result.map(mapper::toDto);
 
-        List<JlptWordDto> wordDtos = result.getContent().stream()
-                .map(mapper::toDto)
-                .toList();
 
         model.addAttribute("words", wordDtos);
         model.addAttribute("page", page);
