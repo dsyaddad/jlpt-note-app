@@ -75,7 +75,7 @@ public class JlptWordController {
     @PostMapping("/create")
     public String save(@ModelAttribute("jlptWord") JlptWordDto wordDto,
                        RedirectAttributes redirectAttributes) {
-        jlptWordService.save(wordDto);
+        jlptWordService.upsert(wordDto);
         redirectAttributes.addFlashAttribute("message", "Word saved successfully!");
         return "redirect:/jisho";
     }
@@ -96,7 +96,7 @@ public class JlptWordController {
     @PostMapping("/edit/{id}")
     public String editMainNote(@PathVariable Long id, @ModelAttribute("jlptWord") JlptWordDto jlptWord, RedirectAttributes redirectAttributes, Map map) {
         jlptWord.setId(id);
-        jlptWordService.save(jlptWord);
+        jlptWordService.upsert(jlptWord);
         redirectAttributes.addFlashAttribute("message", String.format("Word %s update successfully.", jlptWord.getKanji()));
         return "redirect:/jisho";
     }

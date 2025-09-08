@@ -6,6 +6,4 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface JlptWordRepository extends JpaRepository<JlptWord, Long>, JpaSpecificationExecutor<JlptWord> {
-
-}
+public interface JlptWordRepository extends JpaRepository<JlptWord, Long>, JpaSpecificationExecutor<JlptWord> { }

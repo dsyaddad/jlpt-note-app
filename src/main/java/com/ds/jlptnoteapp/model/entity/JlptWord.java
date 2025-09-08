@@ -1,6 +1,7 @@
 package com.ds.jlptnoteapp.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -73,7 +74,12 @@ public class JlptWord implements Serializable {
     @Column(name = "level_id")
     private Long levelId;
 
+    @Setter(AccessLevel.NONE) // ⬅️ hentikan setExamples(List)
     @OneToMany(mappedBy = "word", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<JlptExample> examples = new ArrayList<>();
+
+    public void addExample(JlptExample e) { e.setWord(this); examples.add(e); }
+    public void removeExample(JlptExample e) { e.setWord(null); examples.remove(e); }
+
 }
 

@@ -28,8 +28,16 @@ public class JlptExample implements Serializable {
     @Column(name = "note", columnDefinition = "TEXT")
     private String note;
 
-    @ManyToOne
-    @JoinColumn(name = "word_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "word_id", nullable = false)
     private JlptWord word;
 
+    // (Opsional tapi bagus) equals/hashCode berbasis id
+    @Override public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof JlptExample)) return false;
+        JlptExample other = (JlptExample) o;
+        return id != null && id.equals(other.id);
+    }
+    @Override public int hashCode() { return 31; }
 }
