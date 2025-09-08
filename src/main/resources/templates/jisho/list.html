@@ -88,6 +88,7 @@
                 </th>
                 <th>Kanji-Kana</th>
                 <th>Meaning</th>
+                <th>Examples</th>
                 <th>Note</th>
                 <th>Mark</th>
             </tr>
@@ -127,6 +128,21 @@
                             <cite title="Source Title" th:text="${word.meaningEn}"></cite>
                         </figcaption>
                     </figure>
+                </td>
+                <td>
+                    <ul class="list-unstyled mb-0" th:if="${!#lists.isEmpty(word.examples)}" style="scale: 0.7;transform-origin: top left;">
+                        <li th:each="example : ${word.examples}">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                    <p th:text="${example.jpSentence}"></p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0">
+                                    <cite title="Source Title" th:text="${example.translation}"></cite>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <span th:if="${#lists.isEmpty(word.examples)}" >N/A</span>
                 </td>
                 <td th:text="${word.note}"></td>
                 <td>
