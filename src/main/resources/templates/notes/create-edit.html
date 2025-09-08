@@ -63,8 +63,9 @@
                     <div id="formulas-container">
                         <div th:if="${mainNote.formulas != null and #lists.size(mainNote.formulas) > 0}">
                             <div th:each="formula, formulaStat : *{formulas}" class="formula-block mb-3 card">
-                                <div class="card-header">
-                                    <h5>Formula</h5>
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6>Formula</h6>
+                                    <button type="button" class="btn btn-danger btn-sm" onclick="removeFormula(this)">Remove</button>
                                 </div>
                                 <div class="card-body">
                                     <input type="hidden" th:field="*{formulas[__${formulaStat.index}__].id}">
@@ -78,8 +79,9 @@
                                     <div th:id="'examples-container-' + ${formulaStat.index}">
                                         <div th:if="${formula.examples != null and #lists.size(formula.examples) > 0}">
                                             <div th:each="example, exampleStat : ${formula.examples}" class="example-block mb-2 card">
-                                                <div class="card-header">
+                                                <div class="card-header d-flex justify-content-between align-items-center">
                                                     <h6>Example</h6>
+                                                    <button type="button" class="btn btn-danger btn-sm" onclick="removeExample(this)">Remove</button>
                                                 </div>
                                                 <div class="card-body">
                                                     <input type="hidden" th:field="*{formulas[__${formulaStat.index}__].examples[__${exampleStat.index}__].id}">

@@ -14,30 +14,42 @@ import org.mapstruct.factory.Mappers;
 public interface AppMapper {
 
     AppMapper INSTANCE = Mappers.getMapper(AppMapper.class);
+    // ===== MainNote =====
+    @Mapping(target = "level", ignore = true)      // set di service via repo reference
+    @Mapping(target = "formulas", ignore = true)   // koleksi dikelola di service (sync)
+    MainNote toEntity(MainNoteDto dto, @Context GlobalCachedVariable cache);
 
-    @Mapping(target = "level", expression = "java(levelFromId(dto.getLevelId(), globalCachedVariable))")
-    MainNote toEntity(MainNoteDto dto, @Context GlobalCachedVariable globalCachedVariable);
+    @Mapping(target = "level", ignore = true)
+    @Mapping(target = "formulas", ignore = true)
+    void updateEntity(@MappingTarget MainNote target, MainNoteDto dto, @Context GlobalCachedVariable cache);
 
     @Mapping(target = "levelId", expression = "java(levelToId(entity.getLevel()))")
     @Mapping(target = "level", expression = "java(toDto(entity.getLevel()))")
     MainNoteDto toDto(MainNote entity);
 
-    @Mapping(target = "mainNoteId", source = "mainNote.id")
-    @Mapping(target = "subFunction", source = "subFunction")
-    FormulaDto toDto(Formula entity);
-
-    @Mapping(target = "mainNote.id", source = "mainNoteId")
-    @Mapping(target = "subFunction", source = "subFunction")
+    // ===== Formula =====
+    @Mapping(target = "mainNote", ignore = true)   // ⬅️ jangan buat MainNote transien
+    @Mapping(target = "examples", ignore = true)   // sync di service
     Formula toEntity(FormulaDto dto);
 
-    @Mapping(target = "formulaId", source = "formula.id")
-    ExampleDto toDto(Example entity);
+    @Mapping(target = "mainNote", ignore = true)
+    @Mapping(target = "examples", ignore = true)
+    void updateEntity(@MappingTarget Formula target, FormulaDto dto);
 
-    @Mapping(target = "formula.id", source = "formulaId")
+    FormulaDto toDto(Formula entity); // mapping simple fields saja
+
+    // ===== Example =====
+    @Mapping(target = "formula", ignore = true)    // ⬅️ jangan buat Formula transien
     Example toEntity(ExampleDto dto);
 
+    @Mapping(target = "formula", ignore = true)
+    void updateEntity(@MappingTarget Example target, ExampleDto dto);
+
+    ExampleDto toDto(Example entity);
+
+    // ===== Level =====
     LevelDto toDto(Level entity);
-    Level toEntity(LevelDto dto);
+    Level toEntity(LevelDto dto); // (dipakai hanya untuk toDto MainNote)
 
     // pastikan mapper TIDAK menyentuh koleksi
     @Mapping(target = "examples", ignore = true)     // ⬅️ penting

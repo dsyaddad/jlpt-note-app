@@ -32,9 +32,8 @@ public class Example implements Serializable {
     @Column(name = "note")
     private String note;
 
-    @ManyToOne
-    @JoinColumn(name = "formula_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "formula_id", nullable = false) // ⬅️ kunci: delete, bukan null-kan FK
     private Formula formula;
-
 
 }

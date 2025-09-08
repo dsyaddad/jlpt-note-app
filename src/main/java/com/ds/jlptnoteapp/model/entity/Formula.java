@@ -1,6 +1,7 @@
 package com.ds.jlptnoteapp.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -36,20 +37,15 @@ public class Formula implements Serializable {
     @Column(name = "sub_note")
     private String subNote;
 
-    @ManyToOne
-    @JoinColumn(name = "main_note_id") // biar bisa diisi otomatis
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "main_note_id", nullable = false)
     private MainNote mainNote;
 
-    @PrePersist
-    public void prePersist() {
-        if (examples != null) {
-            for (Example e : examples) {
-                e.setFormula(this); // auto link ke parent
-            }
-        }
-    }
-
     @OneToMany(mappedBy = "formula", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Setter(AccessLevel.NONE) // ⬅️ cegah setExamples(List)
     private List<Example> examples = new ArrayList<>();
+
+    public void addExample(Example e) { if (e != null) { e.setFormula(this); examples.add(e); } }
+    public void removeExample(Example e) { if (e != null) { e.setFormula(null); examples.remove(e); } }
 
 }

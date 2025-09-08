@@ -1,12 +1,14 @@
 package com.ds.jlptnoteapp.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -48,18 +50,16 @@ public class MainNote implements Serializable {
         if (this.createdAt == null) {
             this.createdAt = LocalDateTime.now();
         }
-        if (formulas != null) {
-            for (Formula f : formulas) {
-                f.setMainNote(this);
-            }
-        }
     }
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "level_id")
     private Level level;
 
     @OneToMany(mappedBy = "mainNote", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Formula> formulas;
+    @Setter(AccessLevel.NONE) // ⬅️ cegah setFormulas(List) mengganti referensi list
+    private List<Formula> formulas = new ArrayList<>();
 
+    public void addFormula(Formula f) { if (f != null) { f.setMainNote(this); formulas.add(f); } }
+    public void removeFormula(Formula f) { if (f != null) { f.setMainNote(null); formulas.remove(f); } }
 }

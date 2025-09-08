@@ -58,9 +58,9 @@ public class MainNoteController {
 
     @PostMapping("/create")
     public String createMainNote(@ModelAttribute("mainNote") MainNoteDto mainNoteDto, RedirectAttributes redirectAttributes) {
-        MainNote entity = mainNoteMapper.toEntity(mainNoteDto,globalCachedVariable);
-        mainNoteService.save(entity);
-        redirectAttributes.addFlashAttribute("message", String.format("Note %s update successfully.", entity.getSection()));
+        mainNoteDto.setId(null);
+        mainNoteService.upsert(mainNoteDto);
+        redirectAttributes.addFlashAttribute("message", String.format("Note %s update successfully.", mainNoteDto.getSection()));
         return "redirect:/notes";
     }
     // Show edit form using create-edit.html
@@ -81,8 +81,8 @@ public class MainNoteController {
     @PostMapping("/edit/{id}")
     public String editMainNote(@PathVariable Long id, @ModelAttribute("mainNote") MainNoteDto mainNoteDto, RedirectAttributes redirectAttributes) {
         MainNote entity = mainNoteMapper.toEntity(mainNoteDto, globalCachedVariable);
-        entity.setId(id);
-        mainNoteService.save(entity);
+        mainNoteDto.setId(id);
+        mainNoteService.upsert(mainNoteDto);
         redirectAttributes.addFlashAttribute("message", String.format("Note %s update successfully.", entity.getSection()));
         return "redirect:/notes";
     }
