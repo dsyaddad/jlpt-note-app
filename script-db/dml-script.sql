@@ -44,7 +44,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `jlpt_examples` WRITE;
 /*!40000 ALTER TABLE `jlpt_examples` DISABLE KEYS */;
-INSERT INTO `jlpt_examples` VALUES (1,1,'私はリンゴを食べます。','I eat an apple.','Basic present tense usage.'),(2,1,'昨日寿司を食べました。','I ate sushi yesterday.','Past tense example.'),(3,2,'あの犬はとても大きいです。','That dog is very big.','Adjective with desu.'),(4,2,'この家は大きいですが、古いです。','This house is big, but old.','Adjective + conjunction.'),(5,3,'彼は毎日学校に行きます。','He goes to school every day.','Daily routine.'),(6,3,'学校は8時に始まります。','School starts at 8 o\'clock.','Time expression.');
+INSERT INTO `jlpt_examples` VALUES (1,1,'私はリンゴを食べます。','I eat an apple.','Basic present tense usage.'),(2,1,'昨日寿司を食べました。','I ate sushi yesterday.','Past tense example.'),(3,2,'あの犬はとても大きいです。','That dog is very big.','Adjective with desu.'),(4,2,'この家は大きいですが、古いです。','This house is big, but old.','Adjective + conjunction.'),(5,3,'彼は毎日学校に行きます。','He goes to school every day.','Daily routine.'),(6,3,'学校は8時に始まります。','School starts at 8 o\'clock.','Time expression.'),(25,14,'おにぎりを買います','Membeli onigiri','');
 /*!40000 ALTER TABLE `jlpt_examples` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `jlpt_words` WRITE;
 /*!40000 ALTER TABLE `jlpt_words` DISABLE KEYS */;
-INSERT INTO `jlpt_words` VALUES (1,'L01-1','食べる','たべる','taberu','to eat','makan','DOSHI_ICHIDAN','Basic verb for eating.','2025-09-03 07:44:40',NULL,1),(2,'L01-1','大きい','おおきい','ookii','big, large','besar','KEIYOSHI','Common adjective.','2025-09-03 07:44:40',NULL,1),(3,'L01-1','学校','がっこう','gakkou','school','sekolah','MEISHI','Place for studying.','2025-09-03 07:44:40',NULL,1);
+INSERT INTO `jlpt_words` VALUES (1,'L01-1','食べる','たべる','taberu','to eat','makan','DOSHI_ICHIDAN','Basic verb for eating.','2025-09-03 07:44:40',NULL,1),(2,'L01-1','大きい','おおきい','ookii','big, large','besar','KEIYOSHI','Common adjective.','2025-09-03 07:44:40',NULL,1),(3,'L01-1','学校','がっこう','gakkou','school','sekolah','MEISHI','Place for studying.','2025-09-03 07:44:40',NULL,1),(14,'L01.2','買う','かう','kau','Buy','Beli','DOSHI_ICHIDAN','kata kerja dari verb 1','2025-09-09 04:19:10',NULL,1);
 /*!40000 ALTER TABLE `jlpt_words` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,4 +87,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-09  3:14:12
+-- Dump completed on 2025-09-09  4:19:37

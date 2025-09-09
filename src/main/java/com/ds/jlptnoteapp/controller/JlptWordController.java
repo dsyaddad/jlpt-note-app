@@ -1,9 +1,7 @@
 package com.ds.jlptnoteapp.controller;
 
 import com.ds.jlptnoteapp.model.dto.JlptWordDto;
-import com.ds.jlptnoteapp.model.dto.MainNoteDto;
 import com.ds.jlptnoteapp.model.entity.JlptWord;
-import com.ds.jlptnoteapp.model.entity.MainNote;
 import com.ds.jlptnoteapp.model.enums.PosEnum;
 import com.ds.jlptnoteapp.model.transformer.AppMapper;
 import com.ds.jlptnoteapp.service.JlptWordService;
@@ -13,7 +11,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +36,7 @@ public class JlptWordController {
             @RequestParam(value = "size", defaultValue = "30") int size,
             Model model
     ) {
-        filter.checkNoteExists();
+        filter.adjustFilter(globalCachedVariable);
         Pageable pageable = PageRequest.of(page, size, Sort.by("id").descending());
         Page<JlptWord> result = jlptWordService.findAllByFilter(filter, pageable);
         Page<JlptWordDto> wordDtos = result.map(mapper::toDto);
@@ -49,6 +46,7 @@ public class JlptWordController {
         model.addAttribute("page", page);
         model.addAttribute("filter", filter);
         model.addAttribute("activeTab", "jisho");
+        model.addAttribute("title", "Jisho");
 
 
         // untuk dropdown Level
@@ -67,6 +65,7 @@ public class JlptWordController {
         model.addAttribute("activeTab", "jisho");
         model.addAttribute("formAction", "/jisho/create");
         model.addAttribute("posEnums", PosEnum.getPosEnumsByKey());
+        model.addAttribute("title", "Create Jisho");
 
         return "jisho/create-edit";
     }
@@ -90,6 +89,7 @@ public class JlptWordController {
         model.addAttribute("formAction", "/jisho/edit/" + id);
         model.addAttribute("activeTab", "jisho");
         model.addAttribute("posEnums", PosEnum.getPosEnumsByKey());
+        model.addAttribute("title", "Edit Jisho");
 
         return "jisho/create-edit";
     }

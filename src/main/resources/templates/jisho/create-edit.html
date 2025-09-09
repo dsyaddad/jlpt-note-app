@@ -29,13 +29,20 @@
                     </div>
                     <div class="row g-2 mb-2">
                         <div class="col">
-                            <select th:field="*{levelId}" class="form-select" id="level" required>
-                                <option value="" disabled th:if="*{levelId == null}" selected>Pilih Level</option>
-                                <option th:each="entry : ${levels}"
-                                        th:value="${entry.key}"
-                                        th:text="${entry.value.level}">
-                                </option>
-                            </select>
+                            <div class="row g-2 mb-2">
+                                <div class="col">
+                                    <select th:field="*{levelId}" class="form-select" id="level" required>
+                                        <option value="" disabled th:if="*{levelId == null}" selected>- Level -</option>
+                                        <option th:each="entry : ${levels}"
+                                                th:value="${entry.key}"
+                                                th:text="${entry.value.level}">
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <input type="text" th:field="*{section}" id="section" class="form-control" placeholder="Section" required>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
                             <input type="text" th:field="*{romaji}" id="romaji" class="form-control" placeholder="romaji">

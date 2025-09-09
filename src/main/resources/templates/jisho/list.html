@@ -22,9 +22,7 @@
                     <button type="submit" id="bulkDeleteBtn" class="btn btn-danger" form="bulkDeleteForm" disabled>
                         Delete Selected
                     </button>
-                    <a class="btn btn-success" th:href="@{/jisho/create}">
-                        + Add Word
-                    </a>
+                    <a class="btn btn-success" th:href="@{/jisho/create}">Add Word</a>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Filter
@@ -48,7 +46,14 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <input type="text" th:field="*{filter.note}" class="form-control" placeholder="Word" id="noteInput">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <input type="text" th:field="*{filter.note}" class="form-control" placeholder="Word" id="noteInput">
+                                </div>
+                                <div class="col">
+                                    <input type="text" th:field="*{filter.section}" class="form-control" placeholder="Section" id="sectionInput">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <select th:field="*{filter.levelId}" class="form-control" id="levelSelect">
@@ -147,6 +152,7 @@
                 <td th:text="${word.note}"></td>
                 <td>
                     <span class="badge bg-secondary" th:text="${word.level != null ? word.level.level : '-'}"></span>
+                    <span class="badge bg-secondary" th:text="${word.section}"></span>
                     <span class="badge bg-primary" th:text="${word.pos}"></span>
                 </td>
             </tr>

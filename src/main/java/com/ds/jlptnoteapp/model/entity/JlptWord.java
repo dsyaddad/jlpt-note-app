@@ -26,6 +26,9 @@ public class JlptWord implements Serializable {
     @Column(name = "kanji")
     private String kanji;
 
+    @Column(name = "section")
+    private String section;
+
     @Column(name = "kana", nullable = false)
     private String kana;
 

@@ -51,7 +51,7 @@ public class MainNoteController {
         model.addAttribute("mainNote", new MainNoteDto());
         model.addAttribute("formAction", "/notes/create");
         model.addAttribute("submitLabel", "Save");
-        model.addAttribute("activeTab", "create-edit");
+        model.addAttribute("activeTab", "notes");
         model.addAttribute("title", "Add New MainNote");
         return "notes/create-edit";
     }
@@ -72,7 +72,7 @@ public class MainNoteController {
         model.addAttribute("mainNote", dto);
         model.addAttribute("formAction", "/notes/edit/" + id);
         model.addAttribute("submitLabel", "Update");
-        model.addAttribute("activeTab", "create-edit");
+        model.addAttribute("activeTab", "notes");
         model.addAttribute("title", "Edit MainNote");
         return "notes/create-edit";
     }
@@ -92,7 +92,7 @@ public class MainNoteController {
         MainNoteDto dto = mainNoteMapper.toDto(mainNote);
         model.addAttribute("levels", globalCachedVariable.getLevelMapByLevel());
         model.addAttribute("mainNote", dto);
-        model.addAttribute("activeTab", "view");
+        model.addAttribute("activeTab", "notes");
         model.addAttribute("title", "View MainNote");
         return "notes/view";
     }
