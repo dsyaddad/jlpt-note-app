@@ -48,6 +48,8 @@ CREATE TABLE example (
 
 CREATE TABLE jlpt_words (
                             id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                            section VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+                            level_id BIGINT,
                             kanji VARCHAR(255),
                             kana VARCHAR(255) NOT NULL,
                             romaji VARCHAR(255),
@@ -56,8 +58,7 @@ CREATE TABLE jlpt_words (
                             pos VARCHAR(100),
                             note TEXT,
                             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                            updated_at TIMESTAMP NULL,
-                            level_id BIGINT
+                            updated_at TIMESTAMP NULL
 );
 
 CREATE TABLE jlpt_examples (
