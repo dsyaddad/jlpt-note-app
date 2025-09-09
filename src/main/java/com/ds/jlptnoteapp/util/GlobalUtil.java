@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.nio.file.Paths;
+import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @UtilityClass
 @Log4j2
@@ -53,5 +56,31 @@ public class GlobalUtil {
             throw new RuntimeException("Failed to export DML", e);
         }
     }
+
+    // Pola: harus di AWAL string -> N{1digit}-L{2digit}{bebas}
+    private static final Pattern NL_HEAD = Pattern.compile("^N(\\d)-L(\\d{2})(.*)$");
+
+    /** Deteksi "N{1digit}-L{2digit}{bebas}" di awal string. */
+    public static boolean isN1L2(String s) {
+        if (s == null) return false;
+        return NL_HEAD.matcher(s.trim()).matches();
+    }
+
+    /**
+     * Pisahkan "N{1digit}-L{2digit}{bebas}" menjadi:
+     *   ["N{digit}", "L{2digit}{suffix}"]
+     * Hanya '-' pertama yang dihilangkan (antara N dan L).
+     * Return Optional.empty() jika tidak match.
+     */
+    public static Optional<String[]> splitN1L2(String s) {
+        if (s == null) return Optional.empty();
+        Matcher m = NL_HEAD.matcher(s.trim());
+        if (!m.matches()) return Optional.empty();
+
+        String left  = "N" + m.group(1);               // N{digit}
+        String right = "L" + m.group(2) + m.group(3);  // L{2digit}{suffix}
+        return Optional.of(new String[]{ left, right });
+    }
+
 
 }

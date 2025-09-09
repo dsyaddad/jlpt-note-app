@@ -57,7 +57,7 @@ CREATE TABLE jlpt_words (
                             note TEXT,
                             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                             updated_at TIMESTAMP NULL,
-                            level_id BIGINT -- referensi ke level.id (tanpa constraint)
+                            level_id BIGINT
 );
 
 CREATE TABLE jlpt_examples (

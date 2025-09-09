@@ -29,7 +29,7 @@ public class MainNoteController {
             @RequestParam(value = "size", defaultValue = "30") int size,
             Model model
     ) {
-        filter.checkMainNoteExists();
+        filter.checkFilterAndAdjust(globalCachedVariable);
         Pageable pageable = PageRequest.of(page, size, Sort.by("level.id","section").descending());
         Page<MainNote> result = mainNoteService.findAllByfilter(filter, pageable);
         Page<MainNoteDto> dtoPage = result.map(mainNoteMapper::toDto);

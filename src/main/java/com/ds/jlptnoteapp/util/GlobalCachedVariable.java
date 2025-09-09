@@ -11,4 +11,5 @@ import java.util.Map;
 public class GlobalCachedVariable {
     private Map<Long, String> levelMapById;
     private Map<Long, LevelDto> levelMapByLevel;
+    private Map<String,LevelDto> levelMapByStringLevel;
 }

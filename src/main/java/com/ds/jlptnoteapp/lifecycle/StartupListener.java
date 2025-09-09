@@ -31,7 +31,13 @@ public class StartupListener implements ApplicationRunner {
         log.info("Refreshing global variable");
         globalCachedVariable.setLevelMapById(findAllAsMapById());
         globalCachedVariable.setLevelMapByLevel(findAllAsMapByLevel());
+        globalCachedVariable.setLevelMapByStringLevel(findAllByStringLevel());
         log.info("Refreshing global variable done.");
+    }
+
+    private Map<String, LevelDto> findAllByStringLevel() {
+        return levelRepository.findAll().stream()
+                .collect(Collectors.toMap(Level::getLevel, appMapper::toDto));
     }
 
     private Map<Long, String> findAllAsMapById() {
