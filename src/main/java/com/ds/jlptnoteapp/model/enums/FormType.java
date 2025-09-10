@@ -1,0 +1,7 @@
+package com.ds.jlptnoteapp.model.enums;
+
+public enum FormType {
+    DICTIONARY, MASU, TE, TA, NAI, POTENTIAL, VOLITIONAL,
+    CONDITIONAL, CONDITIONAL_NEG, IMPERATIVE,
+    PASSIVE, CAUSATIVE, CAUSATIVE_PASSIVE
+}

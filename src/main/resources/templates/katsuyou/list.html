@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{/base/base-frame::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Temporary Tab</title>
+</head>
+<body>
+<section>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>Headword</th>
+                        <th>POS</th>
+                        <th th:each="ft : ${formTypes}" th:text="${ft}"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="item, idx : ${items}">
+                        <td th:text="${idx.index + 1}"></td>
+                        <td>
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                    <p th:text="${item.request.kanji}"></p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0">
+                                    <cite th:text="${item.request.headwordKana}"></cite>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <span class="badge bg-info text-dark" th:text="${item.request.posType}"></span>
+                        </td>
+                        <!-- lookup by key -->
+                        <td th:each="ft : ${formTypes}">
+                            <span th:text="${item.formMap.get(ft)} ?: '—'"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
