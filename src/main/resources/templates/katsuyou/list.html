@@ -10,7 +10,7 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle">
+                <table id="displayTable" class="table table-bordered table-hover align-middle table-katsuyou">
                     <thead class="table-secondary">
                     <tr>
                         <th>#</th>
@@ -45,6 +45,46 @@
             </div>
         </div>
     </div>
+<style>
+    /* Biarkan kolom mengikuti isi, bukan header */
+    .table-katsuyou {
+        table-layout: auto;          /* default, tapi eksplisitkan */
+        width: 100%;
+    }
+
+    .table-katsuyou thead th {
+        width: 1px;                  /* header jadi “sekecil mungkin” */
+        white-space: normal;         /* izinkan header membungkus */
+        vertical-align: bottom;
+    }
+
+    .table-katsuyou tbody td {
+        white-space: nowrap;         /* kolom melebar mengikuti isi terpanjang */
+    }
+
+    /* Opsional: header tetap rapi di perangkat kecil */
+    @media (max-width: 992px) {
+        .table-katsuyou tbody td { white-space: normal; } /* boleh wrap saat layar kecil */
+    }
+</style>
+    <script>
+        $(function () {
+            if ($.fn.DataTable) {
+                $('#displayTable').DataTable({
+                    autoWidth: false,     // <-- penting: jangan hitung lebar dari header
+                    lengthChange: false,
+                    // Opsional: kalau kolom banyak, aktifkan scrollX
+                    scrollX: true,
+                    language: {
+                        search: "Cari:",
+                        lengthMenu: "Tampil _MENU_",
+                        info: "Menampilkan _START_–_END_ dari _TOTAL_",
+                        paginate: { previous: "Sebelumnya", next: "Berikutnya" }
+                    }
+                }).columns.adjust();     // pastikan recalculation setelah render
+            }
+        });
+    </script>
 
 </section>
 </body>
