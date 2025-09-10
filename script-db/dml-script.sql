@@ -19,6 +19,16 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Dumping data for table `conjugation_override`
+--
+
+LOCK TABLES `conjugation_override` WRITE;
+/*!40000 ALTER TABLE `conjugation_override` DISABLE KEYS */;
+INSERT INTO `conjugation_override` VALUES (1,3,'DICTIONARY','する','irregular'),(2,3,'MASU','します','irregular'),(3,3,'TE','して','irregular'),(4,3,'TA','した','irregular'),(5,3,'NAI','しない','irregular'),(6,3,'POTENTIAL','できる','する→できる'),(7,3,'VOLITIONAL','しよう','irregular'),(8,3,'CONDITIONAL','すれば','irregular'),(9,3,'CONDITIONAL_NEG','しなければ','irregular'),(10,3,'IMPERATIVE','しろ','irregular'),(11,3,'PASSIVE','される','irregular'),(12,3,'CAUSATIVE','させる','irregular'),(13,3,'CAUSATIVE_PASSIVE','させられる','irregular'),(14,4,'DICTIONARY','くる','irregular'),(15,4,'MASU','きます','irregular'),(16,4,'TE','きて','irregular'),(17,4,'TA','きた','irregular'),(18,4,'NAI','こない','irregular'),(19,4,'POTENTIAL','こられる','irregular'),(20,4,'VOLITIONAL','こよう','irregular'),(21,4,'CONDITIONAL','くれば','irregular'),(22,4,'CONDITIONAL_NEG','こなければ','irregular'),(23,4,'IMPERATIVE','こい','irregular'),(24,4,'PASSIVE','こられる','irregular'),(25,4,'CAUSATIVE','こさせる','irregular'),(26,4,'CAUSATIVE_PASSIVE','こさせられる','irregular'),(27,6,'CONDITIONAL','よければ','i-adj irregular'),(28,6,'CONDITIONAL_NEG','よくなければ','i-adj irregular');
+/*!40000 ALTER TABLE `conjugation_override` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `example`
 --
 
@@ -59,6 +69,16 @@ INSERT INTO `jlpt_words` VALUES (1,'L01-1','食べる','たべる','taberu','to 
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `lemma`
+--
+
+LOCK TABLES `lemma` WRITE;
+/*!40000 ALTER TABLE `lemma` DISABLE KEYS */;
+INSERT INTO `lemma` VALUES (1,'あう','会う','DOSHI_GODAN','う','bertemu'),(2,'たべる','食べる','DOSHI_ICHIDAN',NULL,'makan'),(3,'する','する','DOSHI_IRREGULAR',NULL,'melakukan'),(4,'くる','来る','DOSHI_IRREGULAR',NULL,'datang'),(5,'あつい','熱い','KEIYOSHI',NULL,'panas'),(6,'いい','良い','KEIYOSHI',NULL,'bagus'),(7,'ひま','暇','KEIYODOUSHI',NULL,'luang'),(8,'あめ','雨','MEISHI',NULL,'hujan');
+/*!40000 ALTER TABLE `lemma` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `level`
 --
 
@@ -79,56 +99,6 @@ INSERT INTO `main_note` VALUES (1,'L01-1.1',2,' ～が + V可能形','Ungkapan B
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
--- ====== Lemma (semi-otomatis) ======
-INSERT INTO lemma (id, headword_kana, kanji, pos_type, godan_ending_kana, meaning) VALUES
-                                                                                       (1, 'あう',   '会う',  'DOSHI_GODAN',    'う', 'bertemu'),
-                                                                                       (2, 'たべる', '食べる','DOSHI_ICHIDAN',  NULL, 'makan'),
-                                                                                       (3, 'する',   'する',  'DOSHI_IRREGULAR',NULL, 'melakukan'),
-                                                                                       (4, 'くる',   '来る',  'DOSHI_IRREGULAR',NULL, 'datang'),
-                                                                                       (5, 'あつい', '熱い',  'KEIYOSHI',       NULL, 'panas'),
-                                                                                       (6, 'いい',   '良い',  'KEIYOSHI',       NULL, 'bagus'),
-                                                                                       (7, 'ひま',   '暇',    'KEIYODOUSHI',    NULL, 'luang'),
-                                                                                       (8, 'あめ',   '雨',    'MEISHI',         NULL, 'hujan');
-
--- ====== Override (irregular & compound minimal) ======
-
--- する (id=3)
-INSERT INTO conjugation_override (lemma_id, form_type, surface, note) VALUES
-                                                                          (3,'DICTIONARY','する','irregular'),
-                                                                          (3,'MASU','します','irregular'),
-                                                                          (3,'TE','して','irregular'),
-                                                                          (3,'TA','した','irregular'),
-                                                                          (3,'NAI','しない','irregular'),
-                                                                          (3,'POTENTIAL','できる','する→できる'),
-                                                                          (3,'VOLITIONAL','しよう','irregular'),
-                                                                          (3,'CONDITIONAL','すれば','irregular'),
-                                                                          (3,'CONDITIONAL_NEG','しなければ','irregular'),
-                                                                          (3,'IMPERATIVE','しろ','irregular'),
-                                                                          (3,'PASSIVE','される','irregular'),
-                                                                          (3,'CAUSATIVE','させる','irregular'),
-                                                                          (3,'CAUSATIVE_PASSIVE','させられる','irregular');
-
--- くる (id=4)
-INSERT INTO conjugation_override (lemma_id, form_type, surface, note) VALUES
-                                                                          (4,'DICTIONARY','くる','irregular'),
-                                                                          (4,'MASU','きます','irregular'),
-                                                                          (4,'TE','きて','irregular'),
-                                                                          (4,'TA','きた','irregular'),
-                                                                          (4,'NAI','こない','irregular'),
-                                                                          (4,'POTENTIAL','こられる','irregular'),
-                                                                          (4,'VOLITIONAL','こよう','irregular'),
-                                                                          (4,'CONDITIONAL','くれば','irregular'),
-                                                                          (4,'CONDITIONAL_NEG','こなければ','irregular'),
-                                                                          (4,'IMPERATIVE','こい','irregular'),
-                                                                          (4,'PASSIVE','こられる','irregular'),
-                                                                          (4,'CAUSATIVE','こさせる','irregular'),
-                                                                          (4,'CAUSATIVE_PASSIVE','こさせられる','irregular');
-
--- いい (id=6) – i-adj irregular (conditional)
-INSERT INTO conjugation_override (lemma_id, form_type, surface, note) VALUES
-                                                                          (6,'CONDITIONAL','よければ','i-adj irregular'),
-                                                                          (6,'CONDITIONAL_NEG','よくなければ','i-adj irregular');
-
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
@@ -137,4 +107,4 @@ INSERT INTO conjugation_override (lemma_id, form_type, surface, note) VALUES
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-09  4:19:37
+-- Dump completed on 2025-09-10  4:33:02
