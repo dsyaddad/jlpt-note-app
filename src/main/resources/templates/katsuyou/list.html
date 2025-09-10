@@ -7,84 +7,170 @@
 </head>
 <body>
 <section>
-    <div class="card shadow-sm">
+    <div class="example-block mb-2 card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h6 style="margin-bottom: 0">Katsuyou / Conjugation</h6>
+        </div>
         <div class="card-body">
-            <div class="table-responsive">
-                <table id="displayTable" class="table table-bordered table-hover align-middle table-katsuyou">
-                    <thead class="table-secondary">
-                    <tr>
-                        <th>#</th>
-                        <th>Headword</th>
-                        <th>POS</th>
-                        <th th:each="ft : ${formTypes}" th:text="${ft}"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="item, idx : ${items}">
-                        <td th:text="${idx.index + 1}"></td>
-                        <td>
-                            <figure class="mb-0">
-                                <blockquote class="blockquote">
-                                    <p th:text="${item.request.kanji}"></p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer mb-0">
-                                    <cite th:text="${item.request.headwordKana}"></cite>
-                                </figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <span class="badge bg-info text-dark" th:text="${item.request.posType}"></span>
-                        </td>
-                        <!-- lookup by key -->
-                        <td th:each="ft : ${formTypes}">
-                            <span th:text="${item.formMap.get(ft)} ?: '—'"></span>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div id="dtTopScroll" class="dt-top-scroll"><div class="dt-top-scroll-inner"></div></div>
+            <table id="displayTable" class="table table-bordered table-hover align-middle table-katsuyou">
+                <thead class="table-secondary">
+                <tr>
+                    <th>#</th>
+                    <th>Headword</th>
+                    <th>POS</th>
+                    <th th:each="ft : ${formTypes}" th:text="${ft}"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="item, idx : ${items}">
+                    <td th:text="${idx.index + 1}"></td>
+                    <td>
+                        <figure class="mb-0">
+                            <blockquote class="blockquote">
+                                <p th:text="${item.request.kanji}"></p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0">
+                                <cite th:text="${item.request.headwordKana}"></cite>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <span class="badge bg-info text-dark" th:text="${item.request.posType}"></span>
+                    </td>
+                    <!-- lookup by key -->
+                    <td th:each="ft : ${formTypes}">
+                        <span th:text="${item.formMap.get(ft)} ?: '—'"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-<style>
-    /* Biarkan kolom mengikuti isi, bukan header */
-    .table-katsuyou {
-        table-layout: auto;          /* default, tapi eksplisitkan */
-        width: 100%;
-    }
 
-    .table-katsuyou thead th {
-        width: 1px;                  /* header jadi “sekecil mungkin” */
-        white-space: normal;         /* izinkan header membungkus */
-        vertical-align: bottom;
-    }
+    <style>
+        /* ==== Layout tabel: lebar kolom mengikuti isi terpanjang ==== */
+        .table-katsuyou { table-layout: auto; width: 100%; margin-bottom: 0; }
+        .table-katsuyou thead th { white-space: normal; vertical-align: bottom; }
+        .table-katsuyou tbody td { white-space: nowrap; }
+        @media (max-width: 992px) {
+            .table-katsuyou tbody td { white-space: normal; }
+        }
+        /* pastikan box-sizing konsisten, menghindari selisih padding/border */
+        .dataTables_scrollHead table,
+        .dataTables_scrollBody table,
+        .dataTables_scrollHead th, .dataTables_scrollHead td,
+        .dataTables_scrollBody th, .dataTables_scrollBody td {
+            box-sizing: border-box;
+        }
 
-    .table-katsuyou tbody td {
-        white-space: nowrap;         /* kolom melebar mengikuti isi terpanjang */
-    }
+        /* ==== Search bar di kiri ==== */
+        .dataTables_filter { float: left !important; text-align: left !important; }
 
-    /* Opsional: header tetap rapi di perangkat kecil */
-    @media (max-width: 992px) {
-        .table-katsuyou tbody td { white-space: normal; } /* boleh wrap saat layar kecil */
-    }
-</style>
+        /* ==== Matikan scrollbar bawaan head (kita pakai top scroller) ==== */
+        .dataTables_scrollHead { overflow-x: hidden !important; }
+
+        /* ==== FixedHeader look (plugin) ==== */
+        .fixedHeader-floating, .fixedHeader-locked {
+            background: #fff;      /* solid bg agar tidak transparan */
+            z-index: 1050;         /* di atas konten */
+            border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+
+        /* ==== Top horizontal scrollbar (sticky) ==== */
+        .dt-top-scroll{
+            position: sticky;                    /* nempel di atas saat scroll */
+            top: var(--sticky-offset, 0);        /* di-set dari JS, contoh: 16px + navbar */
+            z-index: 1060;                       /* di atas fixed header */
+            height: 16px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            scrollbar-gutter: stable;
+        }
+        .dt-top-scroll-inner{ height: 1px; }   /* elemen dummy untuk lebar scroll */
+
+        /* ==== (Opsional) rapikan jarak antar elemen di wrapper ==== */
+        .dataTables_wrapper .row { margin-left: 0; margin-right: 0; }
+    </style>
+
+
+    <!-- jQuery harus paling dulu -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables core -->
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables Bootstrap 5 integration -->
+    <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
+    <!-- FixedHeader CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.4.0/css/fixedHeader.bootstrap5.min.css">
+    <!-- FixedHeader JS -->
+    <script src="https://cdn.datatables.net/fixedheader/3.4.0/js/dataTables.fixedHeader.min.js"></script>
+
     <script>
-        $(function () {
-            if ($.fn.DataTable) {
-                $('#displayTable').DataTable({
-                    autoWidth: false,     // <-- penting: jangan hitung lebar dari header
-                    lengthChange: false,
-                    // Opsional: kalau kolom banyak, aktifkan scrollX
-                    scrollX: true,
-                    language: {
-                        search: "Cari:",
-                        lengthMenu: "Tampil _MENU_",
-                        info: "Menampilkan _START_–_END_ dari _TOTAL_",
-                        paginate: { previous: "Sebelumnya", next: "Berikutnya" }
-                    }
-                }).columns.adjust();     // pastikan recalculation setelah render
+        document.addEventListener('DOMContentLoaded', function () {
+            const $tbl = $('#displayTable');
+            if (!$tbl.length || !$.fn || !$.fn.DataTable) return;
+
+            const navOffsetPx  = 0;      // set 56 kalau ada navbar fixed
+            const topBarHeight = 0;
+            const headerOffsetPx = navOffsetPx + topBarHeight;
+
+            const topBar = document.getElementById('dtTopScroll');
+            if (topBar) topBar.style.setProperty('--sticky-offset', headerOffsetPx + 'px');
+
+            const dt = $tbl.DataTable({
+                autoWidth: false,
+                scrollX: true,
+                paging: false,
+                info: false,
+                lengthChange: false,
+                deferRender: true,
+                fixedHeader: { header: true, headerOffset: headerOffsetPx },
+                dom: "<'row'<'col-sm-6'f>>t",
+                language: { search: "Cari:" }
+            });
+
+            const $container = $(dt.table().container());
+            const $body = $container.find('.dataTables_scrollBody');
+            const $top  = $('#dtTopScroll');
+            const $topInner = $top.find('.dt-top-scroll-inner');
+
+            function resizeTopScroller() {
+                const bodyEl = $body.get(0);
+                if (!bodyEl) return;
+                $topInner.width(bodyEl.scrollWidth || $body.prop('scrollWidth'));
+                $top.scrollLeft($body.scrollLeft());
             }
+
+            function adjustAll() {
+                dt.columns.adjust();        // 1) hitung ulang lebar kolom
+                if (dt.fixedHeader) dt.fixedHeader.adjust(); // 2) sinkronkan header clone
+                resizeTopScroller();        // 3) set lebar top scroller
+            }
+
+            // sinkronisasi top <-> body
+            let syncing = false;
+            $top.on('scroll', function () {
+                if (syncing) return; syncing = true;
+                $body.scrollLeft(this.scrollLeft);
+                syncing = false;
+            });
+            $body.on('scroll', function () {
+                if (syncing) return; syncing = true;
+                $top.scrollLeft(this.scrollLeft);
+                syncing = false;
+            });
+
+            // panggil pada waktu yang tepat
+            adjustAll();
+            dt.on('init.dt', adjustAll);
+            dt.on('draw.dt', () => setTimeout(adjustAll, 0));
+            $(window).on('resize.dt', () => setTimeout(adjustAll, 0));
+
         });
     </script>
+
 
 </section>
 </body>
