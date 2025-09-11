@@ -118,7 +118,7 @@ public class MainNoteController {
     public String exportDml(RedirectAttributes redirectAttributes) {
         try {
             GlobalUtil.exportDml();
-            redirectAttributes.addFlashAttribute("message", "Exported to script-db/dml-script.sql successfully.");
+            redirectAttributes.addFlashAttribute("message", "Exported to script-db/02_dml.sql successfully.");
         } catch (Exception e) {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("message", "Error during export: " + e.getMessage());

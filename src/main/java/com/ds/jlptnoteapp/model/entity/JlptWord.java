@@ -50,9 +50,6 @@ public class JlptWord implements Serializable {
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
-
     @PrePersist
     public void prePersist() {
         if (this.createdAt == null) {
@@ -63,11 +60,6 @@ public class JlptWord implements Serializable {
                 f.setWord(this);
             }
         }
-    }
-
-    @PreUpdate
-    public void preUpdate() {
-        this.updatedAt = LocalDateTime.now();
     }
 
     @ManyToOne

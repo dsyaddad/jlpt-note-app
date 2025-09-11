@@ -10,25 +10,31 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: appuser
       MYSQL_PASSWORD: apppass
-    command: [
-      "--character-set-server=utf8mb4",
-      "--collation-server=utf8mb4_unicode_ci"
-    ]
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
     ports:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
-      - ./script-db/ddl-script.sql:/docker-entrypoint-initdb.d/ddl-script.sql:ro
-      - ./script-db/dml-script.sql:/docker-entrypoint-initdb.d/dml-script.sql:ro
+      - ./script-db/01_ddl.sql:/docker-entrypoint-initdb.d/01_ddl.sql:ro
+      - ./script-db/02_dml.sql:/docker-entrypoint-initdb.d/02_dml.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uappuser", "-papppass"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
 
   app:
     build: .
     container_name: notes-app
     restart: always
     depends_on:
-      - db
+      db:
+        condition: service_healthy   # <- tunggu DB sehat
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/notesdb
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/notesdb?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=utf8
       SPRING_DATASOURCE_USERNAME: appuser
       SPRING_DATASOURCE_PASSWORD: apppass
       SPRING_JPA_HIBERNATE_DDL_AUTO: none

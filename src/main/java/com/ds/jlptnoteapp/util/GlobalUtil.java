@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class GlobalUtil {
     public static void exportDml() {
         try {
-            File outputFile = Paths.get("script-db", "dml-script.sql").toFile();
+            File outputFile = Paths.get("script-db", "02_dml.sql").toFile();
 
             if (outputFile.exists()) {
                 log.info("Existing file {} will be overwritten.", outputFile.getAbsolutePath());

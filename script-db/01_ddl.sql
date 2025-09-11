@@ -57,8 +57,7 @@ CREATE TABLE jlpt_words (
                             meaning_id TEXT,
                             pos VARCHAR(100),
                             note TEXT,
-                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                            updated_at TIMESTAMP NULL
+                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE jlpt_examples (
@@ -68,39 +67,21 @@ CREATE TABLE jlpt_examples (
                                translation TEXT,
                                note TEXT
 );
--- Tabel kata dasar (lemma)
+-- Tabel kata dasar (lemma) tanpa constraint/keys
 CREATE TABLE lemma (
-                       id                  BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                       headword_kana       VARCHAR(64)  NOT NULL,  -- あう / たべる / いい / ひま / あめ
-                       kanji               VARCHAR(64)  NULL,      -- 会う / 食べる / 良い / 暇 / 雨
-                       pos_type            ENUM('DOSHI_GODAN','DOSHI_ICHIDAN','DOSHI_IRREGULAR','KEIYOSHI','KEIYODOUSHI','MEISHI') NOT NULL,
-                       godan_ending_kana   CHAR(1) NULL,           -- う/つ/る/む/ぶ/ぬ/く/ぐ/す (hanya untuk 五段)
-                       meaning             VARCHAR(255) NULL,
-
-    -- Validasi sederhana (wajib ending jika godan; selain itu harus NULL)
-                       CONSTRAINT ck_godan_ending
-                           CHECK (
-                               (pos_type <> 'DOSHI_GODAN' AND godan_ending_kana IS NULL)
-                                   OR
-                               (pos_type = 'DOSHI_GODAN' AND godan_ending_kana IN ('う','つ','る','む','ぶ','ぬ','く','ぐ','す'))
-                               ),
-
-                       KEY ix_lemma_headword (headword_kana),
-                       KEY ix_lemma_pos (pos_type)
+                       id                BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                       headword_kana     VARCHAR(64)  NOT NULL,  -- あう / たべる / いい / ひま / あめ
+                       kanji             VARCHAR(64)  NULL,      -- 会う / 食べる / 良い / 暇 / 雨
+                       pos_type          VARCHAR(32)  NOT NULL,  -- asalnya ENUM, jadi VARCHAR bebas
+                       godan_ending_kana CHAR(1)      NULL,      -- asalnya constrained, sekarang bebas
+                       meaning           VARCHAR(255) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;
 
--- Tabel override (hanya untuk anomali: する / くる / いい / compound)
+-- Tabel override (tanpa constraint/keys)
 CREATE TABLE conjugation_override (
-                                      id          BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                                      lemma_id    BIGINT UNSIGNED NOT NULL,
-                                      form_type   ENUM('DICTIONARY','MASU','TE','TA','NAI','POTENTIAL','VOLITIONAL','CONDITIONAL','CONDITIONAL_NEG','IMPERATIVE','PASSIVE','CAUSATIVE','CAUSATIVE_PASSIVE') NOT NULL,
-                                      surface     VARCHAR(64) NOT NULL,    -- hasil konjugasi override
-                                      note        VARCHAR(255) NULL,
-
-                                      CONSTRAINT fk_override_lemma
-                                          FOREIGN KEY (lemma_id) REFERENCES lemma(id)
-                                              ON DELETE CASCADE ON UPDATE CASCADE,
-
-                                      UNIQUE KEY uq_override (lemma_id, form_type),
-                                      KEY ix_override_form (form_type)
+                                      id        BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                                      lemma_id  BIGINT UNSIGNED NOT NULL,   -- tidak ada FOREIGN KEY
+                                      form_type VARCHAR(32)  NOT NULL,      -- asalnya ENUM
+                                      surface   VARCHAR(64)  NOT NULL,      -- hasil konjugasi override
+                                      note      VARCHAR(255) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;

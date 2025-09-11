@@ -64,7 +64,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `jlpt_words` WRITE;
 /*!40000 ALTER TABLE `jlpt_words` DISABLE KEYS */;
-INSERT INTO `jlpt_words` VALUES (1,'L01-1','食べる','たべる','taberu','to eat','makan','DOSHI_ICHIDAN','Basic verb for eating.','2025-09-03 07:44:40',NULL,1),(2,'L01-1','大きい','おおきい','ookii','big, large','besar','KEIYOSHI','Common adjective.','2025-09-03 07:44:40',NULL,1),(3,'L01-1','学校','がっこう','gakkou','school','sekolah','MEISHI','Place for studying.','2025-09-03 07:44:40',NULL,1),(14,'L01.2','買う','かう','kau','Buy','Beli','DOSHI_ICHIDAN','kata kerja dari verb 1','2025-09-09 04:19:10',NULL,1);
+INSERT INTO `jlpt_words` VALUES (1,'L01-1',1,'食べる','たべる','taberu','to eat','makan','DOSHI_ICHIDAN','Basic verb for eating.','2025-09-03 07:44:40'),(2,'L01-1',1,'大きい','おおきい','ookii','big, large','besar','KEIYOSHI','Common adjective.','2025-09-03 07:44:40'),(3,'L01-1',1,'学校','がっこう','gakkou','school','sekolah','MEISHI','Place for studying.','2025-09-03 07:44:40'),(14,'L01.2',1,'買う','かう','kau','Buy','Beli','DOSHI_ICHIDAN','kata kerja dari verb 1','2025-09-09 04:19:10');
 /*!40000 ALTER TABLE `jlpt_words` ENABLE KEYS */;
 UNLOCK TABLES;
 
