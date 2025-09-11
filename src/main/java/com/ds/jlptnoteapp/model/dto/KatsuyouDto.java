@@ -9,7 +9,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor @Builder
 public class KatsuyouDto {
-    private ConjugationRequestDto request;
+    private LemmaDto lemmaDto;
     private ConjugationResultDto result;
     private Map<String,String> formMap;
 }

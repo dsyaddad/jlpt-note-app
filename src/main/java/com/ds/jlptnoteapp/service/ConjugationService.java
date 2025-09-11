@@ -3,6 +3,7 @@ package com.ds.jlptnoteapp.service;
 import com.ds.jlptnoteapp.model.dto.ConjugationRequestDto;
 import com.ds.jlptnoteapp.model.dto.ConjugationResultDto;
 import com.ds.jlptnoteapp.model.dto.InflectedDto;
+import com.ds.jlptnoteapp.model.dto.KatsuyouDto;
 import com.ds.jlptnoteapp.model.entity.ConjugationOverride;
 import com.ds.jlptnoteapp.model.entity.Lemma;
 import com.ds.jlptnoteapp.model.enums.*;
@@ -22,6 +23,7 @@ import java.util.List;
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -31,39 +33,26 @@ public class ConjugationService {
     private final ConjugationOverrideRepository overrideRepo;
     private final LemmaMapper lemmaMapper;
 
-    public List<ConjugationRequestDto> loadConjugationRequestsFromJson(String pathFilejson) {
-        if (pathFilejson == null || pathFilejson.isBlank()) {
-            throw new IllegalArgumentException("pathFilejson must not be null/blank");
-        }
+    public List<KatsuyouDto> getAllSample(){
+        List<Lemma> sampleLemmas = lemmaRepo.findAll();
 
-        // 1) Try classpath
-        InputStream is = this.getClass().getResourceAsStream(pathFilejson);
-        if (is == null && !pathFilejson.startsWith("/")) {
-            is = this.getClass().getResourceAsStream("/" + pathFilejson);
-        }
-
-        // 2) Fallback: filesystem
-        if (is == null) {
-            Path p = Paths.get(pathFilejson).normalize();
-            try {
-                if (Files.exists(p)) {
-                    is = Files.newInputStream(p);
-                }
-            } catch (IOException e) {
-                throw new RuntimeException("Failed to open filesystem path: " + p, e);
-            }
-        }
-
-        if (is == null) {
-            throw new IllegalArgumentException("Resource not found: " + pathFilejson + " (checked classpath & filesystem)");
-        }
-
-        try (InputStream in = is) {
-            ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(in, new TypeReference<List<ConjugationRequestDto>>() {});
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to read/parse JSON from: " + pathFilejson, e);
-        }
+        return sampleLemmas.stream()
+                .map(lemma -> {
+                    ConjugationResultDto result = buildResult(lemma);
+                    Map<String,String> formMap = result.getForms().stream()
+                            .collect(Collectors.toMap(
+                                    f -> f.getFormType().name(),   // key = String
+                                    f -> f.getSurface(),
+                                    (a,b) -> a,
+                                    LinkedHashMap::new
+                            ));
+                    return KatsuyouDto.builder()
+                            .lemmaDto(lemmaMapper.toDto(lemma))
+                            .result(result)
+                            .formMap(formMap)
+                            .build();
+                })
+                .toList();
     }
 
     // ---------- API publik ----------

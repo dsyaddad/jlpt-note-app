@@ -28,15 +28,15 @@
                     <td>
                         <figure class="mb-0">
                             <blockquote class="blockquote">
-                                <p th:text="${item.request.kanji}"></p>
+                                <p th:text="${item.lemmaDto.kanji}"></p>
                             </blockquote>
                             <figcaption class="blockquote-footer mb-0">
-                                <cite th:text="${item.request.headwordKana}"></cite>
+                                <cite th:text="${item.lemmaDto.headwordKana}"></cite>
                             </figcaption>
                         </figure>
                     </td>
                     <td>
-                        <span class="badge bg-info text-dark" th:text="${item.request.posType}"></span>
+                        <span class="badge bg-info text-dark" th:text="${item.lemmaDto.posType}"></span>
                     </td>
                     <!-- lookup by key -->
                     <td th:each="ft : ${formTypes}">
