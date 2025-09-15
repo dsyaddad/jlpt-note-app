@@ -127,11 +127,9 @@
                                  (note.formulas == null or note.formulas.isEmpty()) ?
                                    'Formula belum ditambahkan' :
                                    (
-                                     (note.formulas.?[examples != null and !examples.isEmpty()].isEmpty()) ?
+                                     (formula.examples == null or formula.examples.isEmpty()) ?
                                        'Example belum ditambahkan' :
-                                       '<ul>' + note.formulas
-                                         .![#strings.arrayJoin(examples.![ '<li>' + sampleKanji + '</li>' ], '')]
-                                         + '</ul>'
+                                       '<ul>' + #strings.arrayJoin(formula.examples.![ '<li>' + sampleKanji + '</li>' ], '') + '</ul>'
                                    )
                                }">
                                 <span class="badge bg-primary" th:text="${formula.pattern}"></span>
