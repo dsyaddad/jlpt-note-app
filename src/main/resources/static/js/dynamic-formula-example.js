@@ -1,6 +1,18 @@
 let formulaIdx = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
+    const hiddenInput = document.getElementById('combinedSection');
+    const sectionInput = document.getElementById('section');
+    const subSectionInput = document.getElementById('subSection');
+    const combinedValue = hiddenInput.value;
+    if (combinedValue) {
+        const parts = combinedValue.split('-', 2); // split maksimal 2 bagian
+        sectionInput.value = parts[0] || '';
+        subSectionInput.value = parts[1] || '';
+    }
+    document.querySelector('form').addEventListener('submit', function() {
+        hiddenInput.value = sectionInput.value.trim() + (subSectionInput.value.trim() ? '-' + subSectionInput.value.trim() : '');
+    });
     // inisialisasi index dari DOM yang sudah di-render thymeleaf
     const blocks = document.querySelectorAll('#formulas-container .formula-block');
     formulaIdx = blocks.length;
