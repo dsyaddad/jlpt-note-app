@@ -26,7 +26,7 @@ public class MainNoteController {
     public String listMainNotes(
             MainNoteDto filter, // Spring akan otomatis isi dari query param
             @RequestParam(value = "page", defaultValue = "0") int page,
-            @RequestParam(value = "size", defaultValue = "30") int size,
+            @RequestParam(value = "size", defaultValue = "300") int size,
             Model model
     ) {
         filter.checkFilterAndAdjust(globalCachedVariable);
