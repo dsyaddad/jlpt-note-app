@@ -56,9 +56,6 @@ public class MainNoteSpecification {
                 orPredicates.add(cb.like(cb.lower(formulaJoin.get("subFunction")), keyword));
                 orPredicates.add(cb.like(cb.lower(formulaJoin.get("subUseWhen")), keyword));
                 orPredicates.add(cb.like(cb.lower(formulaJoin.get("subNote")), keyword));
-
-                // supaya tidak duplikat row akibat join
-                query.distinct(true);
             }
 
             if (dto.getCreatedAt() != null) {
