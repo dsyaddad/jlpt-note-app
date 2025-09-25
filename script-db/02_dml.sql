@@ -28,6 +28,25 @@ INSERT INTO `conjugation_override` VALUES (1,3,'DICTIONARY','する','irregular'
 /*!40000 ALTER TABLE `conjugation_override` ENABLE KEYS */;
 UNLOCK TABLES;
 
+--
+-- Dumping data for table `example`
+--
+
+LOCK TABLES `example` WRITE;
+/*!40000 ALTER TABLE `example` DISABLE KEYS */;
+INSERT INTO `example` VALUES (1,1,'私は学生です。','わたしはがくせいです。','Saya adalah murid.',''),(2,1,'これは本です。','これはほんです。','Ini adalah buku.',''),(3,2,'犬がいます。','いぬがいます。','Ada anjing',''),(4,2,'田中さんが来ます。','たなかさんがきます。','Mr Tanaka yang datang ',''),(5,3,'本を読みます。','ほんをよみます。','Membaca buku',''),(6,3,'ご飯を食べます。','ごはんをたべます。','Makan nasi','');
+/*!40000 ALTER TABLE `example` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `formula`
+--
+
+LOCK TABLES `formula` WRITE;
+/*!40000 ALTER TABLE `formula` DISABLE KEYS */;
+INSERT INTO `formula` VALUES (1,1,'1.1','Noun + は + Noun/Adjective/Verb','Menunjukkan topik pembicaraan (“tentang …”).','Saat ingin menekankan konteks umum, bukan detail spesifik.','Bukan selalu “subjek”, tapi lebih ke tema kalimat.'),(2,1,'1.1','Noun + が + Verb/Adjective','Menandai subjek fokus, sering dipakai untuk identifikasi atau saat informasi baru.','Kalau ingin menekankan “siapa/apa” yang melakukan.','Banyak muncul di jawaban pertanyaan.'),(3,1,'1.1','Noun + を + Verb','Menunjukkan objek yang terkena aksi.','Saat kata kerja transitive (ada objek).','Posisi biasanya sebelum kata kerja.');
+/*!40000 ALTER TABLE `formula` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Dumping data for table `jlpt_examples`
@@ -69,6 +88,17 @@ INSERT INTO `level` VALUES (1,'N5','Level: Mampu memahami bahasa Jepang dasar. T
 /*!40000 ALTER TABLE `level` ENABLE KEYS */;
 UNLOCK TABLES;
 
+--
+-- Dumping data for table `main_note`
+--
+
+LOCK TABLES `main_note` WRITE;
+/*!40000 ALTER TABLE `main_note` DISABLE KEYS */;
+INSERT INTO `main_note` VALUES (1,'L01-1.1',1,'Base of 「は」「が」「を」','Partikel penanda dasar kalimat','Digunakan untuk membentuk kerangka kalimat: subjek, topik, dan objek & Mereka menentukan siapa melakukan apa.','-','は = topik, が = subjek fokus, を = objek langsung. (は = “tentang X” | が = “X yang (spesifik)”)','2025-09-25 07:47:24');
+/*!40000 ALTER TABLE `main_note` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
@@ -77,4 +107,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-16  4:47:29
+-- Dump completed on 2025-09-25  7:47:42
