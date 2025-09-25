@@ -28,15 +28,6 @@ public class Formula implements Serializable {
     @Column(name = "pattern")
     private String pattern;
 
-    @Column(name = "is_changes_form")
-    private Boolean isChangesForm;
-
-    @Column(name = "before_pattern")
-    private String beforePattern;
-
-    @Column(name = "after_pattern")
-    private String afterPattern;
-
     @Column(name = "sub_function")
     private String subFunction;
 

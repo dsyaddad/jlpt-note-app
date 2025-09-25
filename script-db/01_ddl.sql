@@ -31,9 +31,6 @@ CREATE TABLE formula (
                          main_note_id BIGINT,
                          type_form VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          pattern VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-                         is_changes_form BOOLEAN,
-                         before_pattern VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-                         after_pattern VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          sub_function TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          sub_use_when TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
                          sub_note TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
