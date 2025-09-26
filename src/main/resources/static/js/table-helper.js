@@ -38,6 +38,19 @@ function makeResizable(table, storageKey) {
     });
 }
 document.addEventListener("DOMContentLoaded", function () {
+    // Inisialisasi DataTables untuk tabel dengan ID 'resizableTable'
+    new DataTable('#resizableTable', {
+        "paging": false,
+        "info": false,
+        "lengthChange": false,
+        // "scrollX": true,
+        "dom": "<'row'<'col-sm-6'f>>t",
+        "language": { search: "" }
+    });
+    $('#resizableTable_filter input[type="search"]')
+        .attr('placeholder', 'Searching ...')
+        .css('margin-bottom', '5px');
+
     const bulkDeleteBtn = document.getElementById('bulkDeleteBtn');
     const checkboxes = document.querySelectorAll('.rowCheckbox');
     const selectAll = document.getElementById('selectAll');
@@ -79,4 +92,5 @@ document.addEventListener("DOMContentLoaded", function () {
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
     })
+
 });

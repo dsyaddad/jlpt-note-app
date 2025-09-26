@@ -168,12 +168,14 @@
         </ul>
     </nav>
     <link rel="stylesheet" th:href="@{/css/table-helper.css}">
+    <!-- jQuery harus paling dulu -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables core -->
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables Bootstrap 5 integration -->
+    <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
     <script th:src="@{/js/table-helper.js}"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            makeResizable(document.getElementById("resizableTable"), "mainNoteTableWidths");
-        });
-    </script>
+
 </section>
 </body>
 
