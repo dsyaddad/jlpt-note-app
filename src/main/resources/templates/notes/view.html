@@ -48,13 +48,13 @@
                         </table>
                         <!-- Loop examples -->
                         <div th:if="${formula.examples != null and #lists.size(formula.examples) > 0}">
-                            <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div th:id="${#strings.concat('exampleCarousel-',formula.id)}" class="carousel slide" data-bs-ride="carousel">
 
                                 <!-- Indicators (titik navigasi bawah) -->
                                 <div class="carousel-indicators">
                                     <button th:each="example, stat : ${formula.examples}"
                                             type="button"
-                                            data-bs-target="#exampleCarousel"
+                                            th:data-bs-target="${#strings.concat('#exampleCarousel-',formula.id)}"
                                             th:attr="data-bs-slide-to=${stat.index}, aria-current=${stat.index == 0} ? 'true' : null"
                                             th:classappend="${stat.index == 0} ? ' active'">
                                     </button>
@@ -94,10 +94,10 @@
                                 </div>
 
                                 <!-- Controls (panah kiri kanan) -->
-                                <button class="carousel-control-prev" type="button" data-bs-target="#exampleCarousel" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" th:data-bs-target="${#strings.concat('#exampleCarousel-',formula.id)}" data-bs-slide="prev">
                                     <i class="fas fa-chevron-left fa-3x text-success"></i>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#exampleCarousel" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" th:data-bs-target="${#strings.concat('#exampleCarousel-',formula.id)}" data-bs-slide="next">
                                     <i class="fas fa-chevron-right fa-3x text-success"></i>
                                 </button>
 
