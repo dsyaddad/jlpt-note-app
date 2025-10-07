@@ -33,7 +33,7 @@ public class JlptWordController {
     public String listWords(
             @ModelAttribute("filter") JlptWordDto filter,
             @RequestParam(value = "page", defaultValue = "0") int page,
-            @RequestParam(value = "size", defaultValue = "30") int size,
+            @RequestParam(value = "size", defaultValue = "10000") int size,
             Model model
     ) {
         filter.adjustFilter(globalCachedVariable);
