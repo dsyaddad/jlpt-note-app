@@ -2,17 +2,27 @@ package com.ds.jlptnoteapp.util;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Optional;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @UtilityClass
 @Log4j2
 public class GlobalUtil {
+
+    public static String CONTAINER;
+    public static String DB_NAME;
+    public static String USER;
+    public static String PASSWORD;
+    public static String SQL_FILE_PATH;
+
     public static void exportDml() {
         try {
             File outputFile = Paths.get("script-db", "02_dml.sql").toFile();
@@ -82,5 +92,105 @@ public class GlobalUtil {
         return Optional.of(new String[]{ left, right });
     }
 
+    public void truncateSelectedThenImport(List<String> tableWhitelist) {
+        if (tableWhitelist == null || tableWhitelist.isEmpty()) {
+            throw new IllegalArgumentException("Daftar tabel untuk dikosongkan tidak boleh kosong.");
+        }
 
+        try {
+            // 1) TRUNCATE yang dipilih
+            String truncateScript = buildTruncateScript(tableWhitelist);
+            execMysqlWithInlineSql(truncateScript);
+            log.info("TRUNCATE selected tables done: {}", tableWhitelist);
+
+            // 2) Import DML dari host file
+            Path sql = Path.of(SQL_FILE_PATH);
+            if (!Files.exists(sql)) {
+                throw new RuntimeException("File SQL tidak ditemukan: " + sql.toAbsolutePath());
+            }
+            importSqlFromHostFile(sql);
+            log.info("DML import successful from {}", sql.toAbsolutePath());
+
+        } catch (Exception e) {
+            throw new RuntimeException("Maintenance failed (truncateSelectedThenImport)", e);
+        }
+    }
+
+    /**
+     * Hanya import DML (tanpa truncate).
+     */
+    public void importOnly() {
+        try {
+            Path sql = Path.of(SQL_FILE_PATH);
+            if (!Files.exists(sql)) {
+                throw new RuntimeException("File SQL tidak ditemukan: " + sql.toAbsolutePath());
+            }
+            importSqlFromHostFile(sql);
+            log.info("DML import successful from {}", sql.toAbsolutePath());
+        } catch (Exception e) {
+            throw new RuntimeException("DML import failed", e);
+        }
+    }
+
+    /**
+     * Hanya TRUNCATE tabel yang dipilih (tanpa import).
+     */
+    public void truncateSelectedOnly(List<String> tableWhitelist) {
+        if (tableWhitelist == null || tableWhitelist.isEmpty()) {
+            throw new IllegalArgumentException("Daftar tabel untuk dikosongkan tidak boleh kosong.");
+        }
+        try {
+            String truncateScript = buildTruncateScript(tableWhitelist);
+            execMysqlWithInlineSql(truncateScript);
+            log.info("TRUNCATE selected tables done: {}", tableWhitelist);
+        } catch (Exception e) {
+            throw new RuntimeException("TRUNCATE failed", e);
+        }
+    }
+
+    // ------ helpers ------
+
+    private String buildTruncateScript(List<String> tables) {
+        StringBuilder sb = new StringBuilder("SET FOREIGN_KEY_CHECKS=0; ");
+        for (String t : tables) {
+            if (t == null || t.isBlank()) continue;
+            sb.append("TRUNCATE TABLE `").append(t.trim()).append("`; ");
+        }
+        sb.append("SET FOREIGN_KEY_CHECKS=1;");
+        return sb.toString();
+    }
+
+    private void execMysqlWithInlineSql(String sql) throws IOException, InterruptedException {
+        ProcessBuilder pb = new ProcessBuilder(
+                "docker", "exec", "-i", CONTAINER,
+                "mysql",
+                "-u", USER,
+                "-p" + PASSWORD,
+                "--default-character-set=utf8mb4",
+                DB_NAME,
+                "-e", sql
+        );
+        pb.redirectError(ProcessBuilder.Redirect.INHERIT);
+        Process p = pb.start();
+        int code = p.waitFor();
+        if (code != 0) throw new RuntimeException("MySQL exec failed, exit code " + code);
+    }
+
+    private void importSqlFromHostFile(Path sqlFile) throws IOException, InterruptedException {
+        // Stabil & simpel: pipe stdin dari host file ke mysql di dalam CONTAINER
+        ProcessBuilder pb = new ProcessBuilder(
+                "docker", "exec", "-i", CONTAINER,
+                "mysql",
+                "-u", USER,
+                "-p" + PASSWORD,
+                "--default-character-set=utf8mb4",
+                DB_NAME
+        );
+        pb.redirectInput(sqlFile.toFile());
+        pb.redirectError(ProcessBuilder.Redirect.INHERIT);
+
+        Process p = pb.start();
+        int code = p.waitFor();
+        if (code != 0) throw new RuntimeException("MySQL import failed, exit code " + code);
+    }
 }

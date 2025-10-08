@@ -13,6 +13,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/notes")
@@ -122,6 +124,27 @@ public class MainNoteController {
         } catch (Exception e) {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("message", "Error during export: " + e.getMessage());
+        }
+        return "redirect:/notes";
+    }
+    @GetMapping("/import-dml")
+    public String importDml(RedirectAttributes redirectAttributes) {
+        try {
+            List<String> tableToEmpty = List.of(
+                    "conjugation_override",
+                    "example",
+                    "formula",
+                    "jlpt_examples",
+                    "jlpt_words",
+                    "lemma",
+                    "level",
+                    "main_note"
+            );
+            GlobalUtil.truncateSelectedThenImport(tableToEmpty);
+            redirectAttributes.addFlashAttribute("message", "Database truncated & imported from script-db/02_dml.sql successfully.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            redirectAttributes.addFlashAttribute("message", "Error during import: " + e.getMessage());
         }
         return "redirect:/notes";
     }

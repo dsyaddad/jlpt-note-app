@@ -4,5 +4,20 @@
       "name": "application.version",
       "type": "java.lang.String",
       "description": "Description for application.version."
-  }
-] }
+    },
+    {
+      "name": "app.maint.mysql.container",
+      "type": "java.lang.String",
+      "description": "Description for app.maint.mysql.container."
+    },
+    {
+      "name": "app.maint.mysql.db",
+      "type": "java.lang.String",
+      "description": "Description for app.maint.mysql.db."
+    },
+    {
+      "name": "app.maint.sql.file",
+      "type": "java.lang.String",
+      "description": "Description for app.maint.sql.file."
+    }
+  ] }
