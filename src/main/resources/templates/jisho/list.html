@@ -17,7 +17,19 @@
     <div class="example-block mb-2 card">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h6 style="margin-top: 10px;">JLPT Words</h6>
+                <div class="d-flex gap-3">
+                    <form action="/notes/export-dml" method="get" id="exportDmlForm">
+                        <button type="submit" class="btn btn-success" form="exportDmlForm"
+                                onclick="return confirm('Yakin mau export DML terbaru?');"
+                        ><i class="fa fa-file-export"></i></button>
+                    </form>
+                    <form action="/notes/import-dml" method="get" id="importDmlForm">
+                        <button type="submit" class="btn btn-success" form="importDmlForm"
+                                onclick="return confirm('Yakin mau import DML terbaru?');"
+                        ><i class="fa fa-file-import"></i></button>
+                    </form>
+                    <h6 style="margin-top: 10px;">JLPT Words</h6>
+                </div>
                 <div class="d-flex gap-2">
                     <button type="submit" id="bulkDeleteBtn" class="btn btn-danger" form="bulkDeleteForm" disabled>
                         Delete Selected
