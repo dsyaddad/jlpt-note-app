@@ -1,0 +1,36 @@
+-DAY06--------------------------------------------
+BUNPO-1　(makna verb jadi "hampir tidak pernah")
+	めったに　＋　Vない/Vません 
+BUNPO-2　（も構わない→"tidak masalah bila..."）
+	Vて＋もかまわない
+	Adjな・Meishi＋でもかまわない
+	Adjい＋くてもかまわない
+BUNPO-3 (まるで～→Kemiripan situasi)
+	まるで＋「Vjisho・Adjい・Adjな」＋ようだ
+	まるで＋「Meishi」＋ようだ
+BUNPO-4　「というより・というか」（perbandingan dua situasi）
+	「Vます・Adj・Meishi」＋「というより・というか」＋「Vます・Adj・Meishi」
+	action-A＋「というより・というか」＋action-B
+BUNPO-5 (～最中に→"sedang/ditengah-tengah/lagi,malah/tiba-tiba...")
+	「action-A:Vている」＋さいちゅう（に）＋action-B
+	「action-A:Meishi」＋さいちゅう（に）＋action-B
+	action-A: action utama
+	action-B: action gangguan
+BUNPO-6　（～と共に→pola "Bersamaan dengan ..", aplikasinya umum）
+	「Vjisho」＋ともに＋Action-B
+	「Meishi」＋ともに＋Action-B
+
+-------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+会社に通っている間、彼はお菓子をめったに持ってこない。
+BUNPO-2
+彼は電車の中でお菓子を食べきるのに、友達に「お菓子がなくなってもおにぎりでも構わない」と言われます。BUNPO-3
+BUNPO-3
+大学を卒業したとたん、仕事が見つかりました。まるで夢を見ているようです。
+BUNPO-4
+合格の知らせを聞いたとたん、嬉しいというより、びっくりした。
+BUNPO-5
+同僚は発表している最中に電気が消えてしまい、みんながざわざわし始めた。
+BUNPO-6
+気温が下がると共に、風も強くなってきたのに、彼はまだ外で走っている。
