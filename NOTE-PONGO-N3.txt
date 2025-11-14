@@ -1,26 +1,141 @@
--DAY06--------------------------------------------
-BUNPO-1　(makna verb jadi "hampir tidak pernah")
-	めったに　＋　Vない/Vません 
-BUNPO-2　（も構わない→"tidak masalah bila..."）
-	Vて＋もかまわない
-	Adjな・Meishi＋でもかまわない
-	Adjい＋くてもかまわない
-BUNPO-3 (まるで～→Kemiripan situasi)
-	まるで＋「Vjisho・Adjい・Adjな」＋ようだ
-	まるで＋「Meishi」＋ようだ
-BUNPO-4　「というより・というか」（perbandingan dua situasi）
-	「Vます・Adj・Meishi」＋「というより・というか」＋「Vます・Adj・Meishi」
-	action-A＋「というより・というか」＋action-B
-BUNPO-5 (～最中に→"sedang/ditengah-tengah/lagi,malah/tiba-tiba...")
-	「action-A:Vている」＋さいちゅう（に）＋action-B
-	「action-A:Meishi」＋さいちゅう（に）＋action-B
-	action-A: action utama
-	action-B: action gangguan
-BUNPO-6　（～と共に→pola "Bersamaan dengan ..", aplikasinya umum）
-	「Vjisho」＋ともに＋Action-B
-	「Meishi」＋ともに＋Action-B
+==================================================
+-DAYXX--------------------------------------------
+==================================================
+BUNPO-1 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
 
--------------------------------------------------
+BUNPO-3 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
+-DAY08--------------------------------------------
+==================================================
+BUNPO-1 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+
+BUNPO-3 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～・～） ""」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
+-DAY07--------------------------------------------
+==================================================
+BUNPO-1 「（～がたい） "Susah.., Tidak mungkin.., Mustahil.."」
+ [METHOD-A] : 「VerbⓍます」＋「がたい」
+ [NOTE    ] : Hanya ini⇒信じがたい・許しがたい・忘れがたい・理解しがたい
+
+BUNPO-2 「（～において）　mirip に・で "di, dalam, pada, oleh terkait"」
+ [METHOD-A] : 「Meishi」＋「において」＋「detail」
+ [NOTE    ] : lebih kasual
+
+BUNPO-3 「（～次第） "Tergantung.., Secepatnya.."」
+ [METHOD-A] : 「VerbⓍます」＋「しだい」＋「situasi」
+ [METHOD-B] : 「Meishi」＋「しだい」＋「situasi」
+ [NOTE    ] : Meishi⇒"tergantung",VerbⓍます⇒"Secepatnya/setelahnya"
+ 
+BUNPO-4 「（～によれば・～によると） "Berdasarkan informasi dari..."」
+ [METHOD-A] : 「Meishi」＋「によれば・によると」＋「detail」
+ [NOTE    ] : ungkapan info dengan sumber
+ 
+BUNPO-5 「（～によって違う） "Berbeda berdasarkan.., Menurut.., tiap.."」
+ [METHOD-A] : 「Meishi」＋「によって」＋「ちがう」
+ [NOTE    ] : ungkapan info beda tergantung/berdasarkan suatu hal
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+大学のとき、教室の前を一人で歩いている最中に転んでしまいましたから、あの時のことは忘れがたいです。
+BUNPO-2
+先週の会議で決定されたとおり、学校において新しいルールが導入された。
+BUNPO-3
+この学校の文化お祭りは天候次第では中止になります。
+BUNPO-4
+テレビで天気予報の話によると、明日は雨みたいだから、家にでかけません。
+BUNPO-5
+スーパーにスイカを買いに行って、店員さんに「この果物の値段は季節によって違いますか」と聞きました。
+==================================================
+-DAY06--------------------------------------------
+==================================================
+BUNPO-1 「Makna Verb jadi : "Hampir tidak pernah Verb"」
+ [METHOD-A] : 「めったに」＋「Vない・Vません」
+ [NOTE    ] : -
+
+BUNPO-2 「も構わない Makna jadi : "Tidak masalah bila..."」
+ [METHOD-A] : 「Verbて」＋「もかまわない」
+ [METHOD-B] : 「Adjな・Meishi」＋「でもかまわない」
+ [METHOD-C] : 「AdjⓍい」＋「くてもかまわない」
+ [NOTE    ] : Ungkapan toleransi
+
+BUNPO-3 「まるで～ようだ ungkapan perumpamaan suatu A dan B」
+ [METHOD-A] : 「suatu-A」＋「まるで」＋「Vjisho・Adjい・Adjな⇒suatu-B」＋「ようだ」
+ [METHOD-B] : 「suatu-A」＋「まるで」＋「Meishi⇒suatu-B」＋「ようだ」
+ [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒perumpamaan
+ 
+BUNPO-4 「(というより・というか) ungkapan perbandingan situasi A dan B」
+ [METHOD-A] : 「situasi-A」＋「というより・というか」＋「situasi-B」
+ [NOTE    ] : -
+
+BUNPO-5 「～最中に "sedang/ditengah-tengah/lagi,malah/tiba-tiba..."」
+ [METHOD-A] : 「Verbている⇒suatu-A」＋「さいちゅうに」＋「suatu-B」
+ [METHOD-B] : 「Meishi⇒suatu-A」＋「さいちゅうに」＋「suatu-B」
+ [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒gangguan
+
+BUNPO-6 「～と共に "Bersamaan dengan .."」
+ [METHOD-A] : 「Vjisho・Meishi⇒suatu-A」＋「ともに」＋「suatu-B」
+ [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒additional
+ 
+--------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
 会社に通っている間、彼はお菓子をめったに持ってこない。
@@ -34,3 +149,160 @@ BUNPO-5
 同僚は発表している最中に電気が消えてしまい、みんながざわざわし始めた。
 BUNPO-6
 気温が下がると共に、風も強くなってきたのに、彼はまだ外で走っている。
+==================================================
+-DAY05--------------------------------------------
+==================================================
+BUNPO-1 「（～とたん） "Baru saja.., Langsung.."」
+ [METHOD-A] : 「Verbた」＋「とたん」＋「detail」
+ [NOTE    ] : Langsung ｛Verb｝, detail⇒biasanya ungkapan kaget
+
+BUNPO-2 「（～とおり） "Seperti.., Sesuai.."」
+ [METHOD-A] : 「Meishi」＋「の」＋「とおり」＋「situasi」
+ [METHOD-B] : 「VerbJisho」＋「とおり」＋「situasi」
+ [NOTE    ] : ungkapan sesuai perencanaan
+
+BUNPO-3 「（～だらけ） "Penuh dengan.."」
+ [METHOD-A] : 「Meishi」＋「だらけ」
+ [NOTE    ] : Meishi yg dipakai biasanya negatif
+ 
+BUNPO-4 「（～ばかり・～ばかりいる） "Hanya.., Itu-itu saja.., Melulu..,"」
+ [METHOD-A] : 「Meishi」＋「ばかり」
+ [METHOD-B] : 「Verbて」＋「ばかりいる」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～向け） "Untuk.., Ditujukan.."」
+ [METHOD-A] : 「Meishi」＋「向け」＋「detail」
+ [METHOD-B] : 「Meishi」＋「向けの」＋「detail」
+ [METHOD-C] : 「Meishi」＋「向けに」＋「detail」
+ [METHOD-D] : 「Meishi」＋「向けだ」＋「detail」
+ [NOTE    ] : 向けの→＋Meishi, 向けに→＋Verb, 向け→＋klausa, 向けだ→predikat.
+ 
+BUNPO-6 「（～きる・～きれる） "Sampai habis.., Selesai.."」
+ [METHOD-A] : 「VerbⓍます」＋「きる・きれる」
+ [NOTE    ] : -
+ 
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+家に入ったとたん、両親や兄弟などがいませんでした。もしかしたら、私以外みんな旅行に行ったのかもしれません。
+BUNPO-2
+両親と相談したとおり、一人で日本に行きます。
+BUNPO-3
+彼の言葉が嘘だらけだったから、もう彼と話したくない。
+BUNPO-4
+仕事のとき、社長に彼がゲームをしてばかりいるのを見られました。
+BUNPO-5
+このアプリは両親向けに、学生の成績を見るために作られました。
+BUNPO-6
+食堂で、あの人はモグモグと昼ご飯を食べきりました。
+==================================================
+-DAY04--------------------------------------------
+==================================================
+BUNPO-1 「（もしかしたら、～かもしれません） "Jangan-jangan,mungkin.."」
+ [METHOD-A] : 「もしかしたら、」＋「Vjisho・Meishi・Adj」＋「かもしれません」
+ [NOTE    ] : -
+
+BUNPO-2 「（～につれて・～につれ） "Bersamaan dgn.., Menurut.., dgn..,"」
+ [METHOD-A] : 「Vjisho・Meishi⇒main」＋「につれて・につれ」＋「detail」
+ [NOTE    ] : につれて⇒casual,につれ⇒formal
+
+BUNPO-3 「（～にしては） "Untuk.., Mengingat.., Padahal..,"」
+ [METHOD-A] : 「Vjisho・Meishi⇒main」＋「にしては」＋「detail」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（どんなに～・いくら～） "Bagaimanapun.., Tetap saja.., Seberapapun..,"」
+ [METHOD-A] : 「どんなに・いくら」＋「Meishi・Adjな」＋「でも」＋「detail」
+ [METHOD-B] : 「どんなに・いくら」＋「Verbて」＋「も」＋「detail」
+ [METHOD-C] : 「どんなに・いくら」＋「AdjⓍい」＋「くても」＋「detail」
+ [NOTE    ] : Ⓧ⇒artinya tidak dipakai / dirubah
+ 
+BUNPO-5 「（～気味） "Sepertinya.., rasanya.."」
+ [METHOD-A] : 「Meishi」＋「ぎみ」
+ [METHOD-B] : 「VerbⓍます」＋「ぎみ」
+ [NOTE    ] : Verb/Meishi diberi makna "kecenderungan"
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+もしかしたら、あの部屋に勝手に入った人は先輩かもしれません。
+BUNPO-2
+商談が進むにつれて、この新しい研究も進んでいます。
+BUNPO-3
+この荷物が多いので、重いと言いました。でも、運んでみると、この荷物は重いにしては軽いでした。
+BUNPO-4
+どんなにやっても、この運命は消えないから、私はやめてみようと思います。
+BUNPO-5
+一週間、彼の彼女から連絡がなくて、彼は少し悲し気味です。
+==================================================
+-DAY03--------------------------------------------
+==================================================
+BUNPO-1 「（～以外） "Selain~"」
+ [METHOD-A] : 「Meishi⇒exclude」＋「いがい」
+ [NOTE    ] : -
+
+BUNPO-2 「（～と比べて） ungkapan membandingkan kondisi A dan situasi B」
+ [METHOD-A] : 「Meishi⇒kondisi-A」＋「とくらべて」＋「situasi-B」
+ [NOTE    ] : ー
+
+BUNPO-3 「（勝手に～） "Semaunya.., sesuka hati.., semena-mena.."」
+ [METHOD-A] : 「かってに」＋「situasi」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～結果間） "Hasilnya.., Akibatnya.., Setelahnya..,"」
+ [METHOD-A] : 「Meishi⇒sebab」＋「の」＋「けっか」＋「akibat」
+ [METHOD-B] : 「Verbた⇒sebab」＋「けっか」＋「akibat」
+ [NOTE    ] : sebab-akibat. mirip ので lebih formal ini.
+ 
+BUNPO-5 「（～が気に入る） "Suka.., Tertarik.., cocok..,"」
+ [METHOD-A] : 「Meishi」＋「がきにいる」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+インドネシアの学校では学生以外はこの無料の昼ご飯を食べてはいけません。
+BUNPO-2
+リオンは猫と比べてもっと大きいと言われました。
+BUNPO-3
+親の前にあの子供は勝手に友達を殴りました。
+BUNPO-4
+晩ご飯を食べ過ぎた結果、体が動くになりませんでした。
+BUNPO-5
+友達は日本の文化が気に入って、私に日本の文化を教えてくれました。
+==================================================
+-DAY02--------------------------------------------
+==================================================
+BUNPO-1 「（～間に・～間） "Selagi.., Ketika.., Sementara..,"」
+ [METHOD-A] : 「Meishi」＋「の」＋「間」＋「situasi」
+ [METHOD-B] : 「Meishi」＋「の」＋「間に」＋「situasi」
+ [METHOD-C] : 「VerbFutsukei」＋「間」＋「situasi」
+ [METHOD-C] : 「VerbFutsukei」＋「間に」＋「situasi」
+ [NOTE    ] : 間に⇒terjadi terus menerus,間⇒terjadi 1x
+
+BUNPO-2 「よかったです⇒ ungkapan beruntung/lebih baik」
+ [METHOD-A] : 「Verbて」＋「よかったです」
+ [NOTE    ] : -
+
+BUNPO-3 「Vば＋よかった ungkapan penyesalan/seharusnya..」
+ [METHOD-A] : 「Verbば」＋「よかった」
+ [NOTE    ] : Vば⇒V条件形, "seharusnya saya Verbば"
+ 
+BUNPO-4 「(といいです・といいですが) ungkapan harapan suatu kejadian」
+ [METHOD-A] : 「VerbFutsukei」＋「といいです・といいですが」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+会社で朝の発表を待っている間に、文書を書きました。
+BUNPO-2
+昨日夜遅くまでゲームをするのに、寝坊しなくてよかったです。
+BUNPO-3
+今朝、朝ご飯を持ってくるのを忘れたので、食べてくればよかったです。
+BUNPO-4
+一週間雨が降ったので、明日は晴れるといいです。
+==================================================
+-DAY01--------------------------------------------
+==================================================
+- JUST INTRODUCTION
+--------------------------------------------------
