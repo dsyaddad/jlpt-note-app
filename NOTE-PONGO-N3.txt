@@ -90,7 +90,7 @@ BUNPO-4 「（～によって） "Karena..." / "Dengan..."」
  [METHOD-A] : 「Meishi」＋「によって、」＋「Detail」
  [METHOD-B] : 「Meishi」＋「により、」＋「Detail」
  [METHOD-C] : 「Meishi」＋「による」＋「Meishi」
- [NOTE    ] : B　lebih formal A
+ [NOTE    ] : B　lebih formal A, sebab akibat.
  
 BUNPO-5 「（～さえ） "Bahkan..."」
  [METHOD-A] : 「Meishi」＋「さえ」
