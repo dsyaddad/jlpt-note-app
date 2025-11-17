@@ -36,25 +36,30 @@ BUNPO-5
 ==================================================
 -DAY08--------------------------------------------
 ==================================================
-BUNPO-1 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-1 「（Adjい・Adjな＋み） "{sifat}nya", "ke{sifat}an"」
+ [METHOD-A] : 「Adjい」＋「み」
+ [METHOD-B] : 「Adjな」＋「み」
+ [NOTE    ] : Menggambarkan sesuatu yg dirasakan (lewat inda perasa) oleh seseorang
  
-BUNPO-2 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-2 「（～について） "Tentang..."」
+ [METHOD-A] : 「Meishi」＋「について」
+ [METHOD-B] : 「Meishi」＋「についての」＋「Meishi」
  [NOTE    ] : -
 
-BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-3 「（～に関して） "Tentang..." / "Sehubungan..."」
+ [METHOD-A] : 「Meishi」＋「にかんして」＋「は」
+ [METHOD-B] : 「Meishi」＋「にかんする」＋「Meishi」
+ [NOTE    ] : lebih formal dari について
  
-BUNPO-4 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-4 「（～によって） "Karena..." / "Dengan..."」
+ [METHOD-A] : 「Meishi」＋「によって、」＋「Detail」
+ [METHOD-B] : 「Meishi」＋「により、」＋「Detail」
+ [METHOD-C] : 「Meishi」＋「による」＋「Meishi」
+ [NOTE    ] : B　lebih formal A
  
-BUNPO-5 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-5 「（～さえ） "Bahkan..."」
+ [METHOD-A] : 「Meishi」＋「さえ」
+ [NOTE    ] : menyatakan sesuatu hal yg tidak biasa / extrem
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
