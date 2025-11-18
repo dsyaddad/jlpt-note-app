@@ -40,7 +40,7 @@ BUNPO-1 「（～というの・～ということ） Mengubah informasi jadi ka
  [METHOD-A] : 「kalimat」＋「というの」＋「は、」＋「detail」
  [METHOD-B] : 「kalimat」＋「というの」＋「を、」＋「detail」
  [METHOD-C] : 「kalimat」＋「ということ」
- [NOTE    ] : -
+ [NOTE    ] : kalimat / VerbFutsukei
  
 BUNPO-2 「（というのは～） menjelaskan suatu definisi yg belum diketahui」
  [METHOD-A] : 「istilah」＋「というのは」＋「penjelasan」
@@ -64,15 +64,15 @@ BUNPO-5 「（～というと・～といえば・～といったら） ""」
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+来月からリモートワークが始まるということを、昨日正式に聞きました。
 BUNPO-2
-
+「マリン・クンダン」というのはインドネシアの人気の民話です。
 BUNPO-3
-
+「お辞儀」という挨拶は、日本で一般的に使われています。
 BUNPO-4
-
+日本語ができるといっても、簡単な会話だけです。
 BUNPO-5
-
+インドネシア料理といえば、ナシゴレンを知っている人が多いです。
 ==================================================
 -DAY08--------------------------------------------
 ==================================================
