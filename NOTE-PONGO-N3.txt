@@ -36,24 +36,29 @@ BUNPO-5
 ==================================================
 -DAY09--------------------------------------------
 ==================================================
-BUNPO-1 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-1 「（～というの・～ということ） Mengubah informasi jadi kata benda」
+ [METHOD-A] : 「kalimat」＋「というの」＋「は、」＋「detail」
+ [METHOD-B] : 「kalimat」＋「というの」＋「を、」＋「detail」
+ [METHOD-C] : 「kalimat」＋「ということ」
  [NOTE    ] : -
  
-BUNPO-2 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-2 「（というのは～） menjelaskan suatu definisi yg belum diketahui」
+ [METHOD-A] : 「istilah」＋「というのは」＋「penjelasan」
+ [NOTE    ] : istilah berupa meishi yg mau dijelaskan
 
-BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-3 「（～という） "Yang disebut..", "Yang namanya"」
+ [METHOD-A] : 「istilah/nama」＋「という」＋「meishi」＋「です」
+ [NOTE    ] : menjelaskan ke orang ttg hal yg tidak diketahui
+ 
+BUNPO-4 「（～といっても） "Meskipun...", "Walaupun..."」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「といっても」＋「detail」
+ [METHOD-B] : 「meishi/Adjな」＋「だといっても」＋「detail」
  [NOTE    ] : -
  
-BUNPO-4 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
- 
-BUNPO-5 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-5 「（～というと・～といえば・～といったら） ""」
+ [METHOD-A] : 「meishi」＋「というと、」＋「detail」
+ [METHOD-B] : 「meishi」＋「といえば、」＋「detail」
+ [METHOD-C] : 「meishi」＋「といったら、」＋「detail」
  [NOTE    ] : -
 
 --------------------------------------------------
