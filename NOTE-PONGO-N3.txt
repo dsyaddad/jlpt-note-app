@@ -34,6 +34,48 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY10--------------------------------------------
+==================================================
+BUNPO-1 「（～てくれと頼まれる・～てくれと言われる） "Diberitahu..", "Dimintai tolong untuk..."」
+ [METHOD-A] : 「Verbて」＋「くれと頼まれる」
+ [METHOD-B] : 「Verbて」＋「くれと言われる」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～ごらん・～ごらんなさい） "Cobalah..", "Coba.."」
+ [METHOD-A] : 「Verbて」＋「ごらん」
+ [METHOD-B] : 「Verbて」＋「ごらんなさい」
+ [NOTE    ] : digunakan ke status dibawah pembicara
+
+BUNPO-3 「（～合う） "Saling..."」
+ [METHOD-A] : 「VerbⓍます」＋「合う」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～あまり・～のあまり） "Karena perasan/keadaan/sensasinya terlalu berlebihan sehingga..."」
+ [METHOD-A] : 「meishi」＋「の」＋「あまり　（に）」＋「detail」
+ [METHOD-B] : 「Adjな」＋「あまり　（に）」＋「detail」
+ [METHOD-C] : 「VerbJisho」＋「あまり　（に）」＋「detail」
+ [METHOD-D] : 「Adjい (さ・み)」＋「の」＋「あまり　（に）」＋「detail」
+ [NOTE    ] : biasanya diikuti dengan kalimat bernuansa negatif
+ 
+BUNPO-5 「（あまりに～・あんまりにも～） Adj : makna nya tingkat nya terlalu tinggi, verb : frekuensi nya terlalu tinggi」
+ [METHOD-A] : 「あまりに」＋「Adj / verb」
+ [METHOD-A] : 「あまりにも」＋「Adj / verb」
+ [METHOD-A] : 「あんまりにも」＋「Adj / verb」
+ [NOTE    ] : bisa positif / negatif & あんまり = penekanan non formal
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY09--------------------------------------------
 ==================================================
 BUNPO-1 「（～というの・～ということ） Mengubah informasi jadi kata benda」
