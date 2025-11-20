@@ -37,14 +37,14 @@ BUNPO-5
 -DAY10--------------------------------------------
 ==================================================
 BUNPO-1 「（～てくれと頼まれる・～てくれと言われる） "Diberitahu..", "Dimintai tolong untuk..."」
- [METHOD-A] : 「Verbて」＋「くれと頼まれる」
- [METHOD-B] : 「Verbて」＋「くれと言われる」
+ [METHOD-A] : 「peminta-tolong」＋「に」＋「Verbて」＋「くれと頼まれる」
+ [METHOD-B] : 「pemberi-tahu」＋「に」「Verbて」＋「くれと言われる」
  [NOTE    ] : -
  
 BUNPO-2 「（～ごらん・～ごらんなさい） "Cobalah..", "Coba.."」
  [METHOD-A] : 「Verbて」＋「ごらん」
  [METHOD-B] : 「Verbて」＋「ごらんなさい」
- [NOTE    ] : digunakan ke status dibawah pembicara
+ [NOTE    ] : digunakan ke status dibawah pembicara. mirip Verbて＋見る
 
 BUNPO-3 「（～合う） "Saling..."」
  [METHOD-A] : 「VerbⓍます」＋「合う」
@@ -55,7 +55,7 @@ BUNPO-4 「（～あまり・～のあまり） "Karena perasan/keadaan/sensasin
  [METHOD-B] : 「Adjな」＋「あまり　（に）」＋「detail」
  [METHOD-C] : 「VerbJisho」＋「あまり　（に）」＋「detail」
  [METHOD-D] : 「Adjい (さ・み)」＋「の」＋「あまり　（に）」＋「detail」
- [NOTE    ] : biasanya diikuti dengan kalimat bernuansa negatif
+ [NOTE    ] : biasanya diikuti dengan kalimat bernuansa negatif, (に) dulu dipakai sekarang tidak karena modernisasi penggunaan bahasa
  
 BUNPO-5 「（あまりに～・あんまりにも～） Adj : makna nya tingkat nya terlalu tinggi, verb : frekuensi nya terlalu tinggi」
  [METHOD-A] : 「あまりに」＋「Adj / verb」
@@ -66,15 +66,15 @@ BUNPO-5 「（あまりに～・あんまりにも～） Adj : makna nya tingkat
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+会社で同僚と働いている最中に、母に品物を払ってくれと頼まれた。
 BUNPO-2
-
+文章を書いたなら、同僚に確認してごらんなさい。
 BUNPO-3
-
+意見が違っても、話し合えばいい答えが見つかると思います。
 BUNPO-4
-
+驚いたあまり、しばらく言葉が出なかった。
 BUNPO-5
-
+あまりにも残業が続いて、体調を崩してしまった。
 ==================================================
 -DAY09--------------------------------------------
 ==================================================
