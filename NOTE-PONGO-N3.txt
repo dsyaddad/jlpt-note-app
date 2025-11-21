@@ -36,15 +36,15 @@ BUNPO-5
 ==================================================
 -DAY11--------------------------------------------
 ==================================================
-BUNPO-1 「"Karena terlalu...", "Akhirnya..", "Sehingga..."」
+BUNPO-1 「"Karena terlalu...Akhirnya/sehingga..."」
  [METHOD-A] : 「Meishi」＋「の」＋「あまり」＋「に・で」
  [METHOD-B] : 「Adjい⇒さ」＋「の」＋「あまり」＋「に・で」
- [NOTE    ] : Menunjukan alasan atau penyebab
+ [NOTE    ] : Menunjukan alasan atau penyebab (sesuatu yg sudah terjadi)
  
-BUNPO-2 「（～あんまりに。。。と） "Karena terlalu...", "Akhirnya...", "Sehingga..."」
- [METHOD-A] : 「あまり」＋「に」＋「も」＋「Adj/Verb」＋「と」＋「detail」
- [METHOD-B] : 「あまり」＋「に」＋「Adj/Verb」＋「と」＋「detail」
- [NOTE    ] : Menunjukan alasan, penyebab, keadaan
+BUNPO-2 「（～あんまりに。。。と） "Karena terlalu...Akhirnya/sehingga..."」
+ [METHOD-A] : 「あまり」＋「に」＋「も」＋「Adj/VerbFutsukei」＋「と」＋「detail」
+ [METHOD-B] : 「あまり」＋「に」＋「Adj/VerbFutsukei」＋「と」＋「detail」
+ [NOTE    ] : Menunjukan alasan, penyebab, keadaan (sesuatu yg belum terjadi, masih nasihat)
 
 BUNPO-3 「（～なんて。。～あんまりだ） "Kejamnya..", "Teganya.."」
  [METHOD-A] : 「VerbFutsukei」＋「なんて・とは・って・のは」＋「あんまりだ」
@@ -54,9 +54,9 @@ BUNPO-3 「（～なんて。。～あんまりだ） "Kejamnya..", "Teganya.."�
  [NOTE    ] : Menganggap keadaan pada kalimat sebelumnya sangat keterlaluan (emosi)
  
 BUNPO-4 「（～あまり。。ない・～あんまり。。ない） "Tidak terlalu...", "Tidak begitu..", "Jarang.."」
- [METHOD-A] : 「あまり」＋「？」＋「ない」
- [METHOD-B] : 「あんまり」＋「？」＋「ない」
- [NOTE    ] : itu apaan tengah-tengah?
+ [METHOD-A] : 「あまり」＋「Verbない」
+ [METHOD-B] : 「あんまり」＋「Verbない」
+ [NOTE    ] : -
  
 BUNPO-5 「（～以上は・～上は） "Karena sudah..", "Sebagai.. jadi harus.."」
  [METHOD-A] : 「VerbFutsukei」＋「いじょうは・じょうは」＋「detail」
@@ -70,23 +70,23 @@ BUNPO-6 「"Semakin..,semakin.."」
  [METHOD-A] : 「Verbば」＋「VerbJisho」＋「ほど」＋「detail」
  [METHOD-B] : 「Verbば」＋「Verbた」＋「だけ」＋「detail」
  [METHOD-C] : 「meishi」＋「であれば」＋「meishi」＋「であるほど・であるだけ」＋「detail」
- [METHOD-D] : 「Adjい」＋「ければ」＋「Adjい」＋「ほど・だけ」＋「detail」
- [METHOD-E] : 「Adjな」＋「であれば」＋「Adjな」＋「である・であるな」＋「ほど・だけ」＋「detail」
+ [METHOD-D] : 「AdjⓍい」＋「ければ」＋「Adjい」＋「ほど・だけ」＋「detail」
+ [METHOD-E] : 「AdjⓍな」＋「であれば」＋「Adjな」＋「である・であるな」＋「ほど・だけ」＋「detail」
  [NOTE    ] : -
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+体が弱さのあまりに、毎日彼女は病院で休みました。
 BUNPO-2
-
+今はあまりに怠け過ぎると、未来はお金持ちになくなります。
 BUNPO-3
-
+一週間前から彼女は連絡しないのに、突然勝手に別れるなんて、あんまりだ。
 BUNPO-4
-
+彼がこのパーティーにあまり楽しまないみたいだと思う。彼は何を考えているのかな。
 BUNPO-5
-
-BUNPO-６
+新しい冷蔵庫を買った以上、今年こそ貯金しなければなりません。
+BUNPO-6
 
 ==================================================
 -DAY10--------------------------------------------
