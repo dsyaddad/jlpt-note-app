@@ -34,6 +34,52 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY12--------------------------------------------
+==================================================
+BUNPO-1 「（～Vばいい・～VなⓍいければいい） "Tidak apa apa kalau..."」
+ [METHOD-A] : 「Verbば」＋「いい」＋「detail」
+ [METHOD-B] : 「VerbなⓍい」＋「ければいい」＋「detail」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～ばかりでなく） "Tidak hanya..., tapi juga...", "Tidak harus melulu..., tapi juga..."」
+ [METHOD-A] : 「VerbFutsukei・Adjい」＋「ばかりでなく」＋「detail」
+ [METHOD-B] : 「meishi」＋「ばかりでなく」＋「detail」
+ [METHOD-C] : 「Adjな」＋「な・である」＋「ばかりでなく」＋「detail」
+ [NOTE    ] : -
+
+BUNPO-3 「（～べきだ・～べきではない） "Semestinya/Tidak mestinya...", "sepatutnya/Tidak sepatutnya..", "seharusnya/Tidak seharusnya.."」
+ [METHOD-A] : 「VerbJisho(gol 1,2)」＋「べき・べきだ・べきではない」
+ [METHOD-B] : 「VerbⓍする(gol 3)」＋「すべき・すべきだ・すべきではない」
+ [METHOD-C] : 「Adjい⇒く」＋「ある」＋「べき・べきだ・べきではない」
+ [METHOD-D] : 「Adjな」＋「である」＋「べき・べきだ・べきではない」
+ [METHOD-E] : 「meishi」＋「である」＋「べき・べきだ・べきではない」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～べきだった・～べきではなかった） "[bentukLampau](tidak) semestinya / seharusnya"」
+ [METHOD-A] : 「VerbJisho(gol 1,2)」＋「べきだった・べきではなかった」
+ [METHOD-B] : 「VerbⓍする(gol 3)」＋「すべきだった・すべきではなかった」
+ [METHOD-C] : 「Verbて」＋「おく」＋「べきだった・べきではなかった」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～だけでなく） "Bukan hanya/tidak hanya...tapi juga..."」
+ [METHOD-A] : 「VerbFutsukei/meishi」＋「だけでなく」
+ [METHOD-B] : 「Adjい」＋「だけでなく」
+ [METHOD-C] : 「Adjな」＋「な・である」＋「だけでなく」
+ [NOTE    ] : kalimat belakang boleh memasukkan partikel も,　namun bukan rumus wajib.
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY11--------------------------------------------
 ==================================================
 BUNPO-1 「"Karena terlalu...Akhirnya/sehingga..."」
