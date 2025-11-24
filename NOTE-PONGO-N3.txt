@@ -39,13 +39,13 @@ BUNPO-5
 BUNPO-1 「（～Vばいい・～VなⓍいければいい） "Tidak apa apa kalau..."」
  [METHOD-A] : 「Verbば」＋「いい」＋「detail」
  [METHOD-B] : 「VerbなⓍい」＋「ければいい」＋「detail」
- [NOTE    ] : -
+ [NOTE    ] : memberikan izin secara explisit
  
 BUNPO-2 「（～ばかりでなく） "Tidak hanya..., tapi juga...", "Tidak harus melulu..., tapi juga..."」
- [METHOD-A] : 「VerbFutsukei・Adjい」＋「ばかりでなく」＋「detail」
- [METHOD-B] : 「meishi」＋「ばかりでなく」＋「detail」
- [METHOD-C] : 「Adjな」＋「な・である」＋「ばかりでなく」＋「detail」
- [NOTE    ] : -
+ [METHOD-A] : 「VerbFutsukei・Adjい⇒detail-A」＋「ばかりでなく」＋「detail-B」
+ [METHOD-B] : 「meishi⇒detail-A」＋「ばかりでなく」＋「detail」
+ [METHOD-C] : 「Adjな⇒detail-A」＋「な・である」＋「ばかりでなく」＋「detail」
+ [NOTE    ] : A dan B harus setara, sesama positif / sesama negatif.　ini sopan / formal 
 
 BUNPO-3 「（～べきだ・～べきではない） "Semestinya/Tidak mestinya...", "sepatutnya/Tidak sepatutnya..", "seharusnya/Tidak seharusnya.."」
  [METHOD-A] : 「VerbJisho(gol 1,2)」＋「べき・べきだ・べきではない」
@@ -53,7 +53,7 @@ BUNPO-3 「（～べきだ・～べきではない） "Semestinya/Tidak mestinya
  [METHOD-C] : 「Adjい⇒く」＋「ある」＋「べき・べきだ・べきではない」
  [METHOD-D] : 「Adjな」＋「である」＋「べき・べきだ・べきではない」
  [METHOD-E] : 「meishi」＋「である」＋「べき・べきだ・べきではない」
- [NOTE    ] : -
+ [NOTE    ] : ungkapan harus sesuai nalar (semuanya tau harusnya begitu)
  
 BUNPO-4 「（～べきだった・～べきではなかった） "[bentukLampau](tidak) semestinya / seharusnya"」
  [METHOD-A] : 「VerbJisho(gol 1,2)」＋「べきだった・べきではなかった」
@@ -62,23 +62,23 @@ BUNPO-4 「（～べきだった・～べきではなかった） "[bentukLampau
  [NOTE    ] : -
  
 BUNPO-5 「（～だけでなく） "Bukan hanya/tidak hanya...tapi juga..."」
- [METHOD-A] : 「VerbFutsukei/meishi」＋「だけでなく」
- [METHOD-B] : 「Adjい」＋「だけでなく」
- [METHOD-C] : 「Adjな」＋「な・である」＋「だけでなく」
- [NOTE    ] : kalimat belakang boleh memasukkan partikel も,　namun bukan rumus wajib.
+ [METHOD-A] : 「VerbFutsukei/meishi⇒detail-A」＋「だけでなく」＋「detail-B」
+ [METHOD-B] : 「Adjい⇒detail-A」＋「だけでなく」＋「detail-B」
+ [METHOD-C] : 「Adjな⇒detail-A」＋「な・である」＋「だけでなく」＋「detail-B」
+ [NOTE    ] : kalimat belakang boleh memasukkan partikel も,　namun bukan rumus wajib. A dan B harus setara, sesama positif / sesama negatif.　
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+母が冷蔵庫で父が買ったアイスクリームを食べればいいと言いました。
 BUNPO-2
-
+会議で部長は遅れるばかりでなく、会議中で話しませんです。
 BUNPO-3
-
+家族は喧嘩ばかりするんじゃなくて、その後できちんと謝るべきだ。
 BUNPO-4
-
+今朝会社へ行く前に、母に謝っておくべきだった。
 BUNPO-5
-
+今朝に同僚と会議だけでなく、同じ時にみんなで朝ご飯を食べる。
 ==================================================
 -DAY11--------------------------------------------
 ==================================================
@@ -297,7 +297,7 @@ BUNPO-5
 ==================================================
 BUNPO-1 「Makna Verb jadi : "Hampir tidak pernah Verb"」
  [METHOD-A] : 「めったに」＋「Vない・Vません」
- [NOTE    ] : -
+ [NOTE    ] : jarang / hampir tidak pernah.
 
 BUNPO-2 「も構わない Makna jadi : "Tidak masalah bila..."」
  [METHOD-A] : 「Verbて」＋「もかまわない」
