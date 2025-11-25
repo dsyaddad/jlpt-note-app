@@ -34,6 +34,51 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY13--------------------------------------------
+==================================================
+BUNPO-1 「（～だけでは～ない） "Tidak bisa.. kalau hanya...", "...saja tidak cukup untuk..."」
+ [METHOD-A] : 「VerbFutsukei/meishi」＋「だけでは」＋「detail」＋「Verbない」
+ [METHOD-B] : 「Adjい」＋「だけでは」＋「detail」＋「Verbない」
+ [METHOD-C] : 「Adjな」＋「なだけでは」＋「detail」＋「Verbない」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～ふりをする） "Berpura-pura..."」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「ふりをする」
+ [METHOD-B] : 「meishi」＋「の」＋「ふりをする」
+ [METHOD-C] : 「Adjな」＋「な」＋「ふりをする」
+ [NOTE    ] : mayoritas diguakan untuk konotasi negatif
+
+BUNPO-3 「（～がち） "Mudah..."」
+ [METHOD-A] : 「VerbⓍます」＋「がち」
+ [METHOD-B] : 「meishi」＋「がち」
+ [NOTE    ] : sesuatu yg terjadi berulang tanpa disadari dan menunjukan kecenderungan ke arah negatif
+ 
+BUNPO-4 「（～というほどではない） "Tidak se...", "Tidak sampai.."」
+ [METHOD-A] : 「VerbFutsukei・djい」＋「というほどではない」
+ [METHOD-B] : 「Adjな・meishi」＋「だというほどではない」
+ [NOTE    ] : yang dipikirkan/bayangkan/anggap
+ 
+BUNPO-5 「（～ほどのことではない） "Bukan hal yang...", "Tidak perlu.."」
+ [METHOD-A] : 「VerbJisho/Verbない」＋「ほどの」＋「meishi」＋「ではない」
+ [METHOD-B] : 「VerbJisho」＋「ほどのことではない」
+	[SUB-NOTE] : paling umum : "Tidak perlu sampai V / bukan hal yang sampai harus V"
+ [METHOD-C] : 「VerbJisho」＋「ほどのものではない」
+	[SUB-NOTE] : sedikit formal : "Bukan sesuatu yang sampai harus V"
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY12--------------------------------------------
 ==================================================
 BUNPO-1 「（～Vばいい・～VなⓍいければいい） "Tidak apa apa kalau..."」
