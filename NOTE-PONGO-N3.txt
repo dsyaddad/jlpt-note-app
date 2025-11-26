@@ -54,7 +54,7 @@ BUNPO-3 「（～がち） "Mudah..."」
  [NOTE    ] : sesuatu yg terjadi berulang tanpa disadari dan menunjukan kecenderungan ke arah negatif
  
 BUNPO-4 「（～というほどではない） "Tidak se...", "Tidak sampai.."」
- [METHOD-A] : 「VerbFutsukei・djい」＋「というほどではない」
+ [METHOD-A] : 「VerbFutsukei・Adjい」＋「というほどではない」
  [METHOD-B] : 「Adjな・meishi」＋「だというほどではない」
  [NOTE    ] : yang dipikirkan/bayangkan/anggap
  
