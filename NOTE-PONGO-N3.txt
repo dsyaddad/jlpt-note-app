@@ -37,36 +37,41 @@ BUNPO-5
 -DAY14--------------------------------------------
 ==================================================
 BUNPO-1 「（～別に・～別で・～とは別に・～のとは別に） "Dipisahkan berdasarkan..", "Dibedakan berdasarkan.."」
- [METHOD-A] : 「meishi」＋「別に」
- [METHOD-B] : 「meishi」＋「別で」
- [METHOD-B] : 「meishi」＋「とは別に」
- [METHOD-C] : 「VerbJisho」＋「のとは別に」
- [NOTE    ] : A&B ⇒　menerangkan pemisahan / pembedaan, C&D　⇒　"dibedakan..", "berbeda..", "dipisahkan..", "terpisah dari.."
+ [METHOD-A] : 「meishi⇒pembeda」＋「別に」
+ [METHOD-B] : 「meishi⇒pembeda」＋「別で」
+ [METHOD-B] : 「meishi⇒pembeda」＋「とは別に」
+ [METHOD-C] : 「VerbJisho⇒pembeda」＋「のとは別に」
+ [NOTE    ] : A&B ⇒　menerangkan pemisahan / pembedaan, 
+			  C&D　⇒　ungkapan meishi exclude, jadi yg disebutkan tidak termasuk "dibedakan..", "berbeda.." , "dipisahkan..", "terpisah dari.."
  
 BUNPO-2 「（～一方だ・～の一方だ・～一方で・～の一方で・～他方では） “Menunjukkan dua hal yang berlawanan / kontras / terjadi bersamaan.”」 
- [METHOD-A] : 「VerbJisho」＋「一方だ」
- [METHOD-B] : 「meishi」＋「の一方だ」
- [METHOD-C] : 「VerbJisho/Adjい」＋「一方で」
- [METHOD-D] : 「Adjな」＋「な・である」＋「一方で」
-　[METHOD-E]　: 「meishi」＋「である」＋「一方で」
-　[METHOD-F]　: 「一方では」＋「hal-A」＋「他方では」＋「hal-B」
- [NOTE    ] : A&B ⇒ bentuk “X cenderung ke arah Y”, sering bernuansa negatif dan menyatakan perkembangan satu arah.
-			  C&D&E&F ⇒ bentuk “dua hal terjadi bersamaan / berlawanan” dalam satu konteks situasi.
+ [METHOD-A] : 「VerbJisho」＋「いっぽだ」
+ [METHOD-B] : 「meishi」＋「のいっぽだ」
+ [METHOD-C] : 「VerbJisho/Adjい」＋「いっぽで」
+ [METHOD-D] : 「Adjな」＋「な・である」＋「いっぽで」
+　[METHOD-E]　: 「meishi」＋「である」＋「いっぽで」
+　[METHOD-F]　: 「いっぽでは」＋「hal-A」＋「他方では」＋「hal-B」
+ [NOTE    ] : A&B ⇒ untuk menunjukan kemungkinan buruk yg akan terjadi. Suatu keadaan yang semakin meningkat/menurun, makin parah, makin besar, makin sulit. Ini TIDAK bisa dipakai untuk kontras, TIDAK bisa dipakai untuk kondisi “jika… maka…”.
+			  C&D&E&F ⇒ dari 1 situasi ada sisi lain. Dua sisi yang berlawanan / dua hal yang terjadi dalam waktu yang sama. Tidak ada nuansa “tren”, “semakin…”, atau “berkembang terus”.
 
 BUNPO-3 「（～代わりに） "Sebagai ganti / gantinya.."」
- [METHOD-A] : 「VerbJisho・Adjい」＋「代わりに」＋「detail」
- [METHOD-B] : 「Adjな」＋「な」＋「代わりに」＋「detail」
- [METHOD-C] : 「meishi」＋「の」＋「代わりに」＋「detail」
- [NOTE    ] : menjelaskan pengganti atas setuasu
+ [METHOD-A] : 「VerbJisho・Adjい」＋「かわりに」＋「detail」
+ [METHOD-B] : 「Adjな」＋「な」＋「かわりに」＋「detail」
+ [METHOD-C] : 「meishi」＋「の」＋「かわりに」＋「detail」
+ [NOTE    ] : menjelaskan pengganti atas sesuatu
  
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
-BUNPO-1
-
-BUNPO-2
-
+BUNPO-1-A
+先生は男女別にクラスを分ける。
+BUNPO-1-B
+この店で品物を買うとき、税金とは別に料金がかかります。
+BUNPO-2-A
+この地域の人口は減る一方だ。
+BUNPO-2-B
+この店は値段が高い一方で、サービスの質は非常に良い。
 BUNPO-3
-
+この部屋は狭い代わりに、家賃が安い。
 ==================================================
 -DAY13--------------------------------------------
 ==================================================
