@@ -34,6 +34,40 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY14--------------------------------------------
+==================================================
+BUNPO-1 「（～別に・～別で・～とは別に・～のとは別に） "Dipisahkan berdasarkan..", "Dibedakan berdasarkan.."」
+ [METHOD-A] : 「meishi」＋「別に」
+ [METHOD-B] : 「meishi」＋「別で」
+ [METHOD-B] : 「meishi」＋「とは別に」
+ [METHOD-C] : 「VerbJisho」＋「のとは別に」
+ [NOTE    ] : A&B ⇒　menerangkan pemisahan / pembedaan, C&D　⇒　"dibedakan..", "berbeda..", "dipisahkan..", "terpisah dari.."
+ 
+BUNPO-2 「（～一方だ・～の一方だ・～一方で・～の一方で・～他方では） “Menunjukkan dua hal yang berlawanan / kontras / terjadi bersamaan.”」 
+ [METHOD-A] : 「VerbJisho」＋「一方だ」
+ [METHOD-B] : 「meishi」＋「の一方だ」
+ [METHOD-C] : 「VerbJisho/Adjい」＋「一方で」
+ [METHOD-D] : 「Adjな」＋「な・である」＋「一方で」
+　[METHOD-E]　: 「meishi」＋「である」＋「一方で」
+　[METHOD-F]　: 「一方では」＋「hal-A」＋「他方では」＋「hal-B」
+ [NOTE    ] : A&B ⇒ bentuk “X cenderung ke arah Y”, sering bernuansa negatif dan menyatakan perkembangan satu arah.
+			  C&D&E&F ⇒ bentuk “dua hal terjadi bersamaan / berlawanan” dalam satu konteks situasi.
+
+BUNPO-3 「（～代わりに） "Sebagai ganti / gantinya.."」
+ [METHOD-A] : 「VerbJisho・Adjい」＋「代わりに」＋「detail」
+ [METHOD-B] : 「Adjな」＋「な」＋「代わりに」＋「detail」
+ [METHOD-C] : 「meishi」＋「の」＋「代わりに」＋「detail」
+ [NOTE    ] : menjelaskan pengganti atas setuasu
+ 
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+==================================================
 -DAY13--------------------------------------------
 ==================================================
 BUNPO-1 「（～だけでは～ない） "Tidak bisa.. kalau hanya...", "...saja tidak cukup untuk..."」
