@@ -37,24 +37,24 @@ BUNPO-5
 -DAY15--------------------------------------------
 ==================================================
 BUNPO-1 「（～っけ・～だたっけ） Menerangkan ketika lupa akan sesuatu yg sedang diingat / tidak yakin dgn ingatan sendiri」
- [METHOD-A] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「っけ」
- [METHOD-B] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「だっけ」
- [METHOD-C] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「だったっけ」
- [METHOD-D] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「なんだっけ」
- [NOTE    ] : -
+ [METHOD-A] : 「VerbJisho/Verbた/Adjいlampau/Adjなlampau/meishi」＋「っけ」
+ [METHOD-B] : 「VerbJisho/Verbた/Adjいlampau/Adjなlampau/meishi」＋「だっけ」
+ [METHOD-C] : 「VerbJisho/Verbた/Adjいlampau/Adjなlampau/meishi」＋「だったっけ」
+ [METHOD-D] : 「VerbJisho/Verbた/Adjいlampau/Adjなlampau/meishi」＋「なんだっけ」
+ [NOTE    ] : kasual sekali, kalau formal でしょうか
  
 BUNPO-2 「（～きり） Menerangkan sejak / terakhir kali, setelah itu tidak pernah lagi」
  [METHOD-A] : 「meishi(menerangkan waktu)」＋「きり」
  [METHOD-B] : 「Verbた」＋「きり」
- [NOTE    ] : -
+ [NOTE    ] : bisa berupa penggalan kalimat yg mengungkapkan suatu kejadian dengan ket waktu. jd jika ditambah きり diakhir artinya akan berubah seperti judul bunpo-2. ada method yg mirip pakai 「VerbⓍます」＋「きり」 tp artinya beda.
 
 BUNPO-3 「（～ことだ・～ことです） Menerangkan untuk memperingatkan/menasehati, atau bentuk sebuah penekanan perasaan/emosi」
  [METHOD-A] : 「verb・Adj・meishi」＋「ことだ」
- [NOTE    ] : -
+ [NOTE    ] : jika dgn verb⇒lebih ke saran
  
 BUNPO-4 「（～ことに） Menerangkan perasaan atau emosi (keadaan aktual yg membuat perasaan / emosi itu timbul)」
  [METHOD-A] : 「perasaan/emosi」＋「ことに」
- [NOTE    ] : perasaan/emosi disini adalah ...??
+ [NOTE    ] : perasaan/emosi disini adalah ungkapan kalimat, dan pola ことに meenjadikan ungkapan itu jadi perasaan emosi
  
 BUNPO-5 「（～ことがある・～こともある） pernyataan kadang-kadang / sesekali melakukan / dilakukan / terjadi」
  [METHOD-A] : 「frekuensi : 今でも・たまに・ときどき」＋「Verb」＋「ことがある・こともある」
@@ -63,15 +63,15 @@ BUNPO-5 「（～ことがある・～こともある） pernyataan kadang-kadan
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+この前教えてくれた,なんだったっけ？
 BUNPO-2
-
+あの日に約束をしてきり、彼女から何の返事もない。
 BUNPO-3
-
+人の話を聞くときは、相手の目を見ることです。
 BUNPO-4
-
+残念なことに、旅行の日に限って大雨になってしまった。
 BUNPO-5
-
+夜遅くまでゲームをして、翌日寝坊することがある。
 ==================================================
 -DAY14--------------------------------------------
 ==================================================
