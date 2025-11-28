@@ -34,6 +34,45 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY15--------------------------------------------
+==================================================
+BUNPO-1 「（～っけ・～だたっけ） Menerangkan ketika lupa akan sesuatu yg sedang diingat / tidak yakin dgn ingatan sendiri」
+ [METHOD-A] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「っけ」
+ [METHOD-B] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「だっけ」
+ [METHOD-C] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「だったっけ」
+ [METHOD-D] : 「VerbJisho/Verbた/Adjいlampau/Adjな/meishi」＋「なんだっけ」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～きり） Menerangkan sejak / terakhir kali, setelah itu tidak pernah lagi」
+ [METHOD-A] : 「meishi(menerangkan waktu)」＋「きり」
+ [METHOD-B] : 「Verbた」＋「きり」
+ [NOTE    ] : -
+
+BUNPO-3 「（～ことだ・～ことです） Menerangkan untuk memperingatkan/menasehati, atau bentuk sebuah penekanan perasaan/emosi」
+ [METHOD-A] : 「verb・Adj・meishi」＋「ことだ」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～ことに） Menerangkan perasaan atau emosi (keadaan aktual yg membuat perasaan / emosi itu timbul)」
+ [METHOD-A] : 「perasaan/emosi」＋「ことに」
+ [NOTE    ] : perasaan/emosi disini adalah ...??
+ 
+BUNPO-5 「（～ことがある・～こともある） pernyataan kadang-kadang / sesekali melakukan / dilakukan / terjadi」
+ [METHOD-A] : 「frekuensi : 今でも・たまに・ときどき」＋「Verb」＋「ことがある・こともある」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY14--------------------------------------------
 ==================================================
 BUNPO-1 「（～別に・～別で・～とは別に・～のとは別に） "Dipisahkan berdasarkan..", "Dibedakan berdasarkan.."」
