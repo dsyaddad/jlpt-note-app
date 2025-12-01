@@ -34,6 +34,51 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY16--------------------------------------------
+==================================================
+BUNPO-1 「（～ことにする・～こととする） Menerangkan (diri sendiri) menetapkan akan melakukan verb」
+ [METHOD-A] : 「VerbJisho/Verbない」＋「ことにする/こととする」
+ [NOTE    ] : ini ttg keputusan personal seperti "Saya telah memutuskan bahwa verb"
+ 
+BUNPO-2 「（～ことになる・～こととなる） Menerangkan (orang lain yg menetapkan) ditetapkan akan melakukan verb」
+ [METHOD-A] : 「VerbJisho/Verbない」＋「ことになる/こととなる」
+ [NOTE    ] : punya 2 fungsi: 1. sesuatu yg diputuskan pihak diluar pembicara sehingga bisa diartikan "telah diputuskan bahwa..."
+			  2. sebuah kesimpulan logis atau wajar yg dapat terjadi dgn menilai situasi yg terjadi sebelumnya sehingga bisa diartikan "jadi"
+
+BUNPO-3 「（～ことになっている・～こととなっている） Menyatakan sesuatu yg sudah jadi ketentuan peraturan / undang-undang」
+ [METHOD-A] : 「VerbJisho/Verbない」＋「という」＋「ことになっている/こととなっている」
+ [METHOD-B] : 「meishi」＋「という」＋「ことになっている/こととなっている」
+ [NOTE    ] : ini seperti ketentuan / sesuatu yg jadi peraturan / undang-undang hingga suatu kebiasaan. bisa juga digunakan untuk menyampaikan rencana yang sudah kita susun.
+ 
+BUNPO-4 「（～ことはない・～こともない） Menerangkan tidak perlu/ tidak usah melakukan / dilakukan」
+ [METHOD-A] : 「VerbJisho」＋「こと」＋「は・も」＋「ない」
+ [NOTE    ] : dipakai pembicara untuk memberikan nasihat u/ sesuatu yg tidak perlu dilakukan kepada lawan bicara yg sedang kesulitan.
+ 
+BUNPO-5 「（～くせに・～くせして） Menerangkan (penuh dgn emosi) padahal (katanya)」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「くせに・くせして」＋「keadaan yg bertentangan」
+ [METHOD-B] : 「Adjな」＋「な」＋「くせに・くせして」＋「keadaan yg bertentangan」
+ [METHOD-C] : 「meishi」＋「の」＋「くせに・くせして」＋「keadaan yg bertentangan」
+ [NOTE    ] : menunjukan perasaan pembicara yg negatif seperti keluhan, tidak puas, kecewa dll yg dilakukan oleh lawan biacara atau pihak ketiga yg keadaannya bertentangan dgn pembicara
+
+BUNPO-6 「（～たいものだ） ungkapan keinginan & harapan yg kuat, namun sulit / tidak bisa digapai」
+ [METHOD-A] : 「Verbます」＋「たいものだ」
+ [NOTE    ] : digunakan u/ menunjukan keinginan yg benar-benar ingin {Verb} terhadap suatu yg kemungkinan nya sulit tercapai.
+ 
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+BUNPO-6
+
+==================================================
 -DAY15--------------------------------------------
 ==================================================
 BUNPO-1 「（～っけ・～だたっけ） Menerangkan ketika lupa akan sesuatu yg sedang diingat / tidak yakin dgn ingatan sendiri」
