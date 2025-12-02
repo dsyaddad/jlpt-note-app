@@ -34,6 +34,62 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY17--------------------------------------------
+==================================================
+BUNPO-1 「（～たいうもの・～なるもの） menerangkan meishi yg dibilang, disebut (disambung dgn kenyataan terkait hal sebelumnya)」
+ [METHOD-A] : 「meishi」＋「たいうもの・っていうもの・ってもの」
+ [METHOD-B] : 「meishi」＋「なるもの」
+ [NOTE    ] : A usually use on daily conv. B usually use on writing
+ 
+BUNPO-2 「（～もの・～もん） Menerangkan soalnya/habis/kan (alasan/penyebab = verb/adj/noun)」
+ [METHOD-A] : 「VerbFutsukei」＋「もの・もん」
+ [METHOD-B] : 「Adjな」＋「なんだもん」
+ [METHOD-C] : 「meishi」＋「なんだもん」
+ [NOTE    ] : untuk menunjukan persaan pembicara yg ingin menyatakan alasan dalam pertanyaan conv.
+
+BUNPO-3 「（～向きに・～向きだ） Menerangkan cenderung, ditujukan, dikhususkan untuk meishi」
+ [METHOD-A] : 「meishi」＋「むきだ」
+ [METHOD-B] : 「meishi」＋「むきに」＋「verb/adj」
+ [METHOD-C] : 「meishi」＋「むきの」＋「meishi」
+ [NOTE    ] : cenderung / ditujukan / dikhususkan untuk meishi dan meishi ini cenderung / ditujukan untuk verb/meishi untuk / ditujukan untuk / dikhususkan untuk 
+ 
+BUNPO-4 「（～ながら・～ながらも） Menerangkan pola kalimat untuk menyatakan sesuatu yg berlawanan tapi terjadi diwaktu yg sama」
+ [METHOD-A] : 「Verbます」＋「ながら(も)」＋「detail」
+ [METHOD-B] : 「Adjい」＋「ながら(も)」＋「detail」
+ [METHOD-C] : 「Adjな」＋「(である)ながら(も)」＋「detail」
+ [METHOD-D] : 「meishi」＋「(である)ながら(も)」＋「detail」
+ [METHOD-E] : 「detail awal」＋「とながら(も)」＋「detail tambahan」
+ [METHOD-F] : 「detail awal」＋「にながら(も)」＋「detail tambahan」
+ [NOTE    ] : menunjukan hub paradoks antar kalimat pertama dan kedua. kenyataan yg dinyatakan pada kalimat kedua ternyata bertentangan dgn hal-hal yg tentunya akan diprediksi dari isi yg dinyatakan pada kalimat pertama.
+ 
+BUNPO-5 「（～など／～なんか／～なんて） Menyatakan contoh, merendahkan, atau ekspresi terkejut」
+ [METHOD-A] : 「名詞」＋「など」＋「detail」
+ [METHOD-B] : 「名詞」＋「なんか」＋「detail」
+ [METHOD-C] : 「名詞」＋「なんて」＋「detail」
+ [METHOD-D] : 「普通形（V/A）」＋「なんて」＋「detail」
+ [METHOD-E] : 「動詞辞書形」＋「なんか／なんて」＋「detail」
+ [METHOD-F] : 「名詞＋など＋名詞」／「名詞＋なんか＋名詞」
+ [NOTE    ] : -
+	A. Digunakan untuk memberi contoh netral / “dan lain-lain”.
+	B. Memberi contoh dengan nuansa merendahkan / mengecilkan.
+	C. Ekspresi merendahkan atau terkejut (“hal seperti…”, “masa iya…”).
+	D. Dipakai ketika seluruh frasa/aksi dijadikan objek penilaian (“bahwa … itu…”).
+	E. Untuk mengecilkan tindakan (“melakukan X? ah…”).
+	F. Digunakan saat menyebut beberapa benda sekaligus (“X, Y, dan semacamnya”).
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY16--------------------------------------------
 ==================================================
 BUNPO-1 「（～ことにする・～こととする） Menerangkan (diri sendiri) menetapkan akan melakukan verb」
