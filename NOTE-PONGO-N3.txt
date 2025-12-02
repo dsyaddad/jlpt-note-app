@@ -49,7 +49,7 @@ BUNPO-2 「（～もの・～もん） Menerangkan soalnya/habis/kan (alasan/pen
  
 BUNPO-3 「（～ものか） Menerangkan pola kalimat yg ingin menolak / menyangkal sesuatu secara akurat」
  [METHOD-A] : 「VerbJisho」＋「ものか」
- [NOTE    ] : untuk menunjukan persaan pembicara yg menentang sesuatu dengan kuat.
+ [NOTE    ] : untuk menunjukan persaan pembicara yg menentang sesuatu dengan kuat.　"gamungkin saya..."
 
 BUNPO-4 「（～向きに・～向きだ） Menerangkan cenderung, ditujukan, dikhususkan untuk meishi」
  [METHOD-A] : 「meishi」＋「むきだ」
@@ -589,10 +589,10 @@ BUNPO-4 「（～ばかり・～ばかりいる） "Hanya.., Itu-itu saja.., Mel
  [NOTE    ] : -
  
 BUNPO-5 「（～向け） "Untuk.., Ditujukan.."」
- [METHOD-A] : 「Meishi」＋「向け」＋「detail」
- [METHOD-B] : 「Meishi」＋「向けの」＋「detail」
- [METHOD-C] : 「Meishi」＋「向けに」＋「detail」
- [METHOD-D] : 「Meishi」＋「向けだ」＋「detail」
+ [METHOD-A] : 「Meishi」＋「むけ」＋「detail」
+ [METHOD-B] : 「Meishi」＋「むけの」＋「detail」
+ [METHOD-C] : 「Meishi」＋「むけに」＋「detail」
+ [METHOD-D] : 「Meishi」＋「むけだ」＋「detail」
  [NOTE    ] : 向けの→＋Meishi, 向けに→＋Verb, 向け→＋klausa, 向けだ→predikat.
  
 BUNPO-6 「（～きる・～きれる） "Sampai habis.., Selesai.."」
