@@ -123,17 +123,17 @@ BUNPO-6 「（～たいものだ） ungkapan keinginan & harapan yg kuat, namun 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+来月から毎朝30分早く起きることにする。
 BUNPO-2
-
+担当の先生が病気になったため、試験は再来週に行われることになった。
 BUNPO-3
-
+学生は図書館で飲み物を持ち込んではいけないことになっている。
 BUNPO-4
-
+そんなに謝ることはない。誰だってミスはします。
 BUNPO-5
-
+勉強しないくせに、試験の点数が悪いとすぐに文句を言う。
 BUNPO-6
-
+人生で一度は世界一周の旅に出てみたいものだ。
 ==================================================
 -DAY15--------------------------------------------
 ==================================================
@@ -532,7 +532,7 @@ BUNPO-2 「も構わない Makna jadi : "Tidak masalah bila..."」
 BUNPO-3 「まるで～ようだ ungkapan perumpamaan suatu A dan B」
  [METHOD-A] : 「suatu-A」＋「まるで」＋「Vjisho・Adjい・Adjな⇒suatu-B」＋「ようだ」
  [METHOD-B] : 「suatu-A」＋「まるで」＋「Meishi⇒suatu-B」＋「ようだ」
- [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒perumpamaan
+ [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒perumpamaan / seakan-akan
  
 BUNPO-4 「(というより・というか) ungkapan perbandingan situasi A dan B」
  [METHOD-A] : 「situasi-A」＋「というより・というか」＋「situasi-B」
