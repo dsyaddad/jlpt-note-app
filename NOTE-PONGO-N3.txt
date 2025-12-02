@@ -46,14 +46,18 @@ BUNPO-2 「（～もの・～もん） Menerangkan soalnya/habis/kan (alasan/pen
  [METHOD-B] : 「Adjな」＋「なんだもん」
  [METHOD-C] : 「meishi」＋「なんだもん」
  [NOTE    ] : untuk menunjukan persaan pembicara yg ingin menyatakan alasan dalam pertanyaan conv.
+ 
+BUNPO-3 「（～ものか） Menerangkan pola kalimat yg ingin menolak / menyangkal sesuatu secara akurat」
+ [METHOD-A] : 「VerbJisho」＋「ものか」
+ [NOTE    ] : untuk menunjukan persaan pembicara yg menentang sesuatu dengan kuat.
 
-BUNPO-3 「（～向きに・～向きだ） Menerangkan cenderung, ditujukan, dikhususkan untuk meishi」
+BUNPO-4 「（～向きに・～向きだ） Menerangkan cenderung, ditujukan, dikhususkan untuk meishi」
  [METHOD-A] : 「meishi」＋「むきだ」
  [METHOD-B] : 「meishi」＋「むきに」＋「verb/adj」
  [METHOD-C] : 「meishi」＋「むきの」＋「meishi」
  [NOTE    ] : cenderung / ditujukan / dikhususkan untuk meishi dan meishi ini cenderung / ditujukan untuk verb/meishi untuk / ditujukan untuk / dikhususkan untuk 
  
-BUNPO-4 「（～ながら・～ながらも） Menerangkan pola kalimat untuk menyatakan sesuatu yg berlawanan tapi terjadi diwaktu yg sama」
+BUNPO-5 「（～ながら・～ながらも） Menerangkan pola kalimat untuk menyatakan sesuatu yg berlawanan tapi terjadi diwaktu yg sama」
  [METHOD-A] : 「Verbます」＋「ながら(も)」＋「detail」
  [METHOD-B] : 「Adjい」＋「ながら(も)」＋「detail」
  [METHOD-C] : 「Adjな」＋「(である)ながら(も)」＋「detail」
@@ -62,7 +66,7 @@ BUNPO-4 「（～ながら・～ながらも） Menerangkan pola kalimat untuk m
  [METHOD-F] : 「detail awal」＋「にながら(も)」＋「detail tambahan」
  [NOTE    ] : menunjukan hub paradoks antar kalimat pertama dan kedua. kenyataan yg dinyatakan pada kalimat kedua ternyata bertentangan dgn hal-hal yg tentunya akan diprediksi dari isi yg dinyatakan pada kalimat pertama.
  
-BUNPO-5 「（～など／～なんか／～なんて） Menyatakan contoh, merendahkan, atau ekspresi terkejut」
+BUNPO-6 「（～など／～なんか／～なんて） Menyatakan contoh, merendahkan, atau ekspresi terkejut」
  [METHOD-A] : 「名詞」＋「など」＋「detail」
  [METHOD-B] : 「名詞」＋「なんか」＋「detail」
  [METHOD-C] : 「名詞」＋「なんて」＋「detail」
@@ -80,15 +84,17 @@ BUNPO-5 「（～など／～なんか／～なんて） Menyatakan contoh, mere
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+和食というものは味のバランスを大切にする料理です。
 BUNPO-2
-
+まだ食べてないよ。仕事が終わらなかったんだもん。
 BUNPO-3
-
+あの人の言うことなんて信じるものか。
 BUNPO-4
-
+辛い料理が苦手なら、このメニューは向いていないよ。
 BUNPO-5
-
+雨が降っていながらも、試合は予定通り行われた。
+BUNPO-6
+自分なんかにできるわけないよ。
 ==================================================
 -DAY16--------------------------------------------
 ==================================================
