@@ -34,6 +34,47 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY18--------------------------------------------
+==================================================
+BUNPO-1 「（～から～にかけて・にかけ） ungkapan untuk "dari {meishi} hingga {meishi} semua (tanpa terkecuali)"」
+ [METHOD-A] : 「meishi」＋「から」＋「meishi」＋「にかけて・にかけ」＋「detail」
+ [NOTE    ] : ex :`karena hujan dari pagi sampai sore tadi kemungkinan malam nanti akan kabut`
+ 
+BUNPO-2 「（～にしよ～にしよ・～にしても～にしても・～にしろ～にしろ） "Mau {verb/meishi/adj} atau {verb/meishi/adj}, tetap saja {detail}"」
+ [METHOD-A] : 「VerbFutsukei・Adjい」＋「にしろ・にせよ・にしても」
+ [METHOD-B] : 「meishi」＋「である」＋「にしろ・にせよ・にしても」
+ [METHOD-C] : 「Adjな」＋「にしろ・にせよ・にしても」
+ [NOTE    ] : bisa berulang dipakainya dalam 1 kalimat. 
+
+BUNPO-3 「（～を中心にして・～を中心に・～を中心として） pola kalimat "yang pusat", "dipusatkan ke", "berpusat pada"」
+ [METHOD-A] : 「meishi」＋「をちゅうしんにして」
+ [METHOD-B] : 「meishi」＋「をちゅうしんとして」
+ [NOTE    ] : ungkapan untuk menunjukan pusat, berfokus, menfokuskan hal
+ 
+BUNPO-4 「（～を始め・～を始めとして・～を始めとする） "dimulai dari {meishi:sesuatu yg penting}"」
+ [METHOD-A] : 「meishi」＋「をはじめとして」＋「detail」
+ [METHOD-B] : 「meishi」＋「をはじめとする」＋「detail」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～おかげで・～おかげだ） "berkat / atas bantuan {meishi}, jadi (hasil)..."」
+ [METHOD-A] : 「meishi」＋「の」＋「おかげで・おかげだ」＋「detail」
+ [METHOD-B] : 「VerbFutsukei・Adjい」＋「おかげで・おかげだ」＋「detail」
+ [METHOD-C] : 「Adjな」＋「な」＋「おかげで・おかげだ」＋「detail」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+
+BUNPO-2
+
+BUNPO-3
+
+BUNPO-4
+
+BUNPO-5
+
+==================================================
 -DAY17--------------------------------------------
 ==================================================
 BUNPO-1 「（～たいうもの・～なるもの） menerangkan meishi yg dibilang, disebut (disambung dgn kenyataan terkait hal sebelumnya)」
