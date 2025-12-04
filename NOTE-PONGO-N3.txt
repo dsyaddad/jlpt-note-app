@@ -38,7 +38,7 @@ BUNPO-5
 ==================================================
 BUNPO-1 「（～から～にかけて・にかけ） ungkapan untuk "dari {meishi} hingga {meishi} semua (tanpa terkecuali)"」
  [METHOD-A] : 「meishi」＋「から」＋「meishi」＋「にかけて・にかけ」＋「detail」
- [NOTE    ] : ex :`karena hujan dari pagi sampai sore tadi kemungkinan malam nanti akan kabut`
+ [NOTE    ] : meishi hanya untuk tempat / waktu
  
 BUNPO-2 「（～にしよ～にしよ・～にしても～にしても・～にしろ～にしろ） "Mau {verb/meishi/adj} atau {verb/meishi/adj}, tetap saja {detail}"」
  [METHOD-A] : 「VerbFutsukei・Adjい」＋「にしろ・にせよ・にしても」
@@ -65,15 +65,15 @@ BUNPO-5 「（～おかげで・～おかげだ） "berkat / atas bantuan {meish
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+東京から神奈川にかけて、強い風が吹き続いている。
 BUNPO-2
-
+行くにしろ行かないにしろ、早く連絡してくれ。
 BUNPO-3
-
+このプロジェクトはセキュリティ対策を中心に進めていく。
 BUNPO-4
-
+コーヒーを始め、飲み物の値段が次々と上がっている。
 BUNPO-5
-
+天気が良かったおかげで、イベントは大成功だった。
 ==================================================
 -DAY17--------------------------------------------
 ==================================================
