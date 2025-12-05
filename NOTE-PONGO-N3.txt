@@ -72,15 +72,17 @@ BUNPO-5
 -DAY19--------------------------------------------
 ==================================================
 BUNPO-1 「（～さえ～ば） "Seandainya saja..."」
- [METHOD-A] : 「VerbⓍます・meishi・Adj」＋「さえ～ば」＋「detail」
- [NOTE    ] : "~" disini bisa diisi dengan???
+ [METHOD-A] : 「Adj⇒seandainya..」＋「さえば」＋「harapan」
+ [METHOD-B] : 「VerbⓍます⇒seandainya..」＋「さえば」＋「harapan」
+ [METHOD-A] : 「meishi⇒seandainya..」＋「さえすれば」＋「harapan」
+ [NOTE    ] : 
  
 BUNPO-2 「（～せいで・～せいか・～せいだ・～せいにする） "Gara-gara...", "karena ..(negatif)"」
  [METHOD-A] : 「VerbFutsukei」＋「せいで・せいか・せいだ・せいにする」
  [METHOD-B] : 「Adjい」＋「せいで・せいか・せいだ・せいにする」
  [METHOD-C] : 「Adjな」＋「な」＋「せいで・せいか・せいだ・せいにする」
  [METHOD-D] : 「meishi」＋「の(な)」＋「せいで・せいか・せいだ・せいにする」
- [NOTE    ] : menyalahkan sesuatu.
+ [NOTE    ] : せいで⇒ditengah kalimat・せいか⇒dipakai saat ragu mau salahinnya・せいだ⇒diakhir kalimat・せいにする⇒menyalahkan orang
 
 BUNPO-3 「（～しかない） "Hanya bisa {verb}.."」
  [METHOD-A] : 「VerbJisho」＋「しかない」
