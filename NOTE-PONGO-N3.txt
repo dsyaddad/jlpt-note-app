@@ -82,7 +82,7 @@ BUNPO-2 「（～せいで・～せいか・～せいだ・～せいにする）
  [METHOD-B] : 「Adjい」＋「せいで・せいか・せいだ・せいにする」
  [METHOD-C] : 「Adjな」＋「な」＋「せいで・せいか・せいだ・せいにする」
  [METHOD-D] : 「meishi」＋「の(な)」＋「せいで・せいか・せいだ・せいにする」
- [NOTE    ] : せいで⇒ditengah kalimat・せいか⇒dipakai saat ragu mau salahinnya・せいだ⇒diakhir kalimat・せいにする⇒menyalahkan orang
+ [NOTE    ] : せいで⇒ditengah kalimat・せいか⇒dipakai saat ragu mau salahinnya・せいだ⇒diakhir kalimat・せいにする⇒menyalahkan orang          
 
 BUNPO-3 「（～しかない） "Hanya bisa {verb}.."」
  [METHOD-A] : 「VerbJisho」＋「しかない」
@@ -667,7 +667,7 @@ BUNPO-5 「～最中に "sedang/ditengah-tengah/lagi,malah/tiba-tiba..."」
  [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒gangguan
 
 BUNPO-6 「～と共に "Bersamaan dengan .."」
- [METHOD-A] : 「Vjisho・Meishi⇒suatu-A」＋「ともに」＋「suatu-B」
+ [METHOD-A] : 「Vjisho・Meishi⇒suatu-A」＋「とともに」＋「suatu-B」
  [NOTE    ] : ada 2 bagian kalimat, A⇒aktual B⇒additional
  
 --------------------------------------------------
@@ -783,7 +783,7 @@ BUNPO-3 「（勝手に～） "Semaunya.., sesuka hati.., semena-mena.."」
  [METHOD-A] : 「かってに」＋「situasi」
  [NOTE    ] : -
  
-BUNPO-4 「（～結果間） "Hasilnya.., Akibatnya.., Setelahnya..,"」
+BUNPO-4 「（～結果） "Hasilnya.., Akibatnya.., Setelahnya..,"」
  [METHOD-A] : 「Meishi⇒sebab」＋「の」＋「けっか」＋「akibat」
  [METHOD-B] : 「Verbた⇒sebab」＋「けっか」＋「akibat」
  [NOTE    ] : sebab-akibat. mirip ので lebih formal ini.
