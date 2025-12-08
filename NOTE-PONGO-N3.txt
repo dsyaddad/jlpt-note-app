@@ -36,25 +36,43 @@ BUNPO-5
 ==================================================
 -DAY20--------------------------------------------
 ==================================================
-BUNPO-1 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-1 「（～為に・～ために） Ungkapan tujuan/maksud, balas budi, sebab akibat/alasan」
+ [METHOD-A] : 「meishi」＋「の」＋「ため（に）」＋「detail」
+ [METHOD-B] : 「verbJisho」＋「ため（に）」＋「detail」
+ [METHOD-C] : 「nama-org・kelompok」＋「ため（に）」＋「detail」
+ [METHOD-D] : 「verbFutsukei・Adjい」＋「の」＋「ため（に）」＋「detail」
+ [METHOD-E] : 「Adjな」＋「な」＋「ため（に）」＋「detail」
+ [METHOD-F] : 「meishi」＋「の」＋「ため（に）」＋「detail」
+ [NOTE    ] : A,B⇒tujuan : "melakukan {verb.meishi} untuk, {detail}"
+              C⇒balas budi : "dilakukan/melakukan untuk {meishi},{detail}" D,E,F⇒ sebab akibat/alisan : "akibat {verb.meishi.adj} jadi {detail}"
  
-BUNPO-2 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-2 「（たとえ～ても・たとい～ても） "Sekalipun/meskipun/walaupun {verb/adj} tetap {detail}"」
+ [METHOD-A] : 「たとえ」＋「Verbて」＋「も」＋「detail」
+ [METHOD-B] : 「たとえ」＋「Adjな・meishi」＋「でも」＋「detail」
+ [METHOD-C] : 「たとえ」＋「AdjⓍい⇒く」＋「ても」＋「detail」
+ [NOTE    ] : たとえ⇒casual,たとい⇒formal, awal kalimat biasanya perumpamaan/pengandaian
 
-BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-3 「（～てはじめて・～てみてはじめて） ungkapan pertama kali menyadari/mengetahui/merasakan」
+ [METHOD-A] : 「Verbて」＋「はじめて」＋「detail」
+ [METHOD-B] : 「Verbて」＋「みて」＋「はじめて」＋「detail」
  [NOTE    ] : -
  
-BUNPO-4 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-4 「（～としても・～としたって・～としたところで・～とて） "meskipun melakukan {verb/adj/meishi} belum tentu {detail}"」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「としても」＋「detail」
+ [METHOD-B] : 「Adjな/meishi」＋「(だ・である)としても」＋「detail」
+ [NOTE    ] : とて⇒bentuk paling formal
  
-BUNPO-5 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-5 「（～としたら・～とすると・～とすれば） "Seandainya {verb/adj/meishi}, detail"」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「（の）としたら・とすると・とすれば」＋「detail」
+ [METHOD-A] : 「meishi/Adjな」＋「（なの）だ」＋「としたら・とすると・とすれば」＋「detail」
+ [NOTE    ] : perumpamaan dan asumsi yg kemudian diikuti dengan konfirmasi, isi pengandaian yg belum terjadi tp bisa saja terjadi.
+ 
+BUNPO-6 「（～として・～としての・～としても） "｛meishi} sebagai {meishi}, {detail}"」
+ [METHOD-A] : 「meishi」＋「として」＋「detail」
+ [METHOD-B] : 「meishi」＋「としての」＋「meishi」＋「detail」
+ [METHOD-C] : 「meishi」＋「としても・といたしましても」＋「detail」
+ [METHOD-D] : 「meishi」＋「として・といたしまして」＋「detail」
+ [NOTE    ] : ungkapan ini menunjukan status, jabatan, kualifikasi, dan jenis.
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
@@ -67,6 +85,8 @@ BUNPO-3
 BUNPO-4
 
 BUNPO-5
+
+BUNPO-6
 
 ==================================================
 -DAY19--------------------------------------------
