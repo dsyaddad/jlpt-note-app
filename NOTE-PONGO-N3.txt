@@ -34,6 +34,55 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY21--------------------------------------------
+==================================================
+BUNPO-1 「（～つまり・～すなわち） "Dengan kata lain / atau / bisa juga disebut / artinya / intinya / singkat kata"」
+ [METHOD-A] : 「kalimat/kosakata」＋「つまり」＋「kalimat/kosakata」
+ [METHOD-B] : 「kalimat/kosakata」＋「すなわち」＋「kalimat/kosakata」
+ [NOTE    ] : B⇒formal, A⇒casual
+ 
+BUNPO-2 「（～うちに） "Selagi/selama/lama-lama..."」
+ [METHOD-A] : 「meishi」＋「のうちに」
+ [METHOD-B] : 「Adjな」＋「なうちに・ではないうちに」
+ [METHOD-C] : 「Adjい」＋「うちに」
+ [METHOD-D] : 「Verbない・Verbている・VerbJisho」＋「うちに」
+ [NOTE    ] : u/ mengambil kesempatan dari suatu situasi, dan juga bisa untuk hal yg bisa dilakukan selama sesuatu berlangsung (dalam waktu jangka panjang/pendek ) karena kemauan pembicara / terjadi secara alami
+
+BUNPO-3 「（～というわけ） "Wajar saja...","Pantas saja.."」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「（という）わけ」
+ [METHOD-B] : 「Adjな・meishi」＋「な・である・という」＋「わけ」
+ [NOTE    ] : menyatakan alasan, penekanan kesimpulan / fakta / dgn kata lain / ringkasan / pemahaman.
+ 
+BUNPO-4 「（～わけがない） "Tidak mungkin.."」
+ [METHOD-A] : 「Adjい/VerbFutsukei」＋「わけがない」
+ [METHOD-A] : 「Adjな/meishi」＋「な・である・という」＋「わけがない」
+ [NOTE    ] : ungkapan ingin memberi penekanan pada kalimat negatif tidak mungkin, atau sama dengan はずがない
+ 
+BUNPO-5 「（～(という)わけではない） "Bukan berarti.."」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「(という)わけではない」
+ [METHOD-B] : 「meishi/Adjな」＋「な・である・という」＋「わけではない」
+ [NOTE    ] : menyatakan bantahan / sangkalan, tapi tidak dinyatakan secara gamblang
+ 
+BUNPO-6 「（～わけにはいがない・～ないわけにはいがない） A⇒"Tidak munkgin bisa/tidak boleh/tidak bisa..." B⇒"harus(melakukan sesuatu).."」
+ [METHOD-A] : 「VerbJisho」＋「わけにはいかない・わけにもいかない」
+ [METHOD-B] : 「Verbない」＋「ないわけにはいかない・ないわけにもいかない」
+ [NOTE    ] : kedua pola ini dilakukan krn tuntutan / pengaruh keadan sekitar, tidak bisa karena kemampuan pribadi
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+彼は三年間毎日コードを書いている。すなわち、実務経験がなくても基礎力は十分にあるということだ。
+BUNPO-2
+雨が降らないうちに、買い物を済ませよう。
+BUNPO-3
+毎日三時間も勉強しているなら、成績が上がるのは当然なわけだ。
+BUNPO-4
+この古いサーバーで、同時に十件の動画をエンコードできるわけがない。
+BUNPO-5
+彼が嫌いなわけではない。ただ、仕事のやり方が合わないだけだ。
+BUNPO-6
+健康診断が近いから、今は暴飲暴食するわけにはいかない。
+==================================================
 -DAY20--------------------------------------------
 ==================================================
 BUNPO-1 「（～為に・～ために） Ungkapan tujuan/maksud, balas budi, sebab akibat/alasan」
