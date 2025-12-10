@@ -34,6 +34,52 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY22--------------------------------------------
+==================================================
+BUNPO-1 「（～わりに） "Padahal/Meskipun.."」
+ [METHOD-A] : 「Adjい・VerbFutsukei」＋「わりに（は）」
+ [METHOD-B] : 「Adjな」＋「な・である」＋「わりに（は）」
+ [METHOD-C] : 「meishi」＋「の・である」＋「わりに（は）」
+ [NOTE    ] : sesuatu yg bertentangan dgn kenyataan, bisa u/ konotasi positif/negatif
+ 
+BUNPO-2 「（～ようがない） "Tidak bisa.."」
+ [METHOD-A] : 「VerbⓍます」＋「ようがない・ようもない」
+ [METHOD-B] : 「VerbⓍます」＋「ようのない」＋「meishi」
+ [NOTE    ] : ingin dilakukan tapi tidak bisa karena suatu alasan
+
+BUNPO-3 「（～のように） "Seperti/tampak/kelihatan.."」
+ [METHOD-A] : 「VerbJisho/meishi」＋「のように」
+ [METHOD-B] : 「VerbJisho/meishi」＋「のような」＋「meishi」
+ [NOTE    ] : sesuatu yg dirasakan pembicara, bersifat subjektif
+ 
+BUNPO-4 「（～としない・～とはしない） "Tidak berusaha u/ melakukan ...(sedikit pun)", "tidak ada niat untuk.."」
+ [METHOD-A] : 「Verbおう・よう」＋「としない・とはしない・ともしない」
+ [NOTE    ] : Verbおう・よう⇒Bentuk ajakan. sesuatu yg mestinya/niat untuk dilakukan, tapi pada akhirnya tidak dijalankan.
+ 
+BUNPO-5 「（～Verbよう～とする） "Berusaha..","Mencoba.."」
+ [METHOD-A] : 「Verbおう・よう」＋「とする」
+ [NOTE    ] : pembicara berusaha melakukan suatu berdasarkan kemampuannya
+
+BUNPO-6 「（～ないずに・～しないぜすに） "Melakukan...tanpa.."」
+ [METHOD-A] : 「(Vgol-1,2,3-来る)⇒VerbなⓍい」＋「ず（に）」
+ [METHOD-B] : 「(Vgol3-する)⇒VerbなⓍい」＋「せず（に）」
+ [NOTE    ] : ini bentuk sopan dari ～ないで
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+仕事は忙しいわりに、毎晩ゲームしてるね。
+BUNPO-2
+相手の連絡先を知らないから、謝りたくても謝りようがない。
+BUNPO-3
+外を見ると、雪が降り始めたようだった。
+BUNPO-4
+彼女は疲れているのに、休もうともしない。
+BUNPO-5
+早く起きようとしたのに、アラームに全く気づかなかった。
+BUNPO-6
+メガネをかけずに運転するのは危険すぎる。
+==================================================
 -DAY21--------------------------------------------
 ==================================================
 BUNPO-1 「（～つまり・～すなわち） "Dengan kata lain / atau / bisa juga disebut / artinya / intinya / singkat kata"」
