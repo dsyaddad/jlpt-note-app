@@ -34,6 +34,49 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY23--------------------------------------------
+==================================================
+BUNPO-1 「（～ない⇒ぬ・～しない⇒せぬ） bentuk sopan dari ない」
+ [METHOD-A] : 「VerbⓍない」⇒「ぬ・ん」
+ [METHOD-B] : 「VerbⓍしない」⇒「せぬ・せん」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～やら） ungkapan untuk menyebutkan 2 macam contoh sbg perwakilan」
+ [METHOD-A] : 「VerbJisho/meishi/Adjい」＋「やら」
+ [NOTE    ] : biasanya dipakai saat punya kesan yg tidak menyenangkan
+
+BUNPO-3 「（～始める・～始めた） menyatakan awal dari sesuatu」
+ [METHOD-A] : 「VerbⓍます」＋「始める・始めた」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～終わる） menyatakan akhir dari sesuatu」
+ [METHOD-A] : 「VerbⓍます」＋「おわる・おわった・おわったら」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～だろうと思う） menyampaikan apa yg kita pikirkan mungkin benar kpd org lain, tp kita sendiri tidak terlalu yakin akan pendapat tsb」
+ [METHOD-A] : 「VerbFutsukei」＋「だろうと思う」
+ [NOTE    ] : -
+
+BUNPO-6 「（～なさそうだ） menyampaikan saat memikirkan sesuatu "tidak"/"bukan" berdasarkan apa yg kita lihat, rasakan & perkirakan」
+ [METHOD-A] : 「Adjい⇒く」＋「なさそうだ」
+ [METHOD-B] : 「Adjな・meishi」＋「じゃ」＋「なさそうだ」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+あの態度では信頼されんぞ。
+BUNPO-2
+仕事やら家の用事やらで、休む時間がほとんどない。
+BUNPO-3
+雨がぽつぽつ降り始めた。
+BUNPO-4
+彼は映画が終わるまでずっと泣いていた。
+BUNPO-5
+電車はもうすぐ来るだろうと思う。
+BUNPO-6
+このケーキは甘くなさそうだ。
+==================================================
 -DAY22--------------------------------------------
 ==================================================
 BUNPO-1 「（～割に） "Padahal/Meskipun.."」
