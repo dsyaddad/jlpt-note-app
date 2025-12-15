@@ -34,6 +34,47 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY24--------------------------------------------
+==================================================
+BUNPO-1 「（～ていく） ungkapan subject kalimat yg bergerak menjauh, atau pergi ketempat lain.」
+ [METHOD-A] : 「Verbて」＋「いく」
+ [NOTE    ] : bisa juga u/ menyatakan tindakan yg akan berlanjut hingga masa mendatang
+ 
+BUNPO-2 「（～てくる） ungkapan subject kalimat yg bergerak mendekat, atau datang」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : atau ketika tindakan / perubahan di masa lalu berlanjut hingga masa kini.
+
+BUNPO-3 「（～続ける） menerangkan saat menekankan suatu tindakan terus berlanjut / berulang menjadi suatu kebiasaan」
+ [METHOD-A] : 「VerbⓍます」＋「つづける」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～って） menerangkan pengganti という untuk menyatakan nama」
+ [METHOD-A] : 「meishi-A」＋「って」＋「meishi-B」
+ [NOTE    ] : meishi-A yg mau dijelaskan, meishi-B yg penjelasannya.
+ 
+BUNPO-5 「（～って） menerangkan sbg pengganti は」
+ [METHOD-A] : 「meishi」＋「って」
+ [NOTE    ] : -
+ 
+BUNPO-6 「（～てもらう・～てくれる） menerangkan ketika meminta ijin dari orang lain untuk melakukan sesuatu」
+ [METHOD-A] : 「Verbさせる」＋「てもらう・てくれる」
+ [NOTE    ] : bisa digunakan u/ menunjukan rasa terimakasih karena telah mendapatkan ijin. pakai Verb kausatif
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+この町は若者が減っていっている。
+BUNPO-2
+日本語が少しずつ分かってきた。
+BUNPO-3
+問題が解決するまで話し続けましょう。
+BUNPO-4
+N3って、日本語能力試験のレベルの一つだよ。
+BUNPO-5
+日本語って、難しいと思う？
+BUNPO-6
+上司に先に帰らせてもらって、助かりました。
+==================================================
 -DAY23--------------------------------------------
 ==================================================
 BUNPO-1 「（～ない⇒ぬ・～しない⇒せぬ） bentuk sopan dari ない」
