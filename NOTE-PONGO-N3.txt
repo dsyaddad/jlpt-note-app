@@ -41,10 +41,10 @@ BUNPO-1 「（～させるられる） menerangkan ketika org lain menyuruh kita
  [NOTE    ] : -
  
 BUNPO-2 「（～がる） menerangkan saat perasaan / keadaan seseorang ditujunkan melalui perilaku / kata-katanya」
- [METHOD-A] : 「AdjⓍい」＋「がる」
+ [METHOD-A] : 「Adjい/Adjな」＋「がり」 ⇒ mudah ke...
  [METHOD-B] : 「meishi-perasaan」＋「がり」
- [METHOD-C] : 「VerbⓍます」＋「たがる」
- [METHOD-D] : 「Adjな」＋「がる」
+ [METHOD-C] : 「VerbⓍます」＋「たがる」 ⇒ keinginan orang lain..
+ [METHOD-D] : 「Adjい/Adjな」＋「がる」
  [NOTE    ] : tidak digunakan saat mengatakan perasaan diri sendiri. ～がり merupakan meishi yg menunjukan apa yg dirasakan oleh org tersebut seperti 暑がり、寒がり。。
 
 BUNPO-3 「（～出す） menerangkan ketika suatu tiba-tiba terjadi」
@@ -52,7 +52,7 @@ BUNPO-3 「（～出す） menerangkan ketika suatu tiba-tiba terjadi」
  [NOTE    ] : -
  
 BUNPO-4 「（～ようとする・～ようとしない） digunakan saat ingin mengatakan bahwa kamu akan melakukan yg terbaik/ akan melakukan suatu hal seperti itu, dan negasinya digunakan untuk mengkritik seseorang atas hal yg tidak dilakukannya.」
- [METHOD-A] : 「VerbⓍます」＋「」
+ [METHOD-A] : 「Verbよう」＋「とする・としない」
  [NOTE    ] : pola ini bisa untuk mengekspresikan suatu yg terjadi diluar dugaan sebelum subject melakukan tindakan.
  
 BUNPO-5 「（～させる⇒て＋おく） seseorang disuruh untuk terus melakukan suatu tindakan. bisa juga dikatakan tidak mengganggu atau mengubah kebiasaan seseorang namun hanya dibiarkan begitu saja. 」
