@@ -34,6 +34,44 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY25--------------------------------------------
+==================================================
+BUNPO-1 「（～させるられる） menerangkan ketika org lain menyuruh kita melakukan hal yg tidak ingin kita lakukan tapi harus tetap dilakukan」
+ [METHOD-A] : 「Verb」＋「させるられる」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～がる） menerangkan saat perasaan / keadaan seseorang ditujunkan melalui perilaku / kata-katanya」
+ [METHOD-A] : 「AdjⓍい」＋「がる」
+ [METHOD-B] : 「meishi-perasaan」＋「がり」
+ [METHOD-C] : 「VerbⓍます」＋「たがる」
+ [METHOD-D] : 「Adjな」＋「がる」
+ [NOTE    ] : tidak digunakan saat mengatakan perasaan diri sendiri. ～がり merupakan meishi yg menunjukan apa yg dirasakan oleh org tersebut seperti 暑がり、寒がり。。
+
+BUNPO-3 「（～出す） menerangkan ketika suatu tiba-tiba terjadi」
+ [METHOD-A] : 「VerbⓍます」＋「だす」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～ようとする・～ようとしない） digunakan saat ingin mengatakan bahwa kamu akan melakukan yg terbaik/ akan melakukan suatu hal seperti itu, dan negasinya digunakan untuk mengkritik seseorang atas hal yg tidak dilakukannya.」
+ [METHOD-A] : 「VerbⓍます」＋「」
+ [NOTE    ] : pola ini bisa untuk mengekspresikan suatu yg terjadi diluar dugaan sebelum subject melakukan tindakan.
+ 
+BUNPO-5 「（～させる⇒て＋おく） seseorang disuruh untuk terus melakukan suatu tindakan. bisa juga dikatakan tidak mengganggu atau mengubah kebiasaan seseorang namun hanya dibiarkan begitu saja. 」
+ [METHOD-A] : 「Verbさせる⇒Verbさせて」＋「おく」
+ [NOTE    ] : ungkapan dipakai untuk org yg kedudukannya dibawah atau pada hewan.
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+友だちと遊びたかったのに、残業をさせられた。
+BUNPO-2
+彼は人前で話すのを恥ずかしがる。
+BUNPO-3
+ドアを開けた瞬間、犬が飛び出した。
+BUNPO-4
+危ないのに、子どもが一人で川に入ろうとした。
+BUNPO-5
+危なくないので、子どもを外で遊ばせておいた。
+==================================================
 -DAY24--------------------------------------------
 ==================================================
 BUNPO-1 「（～ていく） ungkapan subject kalimat yg bergerak menjauh, atau pergi ketempat lain.」
