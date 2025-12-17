@@ -34,6 +34,50 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY26--------------------------------------------
+==================================================
+BUNPO-1 「（～Vられる⇒て＋しまう） ketika merasa bahwa yg dilakukan oleh org lain thdp diri kita mengganggu / disayangkan」
+ [METHOD-A] : 「Verbられる⇒られて」＋「しまう」
+ [NOTE    ] : VerbUkemikei/pasif
+ 
+BUNPO-2 「（～によって・～による） cara / method dari saat mengerjakan sesuatu」
+ [METHOD-A] : 「meishi」＋「によって」
+ [METHOD-B] : 「meishi」＋「による」＋「meishi」
+ [NOTE    ] : -
+
+BUNPO-3 「（～に対して・～に対し） menyatakan tindakan langsung kepada org lain / suatu sikap」
+ [METHOD-A] : 「meishi」＋「にたいして（は・も）」
+ [METHOD-B] : 「meishi」＋「にたいし」
+ [METHOD-B] : 「meishi」＋「に対する」＋「meishi」
+ [NOTE    ] : bisa juga u/ merespon suatu pendapat, masalah/ permintaan
+ 
+BUNPO-4 「（～につき） untuk menyatakan jumlah pada tiap unit」
+ [METHOD-A] : 「meishi」＋「につき」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～通して～通じて） menunjukan bahwa suatu tindakan tdk dilakukan scr lgsung tp melalui org, cara atau sesuatu」
+ [METHOD-A] : 「meishi」＋「をとをして・つうじて」
+ [NOTE    ] : -
+ 
+BUNPO-6 「（～通して～通じて） menyatakan suatu terjadi selama jangka waktu tersebut」
+ [METHOD-A] : 「meishi-ket-waktu」＋「をとをして・つうじて」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+弟に勝手に日記を読まれてしまった。
+BUNPO-2
+この問題は、話し合いによって解決されました。
+BUNPO-3
+先生に対して、失礼な態度を取ってはいけません。
+BUNPO-4
+一人につき、飲み物は一つまでです。
+BUNPO-5
+インターネットを通じて、世界中の人とつながれます。
+BUNPO-6
+一年を通して、この店は営業しています。
+==================================================
 -DAY25--------------------------------------------
 ==================================================
 BUNPO-1 「（～させるられる） menerangkan ketika org lain menyuruh kita melakukan hal yg tidak ingin kita lakukan tapi harus tetap dilakukan」
