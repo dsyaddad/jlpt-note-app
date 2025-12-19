@@ -48,7 +48,7 @@ BUNPO-2 「（～ようだ・～ように） Menerangkan tampilan, situasi, atau
  [METHOD-D] : 「meishi」＋「の」＋「ように」
  [METHOD-E] : 「VerbFutsukei」＋「ように」
  [METHOD-F] : 「Verbている」＋「ように」
- [NOTE    ] : Pola 「～ようだ／～ように」 digunakan untuk menyatakan dugaan, kesan, atau penilaian pembicara berdasarkan informasi yang terlihat, terdengar, atau diketahui. Bukan perumpamaan murni, melainkan hasil observasi atau logika. Dalam bahasa Indonesia sering diterjemahkan sebagai: “kelihatannya…”, “sepertinya…”, atau “tampak seperti…”
+ [NOTE    ] : Pola 「～ようだ／～ように」 digunakan untuk menyatakan dugaan, kesan, atau penilaian pembicara berdasarkan informasi yang terlihat, terdengar, atau diketahui. Bukan perumpamaan murni, melainkan hasil observasi atau logika. Dalam bahasa Indonesia sering diterjemahkan sebagai: “kelihatannya…”, “sepertinya…”, atau “tampak seperti…” youni ditengah2 youda dibelakang
 
 BUNPO-3 「（～みたい／～みたいだ） Menyatakan kesan, asumsi, atau contoh yang mewakili dalam percakapan santai dengan teman」
  [METHOD-A] : 「meishi」＋「みたい」
