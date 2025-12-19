@@ -34,6 +34,58 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY27--------------------------------------------
+==================================================
+BUNPO-1 「（～のような・～のように） Menerangkan pola kalimat "bagaikan../seperti.."」
+ [METHOD-A] : 「meishi」＋「のような」＋「meishi」
+ [METHOD-B] : 「meishi」＋「のように」
+ [NOTE    ] : Pola “you na / you ni” dalam bahasa Jepang digunakan untuk menyatakan suatu hal yang kita anggap mirip dengan hal lain, atau dengan kata lain untuk menyampaikan suatu contoh atau perumpamaan melalui suatu kata kerja atau kata benda, sehingga pola ini dalam bahasa Indonesia dapat diartikan “seperti”
+ 
+BUNPO-2 「（～ようだ・～ように） Menerangkan tampilan, situasi, atau kondisi yang MIRIP　berdasarkan pengamatan / kesan pembicara」
+ [METHOD-A] : 「meishi」＋「の」＋「ようだ」
+ [METHOD-B] : 「VerbFutsukei」＋「ようだ」
+ [METHOD-C] : 「Verbている」＋「ようだ」
+ [METHOD-D] : 「meishi」＋「の」＋「ように」
+ [METHOD-E] : 「VerbFutsukei」＋「ように」
+ [METHOD-F] : 「Verbている」＋「ように」
+ [NOTE    ] : Pola 「～ようだ／～ように」 digunakan untuk menyatakan dugaan, kesan, atau penilaian pembicara berdasarkan informasi yang terlihat, terdengar, atau diketahui. Bukan perumpamaan murni, melainkan hasil observasi atau logika. Dalam bahasa Indonesia sering diterjemahkan sebagai: “kelihatannya…”, “sepertinya…”, atau “tampak seperti…”
+
+BUNPO-3 「（～みたい／～みたいだ） Menyatakan kesan, asumsi, atau contoh yang mewakili dalam percakapan santai dengan teman」
+ [METHOD-A] : 「meishi」＋「みたい」
+ [METHOD-B] : 「VerbFutsukei」＋「みたい（だ）」
+ [METHOD-C] : 「Adjい・Adjな」＋「みたい（だ）」
+ [METHOD-D] : 「みたいな」＋「meishi」
+ [NOTE    ] : Pola 「～みたい」 digunakan dalam percakapan non-formal　untuk menyatakan kesan, asumsi, atau perbandingan ringan　berdasarkan apa yang dilihat, dirasakan, atau dialami pembicara.　Nuansanya lebih kasual dibandingkan 「～ようだ」 dan　sering dipakai saat berbicara dengan teman.　Dalam bahasa Indonesia dapat diterjemahkan sebagai　“kayaknya…”, “kelihatannya…”, atau “mirip seperti…”.
+ 
+BUNPO-4 「Bentuk singkat / kontraksi dalam percakapan santai　Menyederhanakan pelafalan untuk berbicara dengan teman」
+ [METHOD-A ]: 「～ている」→「～てる」
+ [METHOD-A’]: 「～ている」→「～とる」※dialek / kasual kuat
+ [METHOD-B ]: 「～ておく」→「～とく」
+ [METHOD-C ]: 「～てしまう」→「～ちゃう」
+ [METHOD-C’]: 「～でしまう」→「～じゃう」
+ [METHOD-E ]: 「～てはいけない」→「～ちゃいけない」
+ [METHOD-E’]: 「～てはならない」→「～ちゃならない」
+ [METHOD-F ]: 「～なければならない」→「～なきゃ」
+ [METHOD-F’]: 「～なくてはいけない」→「～なくちゃ」
+ [NOTE     ]: Bentuk singkat (縮約形) digunakan dalam percakapan non-formal untuk mempercepat dan mempermudah pengucapan. Umumnya dipakai saat berbicara dengan teman atau orang dekat.❌ Tidak digunakan dalam situasi formal, tulisan resmi,atau saat berbicara dengan atasan.
+ 
+BUNPO-5 「（～たり～たりして） Menyatakan beberapa contoh kegiatan atau situasi yang terjadi secara bergantian / tidak tetap」
+ [METHOD-A] : 「Verbた」＋「り」＋「Verbた」＋「り」＋「する」
+ [NOTE    ] : Pola 「～たり～たりして」 digunakan untuk menyebutkan beberapa contoh aktivitas atau keadaan yang tidak dilakukan secara tetap atau berurutan. Pola ini tidak menekankan urutan waktu, melainkan memberi gambaran umum tentang apa saja yang terjadi. Dalam bahasa Indonesia sering diterjemahkan sebagai:“kadang… kadang…”, “melakukan hal seperti… dan …”.
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+これは夢のような話だ。
+BUNPO-2
+外は静かですね。雨がもう止んだようです。
+BUNPO-3
+このケーキ、甘すぎるみたい。
+BUNPO-4
+電車に財布忘れちゃった。
+BUNPO-5
+週末は家でゲームをしたり、動画を見たりして過ごします。
+==================================================
 -DAY26--------------------------------------------
 ==================================================
 BUNPO-1 「（～Vられる⇒て＋しまう） ketika merasa bahwa yg dilakukan oleh org lain thdp diri kita mengganggu / disayangkan」
