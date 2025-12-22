@@ -34,6 +34,49 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY28--------------------------------------------
+==================================================
+BUNPO-1 「（～くたって） "Meskipun/walaupun..."」
+ [METHOD-A] : 「Verbた」＋「って」
+ [METHOD-B] : 「Adjい」＋「って」
+ [METHOD-C] : 「Adjな」＋「だって」
+ [METHOD-D] : 「meishi」＋「だって」
+ [METHOD-E] : 「Verbない」＋「くたって」
+ [METHOD-F] : 「Adjい⇒くなくた」＋「って」
+ [METHOD-G] : 「Adjな⇒じゃなくた」＋「って」
+ [METHOD-H] : 「meishi」＋「じゃなくたって」
+ [NOTE    ] : versi lebih formal dari ても・でも
+ 
+BUNPO-2 「（～に決まっている） "Sudah pasti..", "Tidak salah lagi.."」
+ [METHOD-A] : 「VerbFutsukei/Adjい/Adjな/meishi」＋「にきまっている」
+ [NOTE    ] : -
+
+BUNPO-3 「（～じゃない・～じゃん） "Kan..?","Bukan..?"」
+ [METHOD-A] : 「VerbFutsukei/Adjい/Adjな/meishi」＋「じゃない・じゃん」
+ [NOTE    ] : digunakan saat ingin memastikan bahwa lawan bicara juga mengetahui / memiliki pendapat yg sama akan suatu hal. ini juga digunakan saat membicarakan tentang suatu temuan
+ 
+BUNPO-4 「（～ほど～ない・～くない・～ではない） "Tidak ada yang se..", "Paling.."」
+ [METHOD-A] : 「VerbFutsukei/meishi」＋「ほど」＋「Verbない・Adjい⇒くない・Adjな⇒ではない・じゃない」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～かわりに） "Sebagai pengganti.."」
+ [METHOD-A] : 「meishi」＋「の」＋「かわりに」
+ [METHOD-B] : 「VerbFutsukei」＋「かわりに」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+雨が降ったって、私は行く。
+BUNPO-2
+そんな高いレストラン、味がいいに決まっている。
+BUNPO-3
+今日は祝日だから、店は閉まってるじゃない？shukujitsu,shimatteru
+BUNPO-4
+今年の暑さは、去年ほどひどくない。
+BUNPO-5
+部長のかわりに、私が会議に出席します。shusseki
+==================================================
 -DAY27--------------------------------------------
 ==================================================
 BUNPO-1 「（～のような・～のように） Menerangkan pola kalimat "bagaikan../seperti.."」
