@@ -41,7 +41,7 @@ BUNPO-1 「（～のまま） "...begitu saja"」
  [NOTE    ] : suatu keadaan terus belanjut tanpa berubah
  
 BUNPO-2 「（～ます） digunakan saat menulis laporan, pemeriksaan, dll.」
- [METHOD-A] : 「Verbます,」＋「other-sentence」
+ [METHOD-A] : 「VerbⓍます,」＋「other-sentence」
  [NOTE    ] : sbg bentuk lebih formal pengganti Vて untuk menggabungkan kalimat
 
 BUNPO-3 「（～ているところ・～ようとしたところ） digunakan u/ menyatakan suatu yg terjadi tepat saat...」
@@ -73,8 +73,8 @@ SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
 ドアは開いたままです。
 BUNPO-2
-本システムはデータを収集します、分析して結果を表示します。
-hon shisutemu wa deeta o shuushuu shimasu, bunseki shite kekka o hyouji
+本システムはデータを収集し、分析して結果を表示します。
+hon shisutemu wa deeta o shuushuu shi, bunseki shite kekka o hyouji
 BUNPO-3
 会議をしているところなので、後で電話します。
 kaigi o shite iru tokoro nanode, ato de denwa shimasu.
