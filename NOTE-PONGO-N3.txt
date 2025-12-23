@@ -34,6 +34,57 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY29--------------------------------------------
+==================================================
+BUNPO-1 「（～のまま） "...begitu saja"」
+ [METHOD-A] : 「Verbた・meishi（の）」＋「まま」
+ [NOTE    ] : suatu keadaan terus belanjut tanpa berubah
+ 
+BUNPO-2 「（～ます） digunakan saat menulis laporan, pemeriksaan, dll.」
+ [METHOD-A] : 「Verbます,」＋「other-sentence」
+ [NOTE    ] : sbg bentuk lebih formal pengganti Vて untuk menggabungkan kalimat
+
+BUNPO-3 「（～ているところ・～ようとしたところ） digunakan u/ menyatakan suatu yg terjadi tepat saat...」
+ [METHOD-A] : 「VerbJisho/Verbた/Verbている」＋「ところ」
+ [METHOD-B] : 「Verbようとした/Verbていた」＋「ところ」
+ [METHOD-A] : 「Adjい」＋「ところ」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～ませんか・～ありませんか） "Saya pikir..", "...kan?"」
+ [METHOD-A] : 「VerbⓍます」＋「ませんか」
+ [METHOD-B] : 「Adjい⇒く」＋「ないですか・ありませんか」
+ [METHOD-C] : 「Adjな・meishi」＋「じゃないですか・じゃありませんか」
+ [NOTE    ] : digunakan saat menanyakan pendapat lawan bicara, ada kesan penekanan bahwa pembicara berharap lawan bicara setuju dgn pendapat pembicara
+ 
+BUNPO-5 「（～にとって（は・も） "Bagi..", "Menurut.."」
+ [METHOD-A] : 「meishi」＋「にとって（は・も）」
+ [NOTE    ] : -
+
+BUNPO-6 「"Semakin..,semakin.."」
+ [METHOD-A] : 「Verbば」＋「VerbJisho」＋「ほど」＋「detail」
+ [METHOD-B] : 「Verbば」＋「Verbた」＋「だけ」＋「detail」
+ [METHOD-C] : 「meishi」＋「であれば」＋「meishi」＋「であるほど・であるだけ」＋「detail」
+ [METHOD-D] : 「AdjⓍい」＋「ければ」＋「Adjい」＋「ほど・だけ」＋「detail」
+ [METHOD-E] : 「AdjⓍな」＋「であれば」＋「Adjな」＋「である・であるな」＋「ほど・だけ」＋「detail」
+ [NOTE    ] : A sering dipakai, B jarang dipakai
+ 
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+ドアは開いたままです。
+BUNPO-2
+本システムはデータを収集します、分析して結果を表示します。
+hon shisutemu wa deeta o shuushuu shimasu, bunseki shite kekka o hyouji
+BUNPO-3
+会議をしているところなので、後で電話します。
+kaigi o shite iru tokoro nanode, ato de denwa shimasu.
+BUNPO-4
+それはルール違反じゃないですか。
+Sore wa rūru ihan janaidesu ka.
+BUNPO-5
+考えれば考えるほど、不安になってくる。
+Kangaereba kangaeru hodo, fuan ni natte kuru.
+==================================================
 -DAY28--------------------------------------------
 ==================================================
 BUNPO-1 「（～くたって） "Meskipun/walaupun..."」
