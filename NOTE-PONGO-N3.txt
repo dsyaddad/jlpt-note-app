@@ -10,7 +10,7 @@ BUNPO-2 「（～・～） ""」
  [NOTE    ] : -
 
 BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+ [METHOD-A] : 「VerbⓍます」＋「」R
  [NOTE    ] : -
  
 BUNPO-4 「（～・～） ""」
@@ -33,6 +33,63 @@ BUNPO-4
 
 BUNPO-5
 
+==================================================
+-DAY30--------------------------------------------
+==================================================
+BUNPO-1 「（～度に） "Setiap kali {verb/meishi}..selalu.."」
+ [METHOD-A] : 「VerbJisho」＋「たびに」＋「detail」
+ [METHOD-B] : 「meishi」＋「の」＋「たびに」＋「detail」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～はず） "Pasti..","Semestinya..","Seharusnya.."」
+ [METHOD-A] : 「VerbFutsukei」＋「はず」
+ [METHOD-B] : 「Adjい」＋「はず」
+ [METHOD-C] : 「Adjな」＋「な」＋「はず」
+ [METHOD-D] : 「meishi」＋「の」＋「はず」
+ [NOTE    ] : -
+
+BUNPO-3 「（～ますと・～ですと） "Jika.."」
+ [METHOD-A] : 「～ます/～です」＋「と」＋「detail」
+ [NOTE    ] : menyatakan persyaratan dalam situasi formal, seperti ditempat umum, dll.
+ 
+BUNPO-4 「（～ようなら・～ようだったら） "Jika sepertinya.."」
+ [METHOD-A] : 「VerbFutsukei」＋「ようなら・ようだったら」
+ [METHOD-B] : 「Adjな」＋「な」＋「ようなら・ようだったら」
+ [METHOD-C] : 「meishi」＋「の」＋「ようなら・ようだったら」
+ [METHOD-D] : 「Adjい」＋「ようなら・ようだったら」
+ [NOTE    ] : bentuk pengandaian lebih sopan dan halus
+ 
+BUNPO-5 「（～もので・～ものですから） "Karena.."」
+ [METHOD-A] : 「VerbFutsukei」＋「もので・ものですから」
+ [METHOD-B] : 「Adjな」＋「な」＋「もので・ものですから」
+ [METHOD-C] : 「meishi」＋「な」＋「もので・ものですから」
+ [METHOD-D] : 「Adjい」＋「もので・ものですから」
+ [NOTE    ] : -
+ 
+BUNPO-6 「（～もんで・～もんだから） "Karena.."」
+ [METHOD-A] : 「VerbFutsukei」＋「もんで・もんだから」
+ [METHOD-B] : 「Adjな」＋「な」＋「もんで・もんだから」
+ [METHOD-C] : 「meishi」＋「な」＋「もんで・もんだから」
+ [METHOD-D] : 「Adjい」＋「もんで・もんだから」
+ [NOTE    ] : situasi informal, jd biasanya digunakan pd org2 yg dkt dgn pembicara
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+雨が降るたびに、この道は渋滞する。 jūta
+BUNPO-2
+この時間なら、彼はもう会社に着いているはずだ。tsuite iru 
+BUNPO-3
+このボタンを押しますと、機械が自動的に停止します。kikai ga jidōteki ni teishi shimasu.
+BUNPO-4
+体調がまだ回復していないようだったら、無理をしないでください。
+Taichō ga mada kaifuku shite inai yōdattara, muri o shinaide kudasai.
+BUNPO-5
+初めての業務なものですから、時間がかかってしまいました。
+Hajimete no gyōmuna monodesukara, jikan ga kakatte shimaimashita.
+BUNPO-6
+雨が降ってたんだから、試合が中止になるのは当然だよ。
+Ame ga futteta ndakara, shiai ga chūshi ni naru no wa tōzenda yo.
 ==================================================
 -DAY29--------------------------------------------
 ==================================================
