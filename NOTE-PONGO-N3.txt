@@ -73,6 +73,10 @@ BUNPO-6 「（～もんで・～もんだから） "Karena.."」
  [METHOD-D] : 「Adjい」＋「もんで・もんだから」
  [NOTE    ] : situasi informal, jd biasanya digunakan pd org2 yg dkt dgn pembicara
 
+BUNPO-7 「（～かと思う） "Saya pikir..", "Saya rasa.."」
+ [METHOD-A] : 「VerbFutsukei/Adjい/Adjな/meishi」＋「かと思う」
+ [NOTE    ] : menyampaikan pendapat dengan memasukkan perasaan sungkan digunakan saat situasi formal.
+
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
@@ -90,6 +94,9 @@ Hajimete no gyōmuna monodesukara, jikan ga kakatte shimaimashita.
 BUNPO-6
 雨が降ってたんだから、試合が中止になるのは当然だよ。
 Ame ga futteta ndakara, shiai ga chūshi ni naru no wa tōzenda yo.
+BUNPO-7
+もうお帰りになったかと思いますが、こちらの資料をご確認ください。
+Mō o kaeri ni natta ka to omoimasuga, kochira no shiryō o go kakunin kudasai.
 ==================================================
 -DAY29--------------------------------------------
 ==================================================
