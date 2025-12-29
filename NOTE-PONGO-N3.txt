@@ -34,6 +34,50 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY31--------------------------------------------
+==================================================
+BUNPO-1 「（～かと思った） "Saya pikir..ternyata.."」
+ [METHOD-A] : 「VerbFutsukei・Adjな・Adjい・meishi」＋「かと思った」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～ばかり） "Baru saja..."」
+ [METHOD-A] : 「Verbた」＋「ばかり」
+ [NOTE    ] : ada jeda waktu, tidak mesti sesuatu yg baru benar benar terjadi
+
+BUNPO-3 「（～いいのに～ければ） "Padahal akan lebih baik jika..", "Andai.."」
+ [METHOD-A] : 「Verbば」＋「いいのに」
+ [METHOD-B] : 「Adjい⇒ければ」＋「いいのに」
+ [METHOD-C] : 「Adjな」＋「なら」＋「いいのに」
+ [METHOD-D] : 「meishi」＋「なら」＋「いいのに」
+ [METHOD-E] : 「Verbない⇒ければ」＋「いいのに」
+ [METHOD-F] : 「Adjい⇒くなければ」＋「いいのに」
+ [METHOD-G] : 「Adjな」＋「じゃなければ」＋「いいのに」
+ [METHOD-H] : 「meishi」＋「じゃなければ」＋「いいのに」
+ [NOTE    ] : A,B,C,D Menyatakan perasaan kecewa dgn kondisi sekarang krn berbeda dr harapan pembiacara.
+  E,F,G,H Menunjukan penyesalan / memberikan kritik pd pihak lain
+ 
+BUNPO-4 「（～もらってもいいですか） "Tolong..","Bisakah tolong..?"」
+ [METHOD-A] : 「Verbて」＋「もらってもいいですか」
+ [NOTE    ] : bentuk lebih sopan dari ～てください u/ meminta tolong pada org lain. dan gunakan ～ていただきたいんですが pada situasi yg lebih formal lagi
+ 
+BUNPO-5 「（～いただく・～くださる） pola u/ menyatakan bahwa kita dpt jasa / kebaikan dr pihak lain」
+ [METHOD-A] : 「お」＋「VerbⓍます」＋「いただく・くださる」
+ [METHOD-B] : 「ご」＋「meishi」＋「いただく・くださる」
+ [NOTE    ] : versi ini merupakan bentuk lebih hormat dari もらう・くれる
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+もう終わったかと思ったけど、まだ続いていた。
+BUNPO-2
+彼女は入社したばかりだから、まだ仕事に慣れていない。
+BUNPO-3
+今日は休みならいいのに。
+BUNPO-4
+少しゆっくり話してもらってもいいですか。
+BUNPO-5
+本日はお忙しい中、お時間をいただき、ありがとうございます。
+==================================================
 -DAY30--------------------------------------------
 ==================================================
 BUNPO-1 「（～度に） "Setiap kali {verb/meishi}..selalu.."」
