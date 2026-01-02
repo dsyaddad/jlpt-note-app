@@ -34,6 +34,58 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY32--------------------------------------------
+==================================================
+BUNPO-1 「（～ていただく・～てくださる） "Tolong izinkan saya...", "Izinkan saya.."」
+ [METHOD-A] : 「VerbKasuatifて」＋「いただく・くださる」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（お目にかかれる・お目にかける） Bahasa merendah bentuk spesial」
+ [METHOD-A] : 「合う」⇒「お目にかかる」
+ [METHOD-B] : 「見せる」⇒「お目にかける」
+ [METHOD-C] : 「もらう」⇒「ちょうだいする」
+ [METHOD-D] : 「知る」⇒「存じ上げる」
+ [NOTE    ] : -
+
+BUNPO-3 「（～でしょうか） Bentuk lebih sopan dari ですか」
+ [METHOD-A] : 「VerbFutsukei/Verbます」＋「でしょうか」
+ [METHOD-B] : 「Adjい」＋「でしょうか」
+ [METHOD-C] : 「Adjな」＋「でしょうか」
+ [METHOD-D] : 「meishi」＋「でしょうか」
+ [NOTE    ] : digunakan saat bertanya atau menyampaikan permintaan dgn sngt sopan
+ 
+BUNPO-4 「（～いらっしゃる） bentuk sopan dari　～ている 」
+ [METHOD-A] : 「Verbて」＋「いらっしゃる」
+ [METHOD-B] : 「Adjな」＋「でいらっしゃる」
+ [METHOD-C] : 「meishi」＋「でいらっしゃる」
+ [NOTE    ] : digunakan pd org yg dihormati
+ 
+BUNPO-5 「（～からでなければ・～からでないと） "Sebelum.., maka tidak bisa..", "jika tidak..,maka tidak akan.."」
+ [METHOD-A] : 「Verbて」＋「からでなければ、」＋「diikuti kata bentuk negatif」
+ [METHOD-B] : 「Verbて」＋「からでないと、」＋「diikuti kata bentuk negatif」
+ [NOTE    ] : -
+ 
+BUNPO-6 「（～かのようだ・～かのように） "Seolah-olah..", "Seolah-olah seperti.."」
+ [METHOD-A] : 「VerbFutsukei」＋「かのようだ」
+ [METHOD-B] : 「かのように」＋「VerbFutsukei」
+ [METHOD-C] : 「かのような」＋「meishi」
+ [NOTE    ] : -
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+会議を途中で退席させていただけませんでしょうか。
+BUNPO-2
+明日、御社に伺ってもよろしいでしょうか。
+BUNPO-3
+こちらで少々お待ちいただけますでしょうか。
+BUNPO-4
+社長はいつもお元気でいらっしゃいますね。
+BUNPO-5
+先生に許可をもらってからでなければ、教室には入れません。
+BUNPO-6
+1月なのに、今日は春が来たかのようだ。
+==================================================
 -DAY31--------------------------------------------
 ==================================================
 BUNPO-1 「（～かと思った） "Saya pikir..ternyata.."」
