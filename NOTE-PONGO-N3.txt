@@ -36,38 +36,40 @@ BUNPO-5
 ==================================================
 -DAY33--------------------------------------------
 ==================================================
-BUNPO-1 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-1 「（～かける・～かけだ・～かけの） Sedang dlm suatu keadaan / sedang melakukan sesuatu, namun belum selesai」
+ [METHOD-A] : 「VerbⓍます」＋「かける・かけだ・かけの(+ meishi)」
  [NOTE    ] : -
  
-BUNPO-2 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-2 「（～すぎはいられない） "Tidak tahan untuk tidak.."」
+ [METHOD-A] : 「VerbⓍない」＋「すぎはいられない」
+ [NOTE    ] : tidak mampu / tidak bisa menahan untuk tidak melakukan sesuatu
 
-BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」R
- [NOTE    ] : -
+BUNPO-3 「（～からこそ） "Justru karena.."」
+ [METHOD-A] : 「VerbFutsukei・Adjい」＋「からこそ」
+ [METHOD-B] : 「meishi・Adjな」＋「だ」＋「からこそ」
+ [NOTE    ] : menekankan alasan yg khusus/penting
  
-BUNPO-4 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-4 「（～っこない） "Tidak mungkin.."」
+ [METHOD-A] : 「VerbⓍます」＋「っこない」
+ [NOTE    ] : menolak suatu dgn keras karena dianggap tidak masuk akal
  
-BUNPO-5 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-5 「（～からといって） "Hanya karena.. tidak berarti/belum tentu .."」
+ [METHOD-A] : 「VerbFutsukei・Adjい」＋「からちいって」
+ [METHOD-B] : 「meishi・Adjな」＋「だ」＋「からといって」
+ [NOTE    ] : suatu info yg umumnya dipercaya sbg hal yg pasti namun bisa jd berbeda dr apa yg dipikirkan
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+彼は言いかけて、急に黙った。
 BUNPO-2
-
+その話を聞いて、笑わずにはいられなかった。
 BUNPO-3
-
+失敗したからこそ、多くを学べた。
 BUNPO-4
-
+あんな説明じゃ、誰も理解できっこない。
 BUNPO-5
-
+日本に住んでいるからといって、日本語が上手とは限らない。
 ==================================================
 -DAY32--------------------------------------------
 ==================================================
