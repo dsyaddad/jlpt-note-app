@@ -34,6 +34,42 @@ BUNPO-4
 BUNPO-5
 
 ==================================================
+-DAY34--------------------------------------------
+==================================================
+BUNPO-1 「（～とは限らない） "Meskipun.. belum tentu.."」
+ [METHOD-A] : 「VerbFutsukei/Adjい」＋「とはかぎらない」
+ [METHOD-A] : 「meishi/Adjな」＋「だ」＋「とはかぎらない」
+ [NOTE    ] : -
+ 
+BUNPO-2 「（～っぽい） "Seperti.."」
+ [METHOD-A] : 「VerbⓍます・Adjい・meishi」＋「っぱい」
+ [NOTE    ] : Menyatakan kesan saat melihat sesuatu terasa/terlihat seperti itu
+
+BUNPO-3 「（～のことだから） "Karena memang"」
+ [METHOD-A] : 「meishi(org,perusahaan,organisasi,etc)」＋「のことだから」
+ [NOTE    ] : -
+ 
+BUNPO-4 「（～くらい・～ぐらい） "Sampai..","Sedemikian.." (digunakan pada meishi) ,"Minimal/paling tidak.." (digunakan pada sifat&meishi)」
+ [METHOD-A] : 「VerbFutsukei/Adjい/meishi/Adjな(+な)」＋「ぐらい・くらい」
+ [NOTE    ] : -
+ 
+BUNPO-5 「（～っぽなし） melakukan sesuatu lalu meninggalkan bgtu saja, melakukan sesuatu tersu menerus dlm keadaan yg sama」
+ [METHOD-A] : 「VerbⓍます」＋「っぽなし」
+ [NOTE    ] : umumnya u/ konotasi negatif
+
+--------------------------------------------------
+SHUKUDAI NO DOUGA HAJIMEMASU.
+BUNPO-1
+日本に住んでいるからといって、日本語が上手とは限りません。
+BUNPO-2
+この説明は難しっぽいですね。
+BUNPO-3
+慎重な会社のことだから、すぐに結論は出さないでしょう。
+BUNPO-4
+立っていられないくらい疲れています。
+BUNPO-5
+ドアを開けっぱなしで、エアコンが無駄になっている。
+==================================================
 -DAY33--------------------------------------------
 ==================================================
 BUNPO-1 「（～かける・～かけだ・～かけの） Sedang dlm suatu keadaan / sedang melakukan sesuatu, namun belum selesai」
