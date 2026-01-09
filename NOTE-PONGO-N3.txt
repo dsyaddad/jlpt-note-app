@@ -1,38 +1,45 @@
 ==================================================
--DAYXX--------------------------------------------
+-DAY35--------------------------------------------
 ==================================================
-BUNPO-1 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-1 「（～らしい） "Seperti.."」
+ [METHOD-A] : 「meishi」＋「らしい」
+ [NOTE    ] : Menunjukan karakteristik,　berupa　perilaku/kelakuan,　sifat,　dll.　bukan　wujud　yg　mirip　tapi　kelakukan　/Karakteristik
  
-BUNPO-2 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-2 「（～とか） "Seperti..., ..., dll."」
+ [METHOD-A] : 「Verb/meishi」＋「とか」
  [NOTE    ] : -
 
-BUNPO-3 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」R
+BUNPO-3 「（～ついでに） "Saat...,sekalian..."」
+ [METHOD-A] : 「Verbた・VerbJisho」＋「ついでに」
+ [METHOD-B] : 「meishi」＋「のついでに」
  [NOTE    ] : -
  
-BUNPO-4 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
+BUNPO-4 「（～に違いない） "Pasti..","Tidak salah lagi.."」
+ [METHOD-A] : 「Verb/Adjい/Adjな/meishi」＋「にちがない」
  [NOTE    ] : -
  
-BUNPO-5 「（～・～） ""」
- [METHOD-A] : 「VerbⓍます」＋「」
- [NOTE    ] : -
+BUNPO-5 「（～抜きで） "Tanpa.."」
+ [METHOD-A] : 「meishi」＋「ぬきで」
+ [NOTE    ] : biasanya meishi yg dicantumkan memang suatu yg semestinya
+
+ BUNPO-6 「（～しょうがない） "Amat sanget.." "Sedemikian..Sehingga.."」
+ [METHOD-A] : 「Verbて・Adjい⇒くて・Adjな⇒で」＋「しょうがない」
+ [NOTE    ] : tanpa bisa menahan suatu emosi / perasaan. terkesan hiperbola
 
 --------------------------------------------------
 SHUKUDAI NO DOUGA HAJIMEMASU.
 BUNPO-1
-
+彼は子どもらしいところがまだ残っている。
 BUNPO-2
-
+この仕事はデータ入力とか、メール対応とかが中心です。
 BUNPO-3
-
+散歩に出たついでに、郵便局にも寄ってきた。
 BUNPO-4
-
+外は真っ暗で風も強い。もうすぐ嵐になるに違いない。
 BUNPO-5
-
+砂糖抜きでコーヒーをください。
+BUNPO-6
+彼女のことが心配で、何も手につかなくてしょうがない。
 ==================================================
 -DAY34--------------------------------------------
 ==================================================
